@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- remote name="arm" fetch="https://github.com/ARM-software" /-->
+	<remote name="busybox" fetch="git://busybox.net" />
+	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
+	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="96boards" fetch="https://github.com/96boards" />
+
+	<!-- OP-TEE users repositories -->
+	<remote name="vchong" fetch="https://github.com/vchong" />
+
+        <!-- strace -->
+        <remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
+
+	<default remote="optee" revision="master" />
+
+        <!-- strace -->
+        <project remote="sfnet" path="strace" name="code" />
+
+	<!-- l-loader -->
+	<!-- project remote="96boards" path="l-loader" name="l-loader" revision="master" /-->
+	<!-- project remote="96boards" path="l-loader" name="l-loader" revision="hikey" /-->
+	<project remote="linaro-swg" path="l-loader" name="l-loader" revision="hikey_optee" />
+
+        <!-- burn-boot -->
+        <project remote="96boards" path="burn-boot" name="burn-boot" />
+
+	<!-- OP-TEE gits -->
+	<project path="optee_os" name="optee_os" />
+	<project path="optee_client" name="optee_client" />
+	<project path="optee_linuxdriver" name="optee_linuxdriver" />
+	<project path="optee_test" name="optee_test" />
+
+	<!-- busybox -->
+	<project remote="busybox" path="busybox" name="busybox.git" />
+
+	<!-- ARM gits -->
+	<!-- project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" /-->
+	<!-- project remote="96boards" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" /-->
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey-sec" />
+
+	<!-- Tianocore, EDK2 -->
+	<!-- project remote="96boards" path="edk2" name="edk2" revision="hikey" /-->
+	<project remote="linaro-swg" path="edk2" name="edk2" revision="hikey_optee" />
+
+	<!-- Linux kernel -->
+	<!-- project remote="96boards" path="linux" name="linux" revision="hikey"/ -->
+	<project remote="linaro-swg" path="linux" name="linux" revision="hikey-optee"/>
+
+	<!-- Filesystem -->
+	<!-- project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" revision="hikey-optee"/-->
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
+
+	<!-- Build -->
+	<project remote="vchong" path="build" name="build.git">
+		<linkfile src="hikey.mk" dest="build/Makefile" />
+	</project>
+</manifest>
