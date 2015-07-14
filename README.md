@@ -17,6 +17,7 @@ $ repo sync
 * QEMU: default.xml
 * FVP: fvp.xml
 * Hikey: hikey.xml
+* MediaTek MT8173 EVB Board: mt8173-evb.xml
 
 ### 2.2 Branches
 Currently we are only using one branch, i.e, the master branch.
@@ -61,6 +62,15 @@ Location of files/images mentioned in the link above:
 * ```$HOME/devel/optee/l-loader/ptable.img```
 * ```$HOME/devel/optee/arm-trusted-firmware/build/hikey/release/fip.bin```
 * ```$HOME/devel/optee/out/boot-fat.uefi.img```
+
+## 6. MT8173-EVB
+After getting the source and toolchain, please run:
+
+```
+$ make all run
+```
+
+When `< waiting for device >` prompt appears, press reset button
 
 # Tips and tricks
 ## Reference existing project to speed up repo sync
