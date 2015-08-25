@@ -12,7 +12,7 @@
 	<default remote="optee" revision="master" />
 
         <!-- strace -->
-        <project remote="sfnet" path="strace" name="code" />
+        <project remote="sfnet" path="strace" name="code" revision="refs/tags/v4.10" />
 
 	<!-- l-loader -->
 	<!-- project remote="96boards" path="l-loader" name="l-loader" revision="master" /-->
