@@ -14,10 +14,13 @@ $ repo sync
 ```
 
 ### 2.1 Targets
-* QEMU: default.xml
-* FVP: fvp.xml
-* Hikey: hikey.xml
-* MediaTek MT8173 EVB Board: mt8173-evb.xml
+* QEMU: default.xml and default_stable.xml. default.xml is pointed out to
+  the master branch of all OP-TEE components. default_stable.xml is the
+  latest known stable version of OP-TEE. OP-TEE components are pointing
+  to the latest version tag
+* FVP: fvp.xml and fvp_stable.xml
+* Hikey: hikey.xml and hikey_stable.xml
+* MediaTek MT8173 EVB Board: mt8173-evb.xml and mt8173-evb_stable.xml
 
 ### 2.2 Branches
 Currently we are only using one branch, i.e, the master branch.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="arm" fetch="https://github.com/ARM-software" />
+	<remote name="busybox" fetch="git://busybox.net" />
+	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
+	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
+	<remote name="optee" fetch="https://github.com/OP-TEE" />
+
+	<default remote="optee" revision="MUST ALWAYS USE STABLE REVISION" />
+
+	<!-- OP-TEE gits -->
+	<project path="optee_os" name="optee_os.git" revision="refs/tags/1.0.0" />
+	<project path="optee_client" name="optee_client.git" revision="refs/tags/1.0.0" />
+	<project path="optee_linuxdriver" name="optee_linuxdriver.git" revision="refs/tags/1.0.0" />
+	<project path="optee_test" name="optee_test.git" revision="refs/tags/1.0.0" />
+
+	<!-- busybox -->
+	<project remote="busybox" path="busybox" name="busybox.git" revision="3b650c1e7b0bcbb4dfebab6fd87449e6b1e0b788" />
+
+	<!-- ARM gits, FVP -->
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="7e4d69163cd93ae2e18555749fc5d7a658139e3c" />
+
+	<!-- Tianocore, EDK2 -->
+	<project remote="arm" path="edk2" name="edk2.git" revision="refs/tags/v2.1-rc0" />
+
+	<!-- Linux kernel -->
+	<project remote="linux" path="linux" name="linux.git" revision="refs/tags/v3.18-rc1"/>
+
+	<!-- Filesystem -->
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="3410709e6932facda8cb1802126630e40e9f1ba4" />
+
+	<!-- Build -->
+	<project remote="optee" path="build" name="build.git" revision="refs/tags/1.0.0">
+		<linkfile src="fvp.mk" dest="build/Makefile" />
+	</project>
+</manifest>
