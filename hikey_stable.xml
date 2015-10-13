@@ -21,10 +21,10 @@
 	<project remote="96boards" path="burn-boot" name="burn-boot" revision="91d58af156fba97f4311f44de92a50f1163d9de0" />
 
 	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os" revision="refs/tags/1.0.0" />
-	<project path="optee_client" name="optee_client" revision="refs/tags/1.0.0" />
-	<project path="optee_linuxdriver" name="optee_linuxdriver" revision="refs/tags/1.0.0" />
-	<project path="optee_test" name="optee_test" revision="refs/tags/1.0.0" />
+	<project path="optee_os" name="optee_os" revision="refs/tags/1.0.1" />
+	<project path="optee_client" name="optee_client" revision="refs/tags/1.0.1" />
+	<project path="optee_linuxdriver" name="optee_linuxdriver" revision="refs/tags/1.0.1" />
+	<project path="optee_test" name="optee_test" revision="refs/tags/1.0.1" />
 
 	<!-- busybox -->
 	<project remote="busybox" path="busybox" name="busybox.git" revision="3b650c1e7b0bcbb4dfebab6fd87449e6b1e0b788" />
@@ -42,7 +42,7 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" revision="3410709e6932facda8cb1802126630e40e9f1ba4" />
 
 	<!-- Build -->
-	<project remote="optee" path="build" name="build.git" revision="refs/tags/1.0.0" >
+	<project remote="optee" path="build" name="build.git" revision="refs/tags/1.0.1" >
 		<linkfile src="hikey.mk" dest="build/Makefile" />
 	</project>
 </manifest>
