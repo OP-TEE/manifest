@@ -4,23 +4,20 @@
 	<remote name="busybox" fetch="git://busybox.net" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
 	<remote name="96boards" fetch="https://github.com/96boards" />
-
-        <!-- strace -->
-        <remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
+	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
 
 	<default remote="optee" revision="master" />
 
-        <!-- strace -->
-        <project remote="sfnet" path="strace" name="code" revision="refs/tags/v4.10" />
+	<!-- strace -->
+	<project remote="sfnet" path="strace" name="code" />
 
 	<!-- l-loader -->
-	<!-- project remote="96boards" path="l-loader" name="l-loader" revision="master" /-->
-	<!-- project remote="96boards" path="l-loader" name="l-loader" revision="hikey" /-->
-	<project remote="linaro-swg" path="l-loader" name="l-loader" revision="hikey_optee" />
+	<project remote="96boards" path="l-loader" name="l-loader" />
 
-        <!-- burn-boot -->
-        <project remote="96boards" path="burn-boot" name="burn-boot" />
+	<!-- burn-boot -->
+	<project remote="96boards" path="burn-boot" name="burn-boot" />
 
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os" />
@@ -29,27 +26,36 @@
 	<project path="optee_test" name="optee_test" />
 
 	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" />
+	<project remote="busybox" path="busybox" name="busybox" />
 
 	<!-- ARM gits -->
-	<!-- project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" /-->
-	<!-- project remote="96boards" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" /-->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey-sec" />
+	<!-- project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" /-->
+	<project remote="96boards" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" />
 
 	<!-- Tianocore, EDK2 -->
-	<!-- project remote="96boards" path="edk2" name="edk2" revision="hikey" /-->
-	<project remote="linaro-swg" path="edk2" name="edk2" revision="hikey_optee" />
+	<project remote="96boards" path="edk2" name="edk2" revision="hikey" />
+
+	<!-- grub -->
+	<project remote="savannah" path="grub" name="grub" />
 
 	<!-- Linux kernel -->
-	<!-- project remote="96boards" path="linux" name="linux" revision="hikey"/ -->
-	<project remote="linaro-swg" path="linux" name="linux" revision="hikey-optee"/>
+	<project remote="96boards" path="linux" name="linux" revision="hikey" />
+	<!-- project remote="linux" path="linux" name="linux" /-->
+
+	<!-- aes-perf -->
+	<project remote="linaro-swg" path="aes-perf" name="aes-perf" />
+
+	<!-- sha-perf -->
+	<project remote="linaro-swg" path="sha-perf" name="sha-perf" />
 
 	<!-- Filesystem -->
-	<!-- project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" revision="hikey-optee"/-->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
 
+	<!-- patches -->
+	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
+
 	<!-- Build -->
-	<project remote="optee" path="build" name="build.git">
+	<project path="build" name="build" >
 		<linkfile src="hikey.mk" dest="build/Makefile" />
 	</project>
 </manifest>
