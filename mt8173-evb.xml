@@ -2,6 +2,7 @@
 <manifest>
 	<remote name="busybox" fetch="git://busybox.net" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
+	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 
 	<default remote="optee" revision="master" />
@@ -19,8 +20,7 @@
 	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="4.0rc1"/>
-	<project remote="linaro-swg" path="patches-upstream" name="patches-upstream.git" revision="4.0rc1"/>
+	<project remote="linux" path="linux" name="linux.git" revision="refs/tags/v4.1-rc1"/>
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
