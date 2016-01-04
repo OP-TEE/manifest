@@ -26,7 +26,7 @@
 	<project path="optee_test" name="optee_test" />
 
 	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox" />
+	<project remote="busybox" path="busybox" name="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- ARM gits -->
 	<!-- project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" /-->

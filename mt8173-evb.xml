@@ -14,7 +14,7 @@
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" />
+	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- MediaTek Download Tool -->
 	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
