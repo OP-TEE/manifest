@@ -19,7 +19,7 @@
 
 	<!-- ARM gits, FVP -->
 	<!-- <project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" /> -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="7e4d69163cd93ae2e18555749fc5d7a658139e3c" />
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_paged_armtf_v1.2" />
 
 	<!-- Tianocore, EDK2 -->
 	<project remote="arm" path="edk2" name="edk2.git" revision="refs/tags/v2.1-rc0" />
