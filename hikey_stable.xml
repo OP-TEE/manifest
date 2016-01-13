@@ -1,48 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<!-- remote name="arm" fetch="https://github.com/ARM-software" /-->
-	<remote name="busybox" fetch="git://busybox.net" />
-	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="optee" fetch="https://github.com/OP-TEE" />
-	<remote name="96boards" fetch="https://github.com/96boards" />
-
-	<!-- strace -->
-	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
-
-	<default remote="optee" revision="MUST ALWAYS USE STABLE REVISION" />
-
-	<!-- strace -->
-	<project remote="sfnet" path="strace" name="code" revision="refs/tags/v4.10" />
-
-	<!-- l-loader -->
-	<project remote="linaro-swg" path="l-loader" name="l-loader" revision="e30c7749dcb15a761f8d4220fd1483ce725b58f4" />
-
-	<!-- burn-boot -->
-	<project remote="96boards" path="burn-boot" name="burn-boot" revision="91d58af156fba97f4311f44de92a50f1163d9de0" />
-
-	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os" revision="refs/tags/1.0.1" />
-	<project path="optee_client" name="optee_client" revision="refs/tags/1.0.1" />
-	<project path="optee_linuxdriver" name="optee_linuxdriver" revision="refs/tags/1.0.1" />
-	<project path="optee_test" name="optee_test" revision="refs/tags/1.0.1" />
-
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="3b650c1e7b0bcbb4dfebab6fd87449e6b1e0b788" />
-
-	<!-- ARM gits -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="38fc0955a31bd822ab8917a0d35ca3b8683d104c" />
-
-	<!-- Tianocore, EDK2 -->
-	<project remote="linaro-swg" path="edk2" name="edk2" revision="1690ce66b9e87cd3143b4343487653f98de57f70" />
-
-	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux" revision="405225aac61c16372c3363ebc142f2ffde094f48"/>
-
-	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" revision="3410709e6932facda8cb1802126630e40e9f1ba4" />
-
-	<!-- Build -->
-	<project remote="optee" path="build" name="build.git" revision="refs/tags/1.0.1" >
-		<linkfile src="hikey.mk" dest="build/Makefile" />
-	</project>
+  <remote fetch="https://github.com/96boards" name="96boards"/>
+  <remote fetch="git://busybox.net" name="busybox"/>
+  <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
+  <remote fetch="https://github.com/OP-TEE" name="optee"/>
+  <remote fetch="git://git.savannah.gnu.org" name="savannah"/>
+  <remote fetch="git://git.code.sf.net/p/strace" name="sfnet"/>
+  
+  <default remote="optee" revision="master"/>
+  
+  <project name="aes-perf" remote="linaro-swg" revision="8d17a2603952fee5d721bb31870e59629f2429cf" upstream="master"/>
+  <project name="arm-trusted-firmware" remote="96boards" revision="7fb9b0e1bf90d167ba451fa3d1485ad07ca5c1da" upstream="hikey"/>
+  <project name="build" revision="refs/tags/1.1.0">
+    <linkfile dest="build/Makefile" src="hikey.mk"/>
+  </project>
+  <project name="burn-boot" remote="96boards" revision="91d58af156fba97f4311f44de92a50f1163d9de0" upstream="master"/>
+  <project name="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
+  <project name="code" path="strace" remote="sfnet" revision="55f3c8901d6807e92edbf1129aeb6df6c99b11c3" upstream="master"/>
+  <project name="edk2" remote="96boards" revision="d1e8dd734165bb83a26b0183c54b59acfd4781fe" upstream="hikey"/>
+  <project name="gen_rootfs" remote="linaro-swg" revision="e303edce27bca5171c731142dadc821b5cc87670" upstream="master"/>
+  <project name="grub" remote="savannah" revision="66768b99f15033bf55bc6c360cae6a6660be5c5f" upstream="master"/>
+  <project name="l-loader" remote="96boards" revision="6b784ad5c4ab00e2b1c6f53cd5f74054e5d00a78" upstream="master"/>
+  <project name="linux" remote="96boards" revision="5e47986094d21b500165c41f4566a71796b7a4fc" upstream="hikey"/>
+  <project name="optee_client" revision="refs/tags/1.1.0"/>
+  <project name="optee_linuxdriver" revision="refs/tags/1.1.0"/>
+  <project name="optee_os" revision="refs/tags/1.1.0"/>
+  <project name="optee_test" revision="refs/tags/1.1.0"/>
+  <project name="patches_hikey" remote="linaro-swg" revision="7652cfa65046a46e6480ce5ad7262d07b2eca1f6" upstream="master"/>
+  <project name="sha-perf" remote="linaro-swg" revision="57516de9f0b431acedb7ed168903c04eac295379" upstream="master"/>
 </manifest>

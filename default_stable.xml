@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="busybox" fetch="git://busybox.net" />
-	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
-	<remote name="optee" fetch="https://github.com/OP-TEE" />
-
-	<default remote="optee" revision="MUST ALWAYS USE STABLE REVISION" />
-
-	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os.git" revision="refs/tags/1.0.1" />
-	<project path="optee_client" name="optee_client.git" revision="refs/tags/1.0.1" />
-	<project path="optee_linuxdriver" name="optee_linuxdriver.git" revision="refs/tags/1.0.1" />
-	<project path="optee_test" name="optee_test.git" revision="refs/tags/1.0.1" />
-
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="3b650c1e7b0bcbb4dfebab6fd87449e6b1e0b788"/>
-
-	<!-- Linux kernel -->
-	<project remote="linux" path="linux" name="linux.git" revision="refs/tags/v4.1-rc1"/>
-
-	<!-- linaro-swg gits -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="3410709e6932facda8cb1802126630e40e9f1ba4"/>
-	<project remote="linaro-swg" path="soc_term" name="soc_term.git" revision="7f2da75e9f106bc3e7ed81dd0ff541a49e04dd8c" />
-	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" revision="baf44144616e8b9b4f92e12d8a4e80379a5506b6" />
-	<project remote="linaro-swg" path="qemu" name="qemu.git" revision="c00ed157431a4a6e0c4c481ba1c809623cbf908f"/>
-
-	<!-- Build -->
-	<project remote="optee" path="build" name="build.git" revision="refs/tags/1.0.1">
-		<linkfile src="qemu.mk" dest="build/Makefile" />
-	</project>
+  <remote fetch="git://busybox.net" name="busybox"/>
+  <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
+  <remote fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" name="linux"/>
+  <remote fetch="https://github.com/OP-TEE" name="optee"/>
+  
+  <default remote="optee" revision="master"/>
+  
+  <project name="bios_qemu_tz_arm.git" path="bios_qemu_tz_arm" remote="linaro-swg" revision="baf44144616e8b9b4f92e12d8a4e80379a5506b6" upstream="master"/>
+  <project name="build.git" path="build" revision="refs/tags/1.1.0">
+    <linkfile dest="build/Makefile" src="qemu.mk"/>
+  </project>
+  <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="e303edce27bca5171c731142dadc821b5cc87670" upstream="master"/>
+  <project name="linux.git" path="linux" remote="linux" revision="b787f68c36d49bb1d9236f403813641efa74a031" upstream="refs/tags/v4.1-rc1"/>
+  <project name="optee_client.git" path="optee_client" revision="refs/tags/1.1.0"/>
+  <project name="optee_linuxdriver.git" path="optee_linuxdriver" revision="refs/tags/1.1.0"/>
+  <project name="optee_os.git" path="optee_os" revision="refs/tags/1.1.0"/>
+  <project name="optee_test.git" path="optee_test" revision="refs/tags/1.1.0"/>
+  <project name="qemu.git" path="qemu" remote="linaro-swg" revision="c00ed157431a4a6e0c4c481ba1c809623cbf908f"/>
+  <project name="soc_term.git" path="soc_term" remote="linaro-swg" revision="7f2da75e9f106bc3e7ed81dd0ff541a49e04dd8c" upstream="master"/>
 </manifest>
