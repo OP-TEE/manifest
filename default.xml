@@ -4,6 +4,7 @@
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="qemu" fetch="https://github.com/qemu" />
 
 	<default remote="optee" revision="master" />
 
@@ -23,7 +24,7 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
-	<project remote="linaro-swg" path="qemu" name="qemu.git" revision="c00ed157431a4a6e0c4c481ba1c809623cbf908f"/>
+	<project remote="qemu" path="qemu" name="qemu.git" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git">
