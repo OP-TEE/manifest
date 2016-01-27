@@ -20,17 +20,17 @@
 	<project remote="96boards" path="burn-boot" name="burn-boot" />
 
 	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os" />
-	<project path="optee_client" name="optee_client" />
-	<project path="optee_linuxdriver" name="optee_linuxdriver" />
-	<project path="optee_test" name="optee_test" />
+	<project path="optee_os" name="optee_os" revision="gendrv" />
+	<project path="optee_client" name="optee_client" revision="gendrv" />
+	<project path="optee_test" name="optee_test" revision="gendrv" />
 
 	<!-- busybox -->
 	<project remote="busybox" path="busybox" name="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- ARM gits -->
 	<!-- project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" /-->
-	<project remote="96boards" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" />
+	<!--<project remote="96boards" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" />-->
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey_gendrv" />
 
 	<!-- Tianocore, EDK2 -->
 	<project remote="96boards" path="edk2" name="edk2" revision="hikey" />
@@ -39,7 +39,8 @@
 	<project remote="savannah" path="grub" name="grub" />
 
 	<!-- Linux kernel -->
-	<project remote="96boards" path="linux" name="linux" revision="hikey" />
+	<project remote="linaro-swg" path="linux" name="linux" revision="hikey_gendrv"/>
+	<!--<project remote="96boards" path="linux" name="linux" revision="hikey" />-->
 	<!-- project remote="linux" path="linux" name="linux" /-->
 
 	<!-- aes-perf -->
@@ -55,7 +56,7 @@
 	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
 
 	<!-- Build -->
-	<project path="build" name="build" >
+	<project path="build" name="build" revision="gendrv">
 		<linkfile src="hikey.mk" dest="build/Makefile" />
 	</project>
 </manifest>
