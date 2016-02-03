@@ -6,6 +6,7 @@
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
 	<remote name="96boards" fetch="https://github.com/96boards" />
+	<remote name="96b-hk" fetch="https://github.com/96boards-hikey" />
 	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
 
 	<default remote="optee" revision="master" />
@@ -39,7 +40,8 @@
 	<project remote="savannah" path="grub" name="grub" />
 
 	<!-- Linux kernel -->
-	<project remote="96boards" path="linux" name="linux" revision="hikey" />
+	<project remote="96b-hk" path="linux" name="linux" revision="hikey-mainline-rebase" />
+	<!-- project remote="96boards" path="linux" name="linux" revision="hikey" /-->
 	<!-- project remote="linux" path="linux" name="linux" /-->
 
 	<!-- aes-perf -->
