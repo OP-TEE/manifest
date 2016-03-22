@@ -11,14 +11,13 @@
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os.git" />
 	<project path="optee_client" name="optee_client.git" />
-	<project path="optee_linuxdriver" name="optee_linuxdriver.git" />
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- busybox -->
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- Linux kernel -->
-	<project remote="linux" path="linux" name="linux.git" revision="refs/tags/v4.1-rc1"/>
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
 
 	<!-- linaro-swg gits -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />

@@ -23,7 +23,6 @@
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os" />
 	<project path="optee_client" name="optee_client" />
-	<project path="optee_linuxdriver" name="optee_linuxdriver" />
 	<project path="optee_test" name="optee_test" />
 
 	<!-- busybox -->
@@ -31,7 +30,7 @@
 
 	<!-- ARM gits -->
 	<!-- project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" /-->
-	<project remote="96boards" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" />
+	<project remote="96b-hk" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" />
 
 	<!-- Tianocore, EDK2 -->
 	<project remote="96boards" path="edk2" name="edk2" revision="hikey" />
@@ -40,10 +39,7 @@
 	<project remote="savannah" path="grub" name="grub" />
 
 	<!-- Linux kernel -->
-	<project remote="96b-hk" path="linux" name="linux" revision="hikey-mainline-rebase" />
-	<!-- project remote="96boards" path="linux" name="linux" revision="hikey" /-->
-	<!-- project remote="linux" path="linux" name="linux" /-->
-
+	<project remote="linaro-swg" path="linux" name="linux" revision="optee"/>
 	<!-- aes-perf -->
 	<project remote="linaro-swg" path="aes-perf" name="aes-perf" />
 
@@ -54,7 +50,7 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
 
 	<!-- patches -->
-	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
+	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" revision="gendrv"/>
 
 	<!-- Build -->
 	<project path="build" name="build" >

@@ -5,13 +5,13 @@
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="landing-teams" fetch="https://git.linaro.org/landing-teams" />
 
 	<default remote="optee" revision="master" />
 
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os.git" />
 	<project path="optee_client" name="optee_client.git" />
-	<project path="optee_linuxdriver" name="optee_linuxdriver.git" />
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- busybox -->
@@ -22,16 +22,16 @@
 	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_paged_armtf_v1.2" />
 
 	<!-- Tianocore, EDK2 -->
-	<project remote="arm" path="edk2" name="edk2.git" revision="refs/tags/v2.1-rc0" />
+	<project remote="landing-teams" path="edk2" name="working/arm/edk2.git" revision="16.01" />
 
 	<!-- Linux kernel -->
-	<project remote="linux" path="linux" name="linux.git" revision="refs/tags/v3.18-rc1"/>
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 
 	<!-- Build -->
-	<project remote="optee" path="build" name="build.git">
+	<project path="build" name="build.git">
 		<linkfile src="fvp.mk" dest="build/Makefile" />
 	</project>
 </manifest>
