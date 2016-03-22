@@ -4,6 +4,7 @@
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="mtk" fetch="https://github.com/m943040028" />
 
 	<default remote="optee" revision="master" />
 
@@ -12,6 +13,9 @@
 	<project path="optee_client" name="optee_client.git" />
 	<project path="optee_linuxdriver" name="optee_linuxdriver.git" />
 	<project path="optee_test" name="optee_test.git" />
+
+	<!-- ARM-TF -->
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="mt8173_evb" />
 
 	<!-- busybox -->
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
@@ -26,7 +30,7 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 
 	<!-- Build -->
-	<project remote="optee" path="build" name="build.git">
+	<project remote="mtk" path="build" name="build.git" revision="mt8173_boot_issue">
 		<linkfile src="mediatek.mk" dest="build/Makefile" />
 	</project>
 </manifest>
