@@ -13,7 +13,6 @@
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os.git" />
 	<project path="optee_client" name="optee_client.git" />
-	<project path="optee_linuxdriver" name="optee_linuxdriver.git" />
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- busybox -->
@@ -30,13 +29,13 @@
 	<project remote="linaro" path="vexpress-firmware" name="arm/vexpress-firmware.git" revision="cad383a2c4ffeb9192605fda54c07fd1aa09a1b0"/>
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="afd2ff9b7e1b367172f18ba7f693dfb62bdcb2dc"/>
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 
 	<!-- Build -->
-	<project remote="optee" path="build" name="build.git">
+	<project path="build" name="build.git">
 		<linkfile src="juno.mk" dest="build/Makefile" />
 	</project>
 </manifest>
