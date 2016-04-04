@@ -16,7 +16,7 @@
   <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
   <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="44a44ba7b35e25d576bef9b367e16f471c24be65" upstream="master"/>
   <project name="linux.git" path="linux" remote="linaro-swg" revision="84c7fe3be96cb570561cbd9926d47f76b93a6fed" upstream="optee"/>
-  <project name="optee_client.git" revision="refs/tags/2.0.0"/>
+  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.0.0"/>
   <project name="optee_os.git" path="optee_os" revision="refs/tags/2.0.0"/>
   <project name="optee_test.git" path="optee_test" revision="refs/tags/2.0.0"/>
   <project name="working/arm/edk2.git" path="edk2" remote="landing-teams" revision="131aec010f565a747ac51e6a95e30a37b5df15cc" upstream="16.01"/>
