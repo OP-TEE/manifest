@@ -50,7 +50,7 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
 
 	<!-- patches -->
-	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" revision="gendrv"/>
+	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
 
 	<!-- Build -->
 	<project path="build" name="build" >

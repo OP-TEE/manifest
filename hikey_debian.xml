@@ -44,7 +44,7 @@
 	<project remote="linaro-swg" path="sha-perf" name="sha-perf" />
 
 	<!-- patches -->
-	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" revision="gendrv"/>
+	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
 
 	<!-- Build -->
 	<project path="build" name="build" >
