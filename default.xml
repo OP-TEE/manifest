@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+	<remote name="96boards" fetch="https://github.com/96boards" />
 	<remote name="busybox" fetch="git://busybox.net" />
+	<remote name="landing-teams" fetch="https://git.linaro.org/landing-teams" />
+	<remote name="linaro" fetch="https://git.linaro.org" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="qemu" fetch="https://github.com/qemu" />
+	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
+	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
+	<remote name="u-boot" fetch="git://git.denx.de" />
 
 	<default remote="optee" revision="master" />
 
@@ -16,13 +22,46 @@
 	<!-- busybox -->
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
+	<!-- ARM gits, FVP -->
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_paged_armtf_v1.2" />
+
+	<!-- Recovery files -->
+	<project remote="linaro" path="vexpress-firmware" name="arm/vexpress-firmware.git" revision="cad383a2c4ffeb9192605fda54c07fd1aa09a1b0"/>
+
+	<!-- Tianocore, EDK2 -->
+	<project remote="landing-teams" path="edk2" name="working/arm/edk2.git" revision="16.01" />
+
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
+
+	<!-- MediaTek Download Tool -->
+	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
+
+	<!-- U-Boot -->
+	<project remote="u-boot" path="u-boot" name="u-boot.git" />
+
+	<!-- strace -->
+	<project remote="sfnet" path="strace" name="code" />
+
+	<!-- grub -->
+	<project remote="savannah" path="grub" name="grub" />
+
+	<!-- patches -->
+	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
+
+	<!-- l-loader -->
+	<project remote="96boards" path="l-loader" name="l-loader" />
+
+	<!-- burn-boot -->
+	<project remote="96boards" path="burn-boot" name="burn-boot" />
 
 	<!-- linaro-swg gits -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
+	<project remote="linaro-swg" path="sha-perf" name="sha-perf" />
+
+	<!-- QEMU -->
 	<project remote="qemu" path="qemu" name="qemu.git" />
 
 	<!-- Build -->
