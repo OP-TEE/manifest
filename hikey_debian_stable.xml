@@ -2,7 +2,6 @@
 <manifest>
   <remote fetch="https://github.com/96boards-hikey" name="96b-hk"/>
   <remote fetch="https://github.com/96boards" name="96boards"/>
-  <remote fetch="git://busybox.net" name="busybox"/>
   <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
   <remote fetch="git://git.savannah.gnu.org" name="savannah"/>
@@ -11,16 +10,14 @@
   <project name="aes-perf" remote="linaro-swg" revision="8d17a2603952fee5d721bb31870e59629f2429cf"/>
   <project name="arm-trusted-firmware" remote="96b-hk" revision="bdec62eeb8f3153a4647770e08aafd56a0bcd42b"/>
   <project name="build" revision="refs/tags/2.1.0">
-    <linkfile dest="build/Makefile" src="hikey.mk"/>
+    <linkfile dest="build/Makefile" src="hikey_debian.mk"/>
   </project>
   <project name="burn-boot" remote="96boards" revision="db522b114fdec4d06d0a1705501fedc277903453"/>
-  <project name="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
   <project name="code" path="strace" remote="sfnet" revision="a50ec349456c79467d58ced70787a44d4c3d309c"/>
   <project name="edk2" remote="96boards" revision="7da6cdf18127ee52e79f3cf990c8d630fd037784"/>
-  <project name="gen_rootfs" remote="linaro-swg" revision="a4aa5a3c99f578cc7fc097aae13ad95ee5fafdcc"/>
   <project name="grub" remote="savannah" revision="b524fa27f56381bb0efa4944e36f50265113aee5"/>
   <project name="l-loader" remote="96b-hk" revision="cddd213c1b820d5f224d20b38581c504552dd59e"/>
-  <project name="linux" remote="linaro-swg" revision="ca9cb996666675ed0d677d478e6b418ed62997ce"/>
+  <project name="linux" remote="linaro-swg" revision="7e8e4404063f52a0c392aa82c7206193277afdb6"/>
   <project name="optee_client" revision="refs/tags/2.1.0"/>
   <project name="optee_os" revision="refs/tags/2.1.0"/>
   <project name="optee_test" revision="refs/tags/2.1.0"/>
