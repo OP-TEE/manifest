@@ -14,7 +14,7 @@
 	<project remote="sfnet" path="strace" name="code" />
 
 	<!-- l-loader -->
-	<project remote="96boards" path="l-loader" name="l-loader" />
+	<project remote="96b-hk" path="l-loader" name="l-loader" />
 
 	<!-- burn-boot -->
 	<project remote="96boards" path="burn-boot" name="burn-boot" />
