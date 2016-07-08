@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="busybox" fetch="git://busybox.net" />
+	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
+	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
+	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="qemu" fetch="https://github.com/qemu" />
+	<remote name="sfnet" fetch="http://git.code.sf.net/p/strace" />
+
+	<default remote="optee" revision="master" />
+
+	<!-- OP-TEE gits -->
+	<project path="optee_os" name="optee_os.git" />
+	<project path="optee_client" name="optee_client.git" />
+	<project path="optee_test" name="optee_test.git" />
+
+	<!-- busybox -->
+	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+
+	<!-- Linux kernel -->
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
+
+	<!-- linaro-swg gits -->
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
+	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
+
+	<!-- QEMU -->
+	<project remote="qemu" path="qemu" name="qemu.git" />
+
+	<!-- We're using Linaro SWG for ARM-TF until merged officially -->
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="refs/heads/optee_v2.1.0_paged_armtf_v1.2" />
+
+	<!-- strace -->
+	<project remote="sfnet" path="strace" name="code" />
+
+	<!-- Build -->
+	<project remote="optee" path="build" name="build.git">
+		<linkfile src="qemu_v8.mk" dest="build/Makefile" />
+		<linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
+	</project>
+</manifest>
