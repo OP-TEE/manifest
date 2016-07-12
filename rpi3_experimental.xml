@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!-- <remote name="busybox" fetch="git://busybox.net" /> -->
+	<remote name="busybox_mirror" fetch="https://github.com/mirror" />
+	<remote name="jbech" fetch="https://github.com/jbech-linaro" />
+	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
+	<remote name="optee" fetch="https://github.com/OP-TEE" />
+
+	<!-- Temporary until patches are good enough to be put on the offical
+	     upstream repositories -->
+	<default remote="jbech" revision="rpi3_initial_drop" />
+
+	<!-- OP-TEE gits -->
+	<project path="optee_os" name="optee_os.git" />
+	<project remote="optee" path="optee_client" name="optee_client.git" revision="master" />
+	<project remote="optee" path="optee_test" name="optee_test.git" revision="master" />
+
+	<!-- busybox -->
+	<!-- <project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" /> -->
+	<project remote="busybox_mirror" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+
+	<project path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
+
+	<!-- Linux kernel -->
+	<project path="linux" name="linux.git" />
+
+	<!-- U-boot -->
+	<project path="u-boot" name="u-boot.git" />
+
+	<!-- Filesystem -->
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="master" />
+
+	<!-- Build -->
+	<project path="build" name="build.git">
+		<linkfile src="rpi3.mk" dest="build/Makefile" />
+		<linkfile src="rpi3/pi3.cfg" dest="build/pi3.cfg" />
+		<linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
+	</project>
+</manifest>
