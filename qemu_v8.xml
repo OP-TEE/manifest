@@ -17,6 +17,9 @@
 	<!-- busybox -->
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
+	<!-- Hello world TA -->
+	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
+
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
 

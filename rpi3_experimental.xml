@@ -27,6 +27,9 @@
 	<!-- U-boot -->
 	<project path="u-boot" name="u-boot.git" />
 
+	<!-- Hello world TA -->
+	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
+
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="master" />
 

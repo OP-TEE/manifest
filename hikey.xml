@@ -46,6 +46,9 @@
 	<!-- sha-perf -->
 	<project remote="linaro-swg" path="sha-perf" name="sha-perf" />
 
+	<!-- Hello world TA -->
+	<project remote="linaro-swg" path="hello_world" name="hello_world" />
+
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
 
