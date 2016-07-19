@@ -23,6 +23,8 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" clone-depth="1" />
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" clone-depth="1" />
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" clone-depth="1" />
+	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
+
 	<project remote="qemu" path="qemu" name="qemu.git" clone-depth="1" />
 
 	<!-- Build -->
