@@ -35,7 +35,7 @@
 	<project remote="savannah" path="grub" name="grub" />
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux" revision="experimental/96b_rpb_1603_optee_debian"/>
+	<project remote="96boards" path="linux" name="linux" revision="96b/releases/2016.06"/>
 
 	<!-- aes-perf -->
 	<project remote="linaro-swg" path="aes-perf" name="aes-perf" />
