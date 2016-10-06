@@ -2,7 +2,6 @@
 <manifest>
 	<remote name="busybox" fetch="git://busybox.net" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="qemu" fetch="https://github.com/qemu" />
 
@@ -25,7 +24,8 @@
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
 	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
 
-	<project remote="qemu" path="qemu" name="qemu.git" />
+	<!-- Temporary use the defined commit since upstream tip didn't work -->
+	<project remote="qemu" path="qemu" name="qemu.git" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git">
