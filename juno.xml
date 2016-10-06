@@ -3,7 +3,6 @@
 	<remote name="arm" fetch="https://github.com/ARM-software" />
 	<remote name="busybox" fetch="git://busybox.net" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="linaro" fetch="https://git.linaro.org" />
 	<remote name="u-boot" fetch="git://git.denx.de" />
