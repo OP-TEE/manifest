@@ -17,8 +17,9 @@
 	<!-- busybox -->
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
-	<!-- MediaTek Download Tool -->
+	<!-- MediaTek Download Tools -->
 	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
+	<project remote="linaro-swg" path "evb-utils" name="evb-utils.git" />
 
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee" />
