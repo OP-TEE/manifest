@@ -34,9 +34,6 @@
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
 
-	<!-- MediaTek Download Tool -->
-	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
-
 	<!-- U-Boot -->
 	<project remote="u-boot" path="u-boot" name="u-boot.git" />
 
@@ -60,9 +57,14 @@
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
 	<project remote="linaro-swg" path="sha-perf" name="sha-perf" />
+	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
 
 	<!-- QEMU -->
 	<project remote="qemu" path="qemu" name="qemu.git" />
+
+	<!-- MediaTek -->
+	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
+	<project remote="linaro-swg" path="evb-utils" name="evb-utils.git" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git">
