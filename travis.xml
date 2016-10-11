@@ -26,7 +26,7 @@
 	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
 
 	<!-- Temporary use the defined commit since upstream tip didn't work -->
-	<project remote="qemu" path="qemu" name="qemu.git" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064" clone-depth="1" />
+	<project remote="qemu" path="qemu" name="qemu.git" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git" clone-depth="1" >
