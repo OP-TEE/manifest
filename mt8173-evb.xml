@@ -19,7 +19,7 @@
 
 	<!-- MediaTek Download Tools -->
 	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
-	<project remote="linaro-swg" path "evb-utils" name="evb-utils.git" />
+	<project remote="linaro-swg" path="evb-utils" name="evb-utils.git" />
 
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee" />
