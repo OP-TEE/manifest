@@ -18,7 +18,7 @@
 	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="rpi3_initial_drop"/>
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="electron752-rpi3-optee" />
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="electron752-rpi3-4.8-optee" />
 
 	<!-- U-boot -->
 	<project remote="linaro-swg" path="u-boot" name="u-boot.git" revision="rpi3_initial_drop"/>
