@@ -3,6 +3,7 @@
 	<remote name="busybox" fetch="git://busybox.net" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="mtk" fetch="https://github.com/m943040028" />
 
 	<default remote="optee" revision="master" />
 
@@ -31,7 +32,7 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 
 	<!-- Build -->
-	<project remote="optee" path="build" name="build.git">
+	<project remote="mtk" path="build" name="build.git" revision="mt8173_boot_issue">
 		<linkfile src="mediatek.mk" dest="build/Makefile" />
 	</project>
 </manifest>
