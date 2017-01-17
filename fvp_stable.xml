@@ -1,23 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest>
   <remote fetch="https://github.com/ARM-software" name="arm"/>
   <remote fetch="git://busybox.net" name="busybox"/>
   <remote fetch="https://git.linaro.org/landing-teams" name="landing-teams"/>
   <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
-  
   <default remote="optee" revision="master"/>
-  
   <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="69fb412f18ee40f9f7707da0d7411aada5ab60a0" upstream="optee_paged_armtf_v1.2"/>
-  <project name="build.git" path="build" revision="refs/tags/2.2.0" upstream="master">
+  <project name="build.git" path="build" revision="refs/tags/2.3.0" upstream="master">
     <linkfile dest="build/Makefile" src="fvp.mk"/>
   </project>
   <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="032dbf7276fc20e5345085113f241b91251ab1c3" upstream="master"/>
-  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="4725dcc0e02c9e4f131e0d65db6617dfc782f55a" upstream="master"/>
-  <project name="linux.git" path="linux" remote="linaro-swg" revision="a11f5a881d7f891ac4c12c45b76895d4d48f93e8" upstream="optee"/>
-  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.2.0" upstream="master"/>
-  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.2.0" upstream="master"/>
-  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.2.0" upstream="master"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="6173deadc2c552265633cca608b09adc0b0e33ec" upstream="master"/>
+  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a17da737d15438ebedf400255570afb5afe9454f" upstream="master"/>
+  <project name="linux.git" path="linux" remote="linaro-swg" revision="18f93163b1b7d598720a0c2fd23a76d4c4a8b6ac" upstream="optee"/>
+  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.3.0" upstream="master"/>
+  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.3.0" upstream="master"/>
+  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.3.0" upstream="master"/>
   <project name="working/arm/edk2.git" path="edk2" remote="landing-teams" revision="131aec010f565a747ac51e6a95e30a37b5df15cc" upstream="16.01"/>
 </manifest>

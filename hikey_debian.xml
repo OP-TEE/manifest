@@ -35,13 +35,7 @@
 	<project remote="savannah" path="grub" name="grub" />
 
 	<!-- Linux kernel -->
-	<project remote="96boards" path="linux" name="linux" revision="96b/releases/2016.06"/>
-
-	<!-- aes-perf -->
-	<project remote="linaro-swg" path="aes-perf" name="aes-perf" />
-
-	<!-- sha-perf -->
-	<project remote="linaro-swg" path="sha-perf" name="sha-perf" />
+	<project remote="linaro-swg" path="linux" name="linux" revision="optee"/>
 
 	<!-- Hello world TA -->
 	<project remote="linaro-swg" path="hello_world" name="hello_world" />

@@ -40,11 +40,6 @@
 
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux" revision="optee"/>
-	<!-- aes-perf -->
-	<project remote="linaro-swg" path="aes-perf" name="aes-perf" />
-
-	<!-- sha-perf -->
-	<project remote="linaro-swg" path="sha-perf" name="sha-perf" />
 
 	<!-- Hello world TA -->
 	<project remote="linaro-swg" path="hello_world" name="hello_world" />

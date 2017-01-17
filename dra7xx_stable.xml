@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <remote fetch="git://busybox.net" name="busybox"/>
+  <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
+  <remote fetch="https://github.com/OP-TEE" name="optee"/>
+  <remote fetch="git://git.ti.com/ti-linux-kernel" name="ti-linux"/>
+  <remote fetch="git://git.ti.com/optee" name="ti-optee"/>
+  <remote fetch="git://git.ti.com/ti-u-boot" name="ti-u-boot"/>
+  <project name="build.git" path="build" remote="optee" revision="refs/tags/2.3.0">
+    <linkfile dest="build/Makefile" src="dra7xx.mk"/>
+  </project>
+  <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="6173deadc2c552265633cca608b09adc0b0e33ec" upstream="master"/>
+  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a17da737d15438ebedf400255570afb5afe9454f" upstream="master"/>
+  <project name="ti-linux-kernel.git" path="linux" remote="ti-linux" revision="7c580a51af521f320eb56717f291aa5b64c2f244"/>
+  <project name="ti-optee-client.git" path="optee_client" remote="ti-optee" revision="ce5fefe6cba5df9b4f31399b1155ba768eee0b78"/>
+  <project name="ti-optee-os.git" path="optee_os" remote="ti-optee" revision="4556015010dbf648d236a72857e927317b0f6438"/>
+  <project name="ti-optee-test.git" path="optee_test" remote="ti-optee" revision="6203b8769beff4eccf7104a6474991114691bf90"/>
+  <project name="ti-u-boot.git" path="u-boot" remote="ti-u-boot" revision="593a89738a59aaf91a24f1ed174ef55b13131fa0"/>
+</manifest>
