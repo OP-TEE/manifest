@@ -18,7 +18,7 @@
   <project name="linux.git" path="linux" remote="linaro-swg" revision="18f93163b1b7d598720a0c2fd23a76d4c4a8b6ac" upstream="optee"/>
   <project name="optee_client.git" path="optee_client" revision="refs/tags/2.3.0" upstream="master"/>
   <project name="optee_os.git" path="optee_os" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="https://github.com/myechuri/elotl_optee_test.git" path="optee_test" revision="refs/tags/2.3.0" upstream="master"/>
+  <project name="elotl_optee_test.git" path="optee_test" remote="myechuri" revision="refs/tags/2.3.0" upstream="master"/>
   <project name="qemu.git" path="qemu" remote="qemu" revision="a8c611e1133f97c979922f41103f79309339dc27" upstream="master"/>
   <project name="soc_term.git" path="soc_term" remote="linaro-swg" revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" upstream="master"/>
 </manifest>
