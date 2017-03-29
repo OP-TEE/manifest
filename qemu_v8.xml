@@ -4,6 +4,7 @@
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
+        <remote name="tianocore" fetch="https://github.com/tianocore" />
 	<remote name="qemu" fetch="https://github.com/qemu" />
 	<remote name="sfnet" fetch="http://git.code.sf.net/p/strace" />
 
@@ -32,6 +33,9 @@
 
 	<!-- We're using Linaro SWG for ARM-TF until merged officially -->
 	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="refs/heads/optee_v2.1.0_paged_armtf_v1.2" />
+
+        <!-- Tianocore, EDK2 -->
+        <project remote="tianocore" path="edk2" name="edk2.git" />
 
 	<!-- strace -->
 	<project remote="sfnet" path="strace" name="code" />
