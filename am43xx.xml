@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="busybox" fetch="git://busybox.net" />
+	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
+	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="ti-u-boot" fetch="git://git.ti.com/ti-u-boot" />
+	<remote name="ti-linux" fetch="git://git.ti.com/ti-linux-kernel" />
+
+	<!-- OP-TEE gits -->
+	<project remote="optee" path="optee_os" name="optee_os.git" revision="master" />
+	<project remote="optee" path="optee_client" name="optee_client.git" revision="master" />
+	<project remote="optee" path="optee_test" name="optee_test.git" revision="master" />
+
+	<!-- busybox -->
+	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+
+	<!-- U-Boot -->
+	<project remote="ti-u-boot" path="u-boot" name="ti-u-boot.git" revision="ti-u-boot-2017.01" />
+
+	<!-- Linux kernel -->
+	<project remote="ti-linux" path="linux" name="ti-linux-kernel.git" revision="ti-lsk-linux-4.9.y" />
+
+	<!-- Hello world TA -->
+	<project remote="linaro-swg" path="hello_world" name="hello_world.git" revision="master" />
+
+	<!-- Filesystem -->
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="master" />
+
+	<!-- Build -->
+	<project remote="optee" path="build" name="build.git" revision="master">
+		<linkfile src="am43xx.mk" dest="build/Makefile" />
+	</project>
+</manifest>
