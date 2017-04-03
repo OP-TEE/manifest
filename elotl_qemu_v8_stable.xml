@@ -5,7 +5,7 @@
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
   <remote fetch="https://github.com/qemu" name="qemu"/>
   <remote fetch="http://git.code.sf.net/p/strace" name="sfnet"/>
-  <remote fetch="https://github.com/myechuri" name="myechuri"/>
+  <remote fetch="https://github.com/elotl" name="elotl"/>
   <default remote="optee" revision="master"/>
   <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="b3a3dde456445d294d83b18faf2769f6aa14ab48" upstream="refs/heads/optee_v2.1.0_paged_armtf_v1.2"/>
   <project name="build.git" path="build" revision="refs/tags/2.3.0" upstream="master">
@@ -19,7 +19,7 @@
   <project name="linux.git" path="linux" remote="linaro-swg" revision="18f93163b1b7d598720a0c2fd23a76d4c4a8b6ac" upstream="optee"/>
   <project name="optee_client.git" path="optee_client" revision="refs/tags/2.3.0" upstream="master"/>
   <project name="optee_os.git" path="optee_os" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="elotl_optee_test.git" path="optee_test" remote="myechuri" revision="refs/tags/2.3.0" upstream="master"/>
+  <project name="elotl_optee_test.git" path="optee_test" remote="elotl" revision="refs/tags/2.3.0" upstream="master"/>
   <project name="qemu.git" path="qemu" remote="qemu" revision="a8c611e1133f97c979922f41103f79309339dc27" upstream="master"/>
   <project name="soc_term.git" path="soc_term" remote="linaro-swg" revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" upstream="master"/>
 </manifest>
