@@ -8,21 +8,21 @@
   <remote fetch="git://git.savannah.gnu.org" name="savannah"/>
   <remote fetch="git://git.code.sf.net/p/strace" name="sfnet"/>
   <default remote="optee" revision="master"/>
-  <project name="arm-trusted-firmware" remote="96b-hk" revision="63655eba61d1739fd710f34fbe7ba8df3873ac4f" upstream="hikey"/>
-  <project name="build" revision="refs/tags/2.3.0" upstream="master">
+  <project name="arm-trusted-firmware" remote="96b-hk" revision="4adfdd06f11deb2ab6a056a68ed6f22dcb99a791"/>
+  <project name="build" revision="refs/tags/2.4.0">
     <linkfile dest="build/Makefile" src="hikey.mk"/>
   </project>
-  <project name="burn-boot" remote="96boards" revision="db522b114fdec4d06d0a1705501fedc277903453" upstream="master"/>
+  <project name="burn-boot" remote="96boards" revision="db522b114fdec4d06d0a1705501fedc277903453"/>
   <project name="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="code" path="strace" remote="sfnet" revision="ca2bf7c9e9b7f1b82a77d400ca9691806f1cbfc8" upstream="master"/>
-  <project name="edk2" remote="96boards" revision="7da6cdf18127ee52e79f3cf990c8d630fd037784" upstream="hikey"/>
-  <project name="gen_rootfs" remote="linaro-swg" revision="6173deadc2c552265633cca608b09adc0b0e33ec" upstream="master"/>
-  <project name="grub" remote="savannah" revision="972765fe8245cdf44d465329f33b5aa9ac6c2f47" upstream="master"/>
-  <project name="hello_world" remote="linaro-swg" revision="a17da737d15438ebedf400255570afb5afe9454f" upstream="master"/>
-  <project name="l-loader" remote="96b-hk" revision="cddd213c1b820d5f224d20b38581c504552dd59e" upstream="master"/>
-  <project name="linux" remote="linaro-swg" revision="18f93163b1b7d598720a0c2fd23a76d4c4a8b6ac" upstream="optee"/>
-  <project name="optee_client" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="optee_os" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="optee_test" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="patches_hikey" remote="linaro-swg" revision="5fa1827551f8850ea010b43ab88e2072f4167912" upstream="master"/>
+  <project name="code" path="strace" remote="sfnet" revision="7f6f12a829c8f3ba2b8bd5d821e3f34ab197bccb"/>
+  <project name="edk2" remote="96boards" revision="7da6cdf18127ee52e79f3cf990c8d630fd037784"/>
+  <project name="gen_rootfs" remote="linaro-swg" revision="0e47dfb1a1dd72c06b9ceed4fd68bf7665e7ce6d"/>
+  <project name="grub" remote="savannah" revision="007f0b407f72314ec832d77e15b83ea40b160037"/>
+  <project name="hello_world" remote="linaro-swg" revision="a2c215b7ddd880cce8fca7913e817f47460bdd40"/>
+  <project name="l-loader" remote="96b-hk" revision="cddd213c1b820d5f224d20b38581c504552dd59e"/>
+  <project name="linux" remote="linaro-swg" revision="961993fde60ebd06715d1433f8eb265471a0f38c"/>
+  <project name="optee_client" revision="refs/tags/2.4.0"/>
+  <project name="optee_os" revision="refs/tags/2.4.0"/>
+  <project name="optee_test" revision="refs/tags/2.4.0"/>
+  <project name="patches_hikey" remote="linaro-swg" revision="93d4254c66003cacd9f7e84dd6b5831ab43b5265"/>
 </manifest>

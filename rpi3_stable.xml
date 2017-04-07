@@ -3,18 +3,18 @@
   <remote fetch="https://github.com/mirror" name="busybox_mirror"/>
   <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
-  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="ec4262bbeba3c7db609fb2aa77a4ddc6deeeab5f" upstream="rpi3_initial_drop"/>
-  <project name="build.git" path="build" remote="optee" revision="refs/tags/2.3.0" upstream="master">
+  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="1da4e15529a32fa244f5e3effc9a90549beb1a26"/>
+  <project name="build.git" path="build" remote="optee" revision="refs/tags/2.4.0">
     <linkfile dest="build/Makefile" src="rpi3.mk"/>
     <linkfile dest="build/pi3.cfg" src="rpi3/debugger/pi3.cfg"/>
     <linkfile dest="build/gdb" src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb"/>
   </project>
   <project name="busybox.git" path="busybox" remote="busybox_mirror" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="6173deadc2c552265633cca608b09adc0b0e33ec" upstream="master"/>
-  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a17da737d15438ebedf400255570afb5afe9454f" upstream="master"/>
-  <project name="linux.git" path="linux" remote="linaro-swg" revision="9f38d0f9d4aa32c8c2802be600d002eea222f9d1" upstream="electron752-rpi3-optee"/>
-  <project name="optee_client.git" path="optee_client" remote="optee" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="optee_os.git" path="optee_os" remote="optee" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="optee_test.git" path="optee_test" remote="optee" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="u-boot.git" path="u-boot" remote="linaro-swg" revision="10577db76e77a513180388df1f176a6642143c84" upstream="rpi3_initial_drop"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="0e47dfb1a1dd72c06b9ceed4fd68bf7665e7ce6d"/>
+  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a2c215b7ddd880cce8fca7913e817f47460bdd40"/>
+  <project name="linux.git" path="linux" remote="linaro-swg" revision="9f38d0f9d4aa32c8c2802be600d002eea222f9d1"/>
+  <project name="optee_client.git" path="optee_client" remote="optee" revision="refs/tags/2.4.0"/>
+  <project name="optee_os.git" path="optee_os" remote="optee" revision="refs/tags/2.4.0"/>
+  <project name="optee_test.git" path="optee_test" remote="optee" revision="refs/tags/2.4.0"/>
+  <project name="u-boot.git" path="u-boot" remote="linaro-swg" revision="10577db76e77a513180388df1f176a6642143c84"/>
 </manifest>

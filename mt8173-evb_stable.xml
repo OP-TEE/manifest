@@ -4,17 +4,17 @@
   <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
   <default remote="optee" revision="master"/>
-  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="063ff44a6af290ebb2fbea10222778b86bad9ed6" upstream="mt8173_evb"/>
-  <project name="build.git" path="build" revision="refs/tags/2.3.0" upstream="master">
+  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="8b2410cd5ab9189337379a9449c0f5588ae9b4a6"/>
+  <project name="build.git" path="build" revision="refs/tags/2.4.0">
     <linkfile dest="build/Makefile" src="mediatek.mk"/>
   </project>
   <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="evb-utils.git" path="evb-utils" remote="linaro-swg" revision="1127dbcdc76e45871ddb9f40f59ff684f6b85a20"/>
-  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="6173deadc2c552265633cca608b09adc0b0e33ec" upstream="master"/>
-  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a17da737d15438ebedf400255570afb5afe9454f" upstream="master"/>
-  <project name="linux.git" path="linux" remote="linaro-swg" revision="18f93163b1b7d598720a0c2fd23a76d4c4a8b6ac" upstream="optee"/>
-  <project name="mtk_tools.git" path="mtk_tools" remote="linaro-swg" revision="1460d821a19c7c81520605801026747e6be0e20e" upstream="master"/>
-  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.3.0" upstream="master"/>
-  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.3.0" upstream="master"/>
+  <project name="evb-utils.git" path="evb-utils" remote="linaro-swg" revision="5494df3c6881739ff2faff636379aaef569c0281"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="0e47dfb1a1dd72c06b9ceed4fd68bf7665e7ce6d"/>
+  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a2c215b7ddd880cce8fca7913e817f47460bdd40"/>
+  <project name="linux.git" path="linux" remote="linaro-swg" revision="961993fde60ebd06715d1433f8eb265471a0f38c"/>
+  <project name="mtk_tools.git" path="mtk_tools" remote="linaro-swg" revision="1460d821a19c7c81520605801026747e6be0e20e"/>
+  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.4.0"/>
+  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.4.0"/>
+  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.4.0"/>
 </manifest>
