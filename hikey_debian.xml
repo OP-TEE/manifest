@@ -32,7 +32,7 @@
 	<project remote="96boards" path="edk2" name="edk2" revision="hikey" />
 
 	<!-- grub -->
-	<project remote="savannah" path="grub" name="grub" />
+	<project remote="savannah" path="grub" name="grub" revision="refs/tags/2.02"/>
 
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux" revision="optee"/>
