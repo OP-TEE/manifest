@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <remote fetch="git://busybox.net" name="busybox"/>
+  <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
+  <remote fetch="https://github.com/OP-TEE" name="optee"/>
+  <remote fetch="https://github.com/qemu" name="qemu"/>
+  <remote fetch="http://git.code.sf.net/p/strace" name="sfnet"/>
+  <remote fetch="https://github.com/myechuri" name="myechuri"/>
+  <default remote="optee" revision="master"/>
+  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="b3a3dde456445d294d83b18faf2769f6aa14ab48" upstream="refs/heads/optee_v2.1.0_paged_armtf_v1.2"/>
+  <project name="build.git" path="build" revision="refs/tags/2.3.0" upstream="master">
+    <linkfile dest="build/Makefile" src="qemu_v8.mk"/>
+    <linkfile dest="build/gdb" src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb"/>
+  </project>
+  <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
+  <project name="code" path="strace" remote="sfnet" revision="ca2bf7c9e9b7f1b82a77d400ca9691806f1cbfc8" upstream="master"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="6173deadc2c552265633cca608b09adc0b0e33ec" upstream="master"/>
+  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a17da737d15438ebedf400255570afb5afe9454f" upstream="master"/>
+  <project name="linux.git" path="linux" remote="linaro-swg" revision="18f93163b1b7d598720a0c2fd23a76d4c4a8b6ac" upstream="optee"/>
+  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.3.0" upstream="master"/>
+  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.3.0" upstream="master"/>
+  <project name="elotl_optee_test.git" path="optee_test" remote="myechuri" revision="refs/tags/2.3.0" upstream="master"/>
+  <project name="qemu.git" path="qemu" remote="qemu" revision="a8c611e1133f97c979922f41103f79309339dc27" upstream="master"/>
+  <project name="soc_term.git" path="soc_term" remote="linaro-swg" revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" upstream="master"/>
+</manifest>
