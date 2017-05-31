@@ -24,6 +24,9 @@
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
 	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
 
+	<!-- Benchmark app -->
+	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
+
 	<!-- Temporary use the defined commit since upstream tip didn't work -->
 	<project remote="qemu" path="qemu" name="qemu.git" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064" />
 
