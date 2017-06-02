@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<!-- remote name="arm" fetch="https://github.com/ARM-software" /-->
+	<remote name="linaro" fetch="https://github.com/Linaro" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
+	<remote name="linaro-git" fetch="https://git.linaro.org" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
 	<remote name="96boards" fetch="https://github.com/96boards" />
@@ -29,13 +31,17 @@
 	<project remote="96b-hk" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" />
 
 	<!-- Tianocore, EDK2 -->
-	<project remote="96boards" path="edk2" name="edk2" revision="hikey" />
+	<project remote="96b-hk" path="edk2" name="edk2" revision="hikey-aosp" />
+	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="hikey-aosp" />
 
 	<!-- grub -->
 	<project remote="savannah" path="grub" name="grub" revision="refs/tags/2.02"/>
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux" revision="optee"/>
+	<project remote="linaro" path="linux" name="rpk" revision="rpk-v4.9" />
+
+	<!-- debian kernel packaging -->
+	<project remote="linaro-git" path="debian-kernel-packaging" name="ci/debian-kernel-packaging" revision="rpb-stretch" />
 
 	<!-- Hello world TA -->
 	<project remote="linaro-swg" path="hello_world" name="hello_world" />
