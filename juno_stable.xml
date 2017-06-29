@@ -9,15 +9,15 @@
   <default remote="optee" revision="master"/>
   <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="0d6e84bc2c68de1602de6fbadeae109eb8298c18"/>
   <project name="arm/vexpress-firmware.git" path="vexpress-firmware" remote="linaro" revision="cad383a2c4ffeb9192605fda54c07fd1aa09a1b0"/>
-  <project name="build.git" path="build" revision="refs/tags/2.4.0">
+  <project name="build.git" path="build" revision="refs/tags/2.5.0-rc1">
     <linkfile dest="build/Makefile" src="juno.mk"/>
   </project>
   <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="0e47dfb1a1dd72c06b9ceed4fd68bf7665e7ce6d"/>
-  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a2c215b7ddd880cce8fca7913e817f47460bdd40"/>
-  <project name="linux.git" path="linux" remote="linaro-swg" revision="961993fde60ebd06715d1433f8eb265471a0f38c"/>
-  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.4.0"/>
-  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.4.0"/>
-  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.4.0"/>
-  <project name="u-boot.git" path="u-boot" remote="u-boot" revision="d53ecad92f06d2e38a5cbc13af7473867c7fa277"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="cb8c7736a46d1ff459f159b2115395d504c96b45"/>
+  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="d71b5ccdbd97407482bca123f12cd60f8d227adf"/>
+  <project name="linux.git" path="linux" remote="linaro-swg" revision="2e26af92fd860371fd65a2c16306cce4508285a1"/>
+  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.5.0-rc1"/>
+  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.5.0-rc1"/>
+  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.5.0-rc1"/>
+  <project name="u-boot.git" path="u-boot" remote="u-boot" revision="08546df976b79b1694af3ff12b26baf2931f371a"/>
 </manifest>
