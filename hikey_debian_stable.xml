@@ -2,24 +2,28 @@
 <manifest>
   <remote fetch="https://github.com/96boards-hikey" name="96b-hk"/>
   <remote fetch="https://github.com/96boards" name="96boards"/>
+  <remote fetch="https://github.com/Linaro" name="linaro"/>
+  <remote fetch="https://git.linaro.org" name="linaro-git"/>
   <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
   <remote fetch="git://git.savannah.gnu.org" name="savannah"/>
   <remote fetch="git://git.code.sf.net/p/strace" name="sfnet"/>
   <default remote="optee" revision="master"/>
-  <project name="arm-trusted-firmware" remote="96b-hk" revision="4adfdd06f11deb2ab6a056a68ed6f22dcb99a791"/>
-  <project name="build" revision="refs/tags/2.4.0">
+  <project name="OpenPlatformPkg" remote="96b-hk" revision="56dec05002f6870928336da5da99d1e1027692e8"/>
+  <project name="arm-trusted-firmware" remote="96b-hk" revision="fb1158a365e2bf5bba638cde950678fddf67fe60"/>
+  <project name="build" revision="refs/tags/2.5.0-rc1">
     <linkfile dest="build/Makefile" src="hikey_debian.mk"/>
   </project>
   <project name="burn-boot" remote="96boards" revision="db522b114fdec4d06d0a1705501fedc277903453"/>
-  <project name="code" path="strace" remote="sfnet" revision="7f6f12a829c8f3ba2b8bd5d821e3f34ab197bccb"/>
-  <project name="edk2" remote="96boards" revision="7da6cdf18127ee52e79f3cf990c8d630fd037784"/>
-  <project name="grub" remote="savannah" revision="007f0b407f72314ec832d77e15b83ea40b160037"/>
-  <project name="hello_world" remote="linaro-swg" revision="a2c215b7ddd880cce8fca7913e817f47460bdd40"/>
+  <project name="ci/debian-kernel-packaging" path="debian-kernel-packaging" remote="linaro-git" revision="14c6e0022cfdbd757a7be5a0d950efe043cdec9f"/>
+  <project name="code" path="strace" remote="sfnet" revision="663b4f8273643372434c8e40a8fa20cdb1aade97"/>
+  <project name="edk2" remote="96b-hk" revision="620ce09af5953caf7099b602c6252bc1bee2241b"/>
+  <project name="grub" remote="savannah" revision="e54c99aaff5e5f6f5d3b06028506c57e66d8ef77"/>
+  <project name="hello_world" remote="linaro-swg" revision="d71b5ccdbd97407482bca123f12cd60f8d227adf"/>
   <project name="l-loader" remote="96b-hk" revision="cddd213c1b820d5f224d20b38581c504552dd59e"/>
-  <project name="linux" remote="linaro-swg" revision="961993fde60ebd06715d1433f8eb265471a0f38c"/>
-  <project name="optee_client" revision="refs/tags/2.4.0"/>
-  <project name="optee_os" revision="refs/tags/2.4.0"/>
-  <project name="optee_test" revision="refs/tags/2.4.0"/>
+  <project name="optee_client" revision="refs/tags/2.5.0-rc1"/>
+  <project name="optee_os" revision="refs/tags/2.5.0-rc1"/>
+  <project name="optee_test" revision="refs/tags/2.5.0-rc1"/>
   <project name="patches_hikey" remote="linaro-swg" revision="93d4254c66003cacd9f7e84dd6b5831ab43b5265"/>
+  <project name="rpk" path="linux" remote="linaro" revision="04ec80a78dbc970cf921abc02910d2148cec6dbb"/>
 </manifest>

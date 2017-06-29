@@ -6,16 +6,17 @@
   <remote fetch="https://github.com/qemu" name="qemu"/>
   <default remote="optee" revision="master"/>
   <project name="bios_qemu_tz_arm.git" path="bios_qemu_tz_arm" remote="linaro-swg" revision="c076d8e4caa25597e72d81a01b594e3d0c8e7a5f"/>
-  <project name="build.git" path="build" revision="refs/tags/2.4.0">
+  <project name="build.git" path="build" revision="refs/tags/2.5.0-rc1">
     <linkfile dest="build/Makefile" src="qemu.mk"/>
   </project>
   <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="0e47dfb1a1dd72c06b9ceed4fd68bf7665e7ce6d"/>
-  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="a2c215b7ddd880cce8fca7913e817f47460bdd40"/>
-  <project name="linux.git" path="linux" remote="linaro-swg" revision="961993fde60ebd06715d1433f8eb265471a0f38c"/>
-  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.4.0"/>
-  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.4.0"/>
-  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.4.0"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="cb8c7736a46d1ff459f159b2115395d504c96b45"/>
+  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="d71b5ccdbd97407482bca123f12cd60f8d227adf"/>
+  <project name="linux.git" path="linux" remote="linaro-swg" revision="2e26af92fd860371fd65a2c16306cce4508285a1"/>
+  <project name="optee_benchmark.git" path="optee_benchmark" remote="linaro-swg" revision="refs/tags/2.5.0-rc1"/>
+  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.5.0-rc1"/>
+  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.5.0-rc1"/>
+  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.5.0-rc1"/>
   <project name="qemu.git" path="qemu" remote="qemu" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064"/>
   <project name="soc_term.git" path="soc_term" remote="linaro-swg" revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20"/>
 </manifest>
