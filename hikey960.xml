@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="arm" fetch="https://github.com/ARM-software" />
+	<remote name="busybox" fetch="git://busybox.net" />
+	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
+	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
+	<remote name="96boards" fetch="https://github.com/96boards" />
+	<remote name="96b-hk" fetch="https://github.com/96boards-hikey" />
+	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
+
+	<default remote="optee" revision="master" />
+
+	<!-- strace -->
+	<project remote="sfnet" path="strace" name="code" />
+
+	<!-- l-loader -->
+	<project remote="96b-hk" path="l-loader" name="l-loader" revision="testing/hikey960_v1.2" />
+
+	<!-- tools -->
+	<project remote="96b-hk" path="tools-images-hikey960" name="tools-images-hikey960" />
+
+	<!-- OP-TEE gits -->
+	<project path="optee_os" name="optee_os" />
+	<project path="optee_client" name="optee_client" />
+	<project path="optee_test" name="optee_test" />
+
+	<!-- busybox -->
+	<project remote="busybox" path="busybox" name="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+
+	<!-- ARM gits -->
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" />
+
+	<!-- Tianocore, EDK2 -->
+	<project remote="96b-hk" path="edk2" name="edk2" revision="testing/hikey960_v2.5" />
+	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="testing/hikey960_v1.3.4" />
+
+	<!-- grub -->
+	<project remote="savannah" path="grub" name="grub" revision="refs/tags/2.02" />
+
+	<!-- Linux kernel -->
+	<project remote="96b-hk" path="linux" name="linux" revision="hikey960-v4.9" />
+
+	<!-- Hello world TA -->
+	<project remote="linaro-swg" path="hello_world" name="hello_world" />
+
+	<!-- Filesystem -->
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
+
+	<!-- patches -->
+	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
+
+	<!-- Build -->
+	<project path="build" name="build" >
+		<linkfile src="hikey960.mk" dest="build/Makefile" />
+	</project>
+</manifest>
