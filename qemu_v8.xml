@@ -30,6 +30,7 @@
 
 	<!-- QEMU -->
 	<project remote="qemu" path="qemu" name="qemu.git" />
+	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
 
 	<!-- We're using Linaro SWG for ARM-TF until merged officially -->
 	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="refs/heads/optee_v2.1.0_paged_armtf_v1.2" />
