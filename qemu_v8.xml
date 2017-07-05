@@ -33,7 +33,7 @@
 	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
 
 	<!-- We're using Linaro SWG for ARM-TF until merged officially -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="refs/heads/optee_v2.1.0_paged_armtf_v1.2" />
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_arm-tf_2017-06-22" />
 
         <!-- Tianocore, EDK2 -->
         <project remote="tianocore" path="edk2" name="edk2.git" />

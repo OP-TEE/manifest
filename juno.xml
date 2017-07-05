@@ -19,7 +19,7 @@
 
 	<!-- ARM gits, FVP -->
 	<!-- <project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" /> -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_paged_armtf_v1.2" />
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_arm-tf_2017-06-22" />
 
 	<!-- U-Boot -->
 	<project remote="u-boot" path="u-boot" name="u-boot.git" />
