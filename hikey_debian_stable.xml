@@ -11,19 +11,19 @@
   <default remote="optee" revision="master"/>
   <project name="OpenPlatformPkg" remote="96b-hk" revision="56dec05002f6870928336da5da99d1e1027692e8"/>
   <project name="arm-trusted-firmware" remote="96b-hk" revision="fb1158a365e2bf5bba638cde950678fddf67fe60"/>
-  <project name="build" revision="refs/tags/2.5.0-rc1">
+  <project name="build" revision="refs/tags/2.5.0-rc2">
     <linkfile dest="build/Makefile" src="hikey_debian.mk"/>
   </project>
   <project name="burn-boot" remote="96boards" revision="db522b114fdec4d06d0a1705501fedc277903453"/>
   <project name="ci/debian-kernel-packaging" path="debian-kernel-packaging" remote="linaro-git" revision="14c6e0022cfdbd757a7be5a0d950efe043cdec9f"/>
-  <project name="code" path="strace" remote="sfnet" revision="663b4f8273643372434c8e40a8fa20cdb1aade97"/>
-  <project name="edk2" remote="96b-hk" revision="620ce09af5953caf7099b602c6252bc1bee2241b"/>
+  <project name="code" path="strace" remote="sfnet" revision="c136e9e449fe733e77e8766a9b26e6dc1134203e"/>
+  <project name="edk2" remote="96b-hk" revision="202895d521a168dfaea4c9ae4521049913d37e9d"/>
   <project name="grub" remote="savannah" revision="e54c99aaff5e5f6f5d3b06028506c57e66d8ef77"/>
-  <project name="hello_world" remote="linaro-swg" revision="d71b5ccdbd97407482bca123f12cd60f8d227adf"/>
+  <project name="hello_world" remote="linaro-swg" revision="2c15acb431bcde20beb0277c3acdab6d0b4894ef"/>
   <project name="l-loader" remote="96b-hk" revision="cddd213c1b820d5f224d20b38581c504552dd59e"/>
-  <project name="optee_client" revision="refs/tags/2.5.0-rc1"/>
-  <project name="optee_os" revision="refs/tags/2.5.0-rc1"/>
-  <project name="optee_test" revision="refs/tags/2.5.0-rc1"/>
+  <project name="optee_client" revision="refs/tags/2.5.0-rc2"/>
+  <project name="optee_os" revision="refs/tags/2.5.0-rc2"/>
+  <project name="optee_test" revision="refs/tags/2.5.0-rc2"/>
   <project name="patches_hikey" remote="linaro-swg" revision="93d4254c66003cacd9f7e84dd6b5831ab43b5265"/>
   <project name="rpk" path="linux" remote="linaro" revision="04ec80a78dbc970cf921abc02910d2148cec6dbb"/>
 </manifest>
