@@ -28,6 +28,9 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
 
+	<!-- Benchmark app -->
+	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
+
 	<!-- QEMU -->
 	<project remote="qemu" path="qemu" name="qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
 	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
