@@ -29,7 +29,7 @@
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
 
 	<!-- QEMU -->
-	<project remote="qemu" path="qemu" name="qemu.git" />
+	<project remote="qemu" path="qemu" name="qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
 	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
 
 	<!-- We're using Linaro SWG for ARM-TF until merged officially -->

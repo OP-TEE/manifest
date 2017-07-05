@@ -28,7 +28,8 @@
 	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
 
 	<!-- Temporary use the defined commit since upstream tip didn't work -->
-	<project remote="qemu" path="qemu" name="qemu.git" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064" />
+	<project remote="qemu" path="qemu" name="qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
+	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git">
