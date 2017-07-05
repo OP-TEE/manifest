@@ -17,6 +17,7 @@
   <project name="optee_client.git" path="optee_client" revision="refs/tags/2.5.0-rc1"/>
   <project name="optee_os.git" path="optee_os" revision="refs/tags/2.5.0-rc1"/>
   <project name="optee_test.git" path="optee_test" revision="refs/tags/2.5.0-rc1"/>
-  <project name="qemu.git" path="qemu" remote="qemu" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064"/>
+  <project name="qemu.git" path="qemu" remote="qemu" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e"/>
+  <project name="dtc.git" path="qemu/dtc" remote="qemu" revision="558cd81bdd432769b59bff01240c44f82cfb1a9d"/>
   <project name="soc_term.git" path="soc_term" remote="linaro-swg" revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20"/>
 </manifest>
