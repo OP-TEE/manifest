@@ -7,7 +7,7 @@
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
   <remote fetch="git://git.denx.de" name="u-boot"/>
   <default remote="optee" revision="master"/>
-  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="0d6e84bc2c68de1602de6fbadeae109eb8298c18"/>
+  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="bdadbc6fc1109110181a417c6aaf6723aa62dc09"/>
   <project name="arm/vexpress-firmware.git" path="vexpress-firmware" remote="linaro" revision="cad383a2c4ffeb9192605fda54c07fd1aa09a1b0"/>
   <project name="build.git" path="build" revision="refs/tags/2.5.0-rc2">
     <linkfile dest="build/Makefile" src="juno.mk"/>

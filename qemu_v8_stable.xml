@@ -8,7 +8,7 @@
   <remote fetch="http://git.code.sf.net/p/strace" name="sfnet"/>
   <remote fetch="https://github.com/tianocore" name="tianocore"/>
   <default remote="optee" revision="master"/>
-  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="3fe1df3a038b0d69ea7c5c1de581ee6e1db28872"/>
+  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="bdadbc6fc1109110181a417c6aaf6723aa62dc09"/>
   <project name="build.git" path="build" revision="refs/tags/2.5.0-rc2">
     <linkfile dest="build/Makefile" src="qemu_v8.mk"/>
     <linkfile dest="build/gdb" src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb"/>
