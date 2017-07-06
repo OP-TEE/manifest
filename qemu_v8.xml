@@ -36,7 +36,8 @@
 	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_arm-tf_2017-06-22" />
 
         <!-- Tianocore, EDK2 -->
-        <project remote="tianocore" path="edk2" name="edk2.git" />
+	<!-- Pinned revision because master is currently broken -->
+	<project remote="tianocore" path="edk2" name="edk2.git" revision="f7bd152c2a05bd75471305184c25f14f01ccf0b7" />
 
 	<!-- strace -->
 	<project remote="sfnet" path="strace" name="code" />
