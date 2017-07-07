@@ -9,20 +9,20 @@
   <remote fetch="git://git.code.sf.net/p/strace" name="sfnet"/>
   <default remote="optee" revision="master"/>
   <project name="arm-trusted-firmware" remote="96b-hk" revision="fb1158a365e2bf5bba638cde950678fddf67fe60"/>
-  <project name="build" revision="refs/tags/2.5.0-rc1">
+  <project name="build" revision="refs/tags/2.5.0-rc2">
     <linkfile dest="build/Makefile" src="hikey.mk"/>
   </project>
   <project name="burn-boot" remote="96boards" revision="db522b114fdec4d06d0a1705501fedc277903453"/>
   <project name="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="code" path="strace" remote="sfnet" revision="663b4f8273643372434c8e40a8fa20cdb1aade97"/>
+  <project name="code" path="strace" remote="sfnet" revision="c136e9e449fe733e77e8766a9b26e6dc1134203e"/>
   <project name="edk2" remote="96boards" revision="7da6cdf18127ee52e79f3cf990c8d630fd037784"/>
   <project name="gen_rootfs" remote="linaro-swg" revision="cb8c7736a46d1ff459f159b2115395d504c96b45"/>
   <project name="grub" remote="savannah" revision="e54c99aaff5e5f6f5d3b06028506c57e66d8ef77"/>
-  <project name="hello_world" remote="linaro-swg" revision="d71b5ccdbd97407482bca123f12cd60f8d227adf"/>
+  <project name="hello_world" remote="linaro-swg" revision="2c15acb431bcde20beb0277c3acdab6d0b4894ef"/>
   <project name="l-loader" remote="96b-hk" revision="cddd213c1b820d5f224d20b38581c504552dd59e"/>
-  <project name="linux" remote="linaro-swg" revision="2e26af92fd860371fd65a2c16306cce4508285a1"/>
-  <project name="optee_client" revision="refs/tags/2.5.0-rc1"/>
-  <project name="optee_os" revision="refs/tags/2.5.0-rc1"/>
-  <project name="optee_test" revision="refs/tags/2.5.0-rc1"/>
+  <project name="linux" remote="linaro-swg" revision="cc2e97bbe2ed6290df25087d8967429071abb214"/>
+  <project name="optee_client" revision="refs/tags/2.5.0-rc2"/>
+  <project name="optee_os" revision="refs/tags/2.5.0-rc2"/>
+  <project name="optee_test" revision="refs/tags/2.5.0-rc2"/>
   <project name="patches_hikey" remote="linaro-swg" revision="93d4254c66003cacd9f7e84dd6b5831ab43b5265"/>
 </manifest>
