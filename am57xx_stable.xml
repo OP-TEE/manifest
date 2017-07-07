@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <remote fetch="https://github.com/mirror" name="busybox_mirror"/>
+  <remote fetch="git://busybox.net" name="busybox"/>
   <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
-  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="1da4e15529a32fa244f5e3effc9a90549beb1a26"/>
+  <remote fetch="git://git.ti.com/ti-linux-kernel" name="ti-linux"/>
+  <remote fetch="git://git.ti.com/ti-u-boot" name="ti-u-boot"/>
   <project name="build.git" path="build" remote="optee" revision="refs/tags/2.5.0">
-    <linkfile dest="build/Makefile" src="rpi3.mk"/>
-    <linkfile dest="build/pi3.cfg" src="rpi3/debugger/pi3.cfg"/>
-    <linkfile dest="build/gdb" src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb"/>
+    <linkfile dest="build/Makefile" src="am57xx.mk"/>
   </project>
-  <project name="busybox.git" path="busybox" remote="busybox_mirror" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
+  <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
   <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="cb8c7736a46d1ff459f159b2115395d504c96b45"/>
   <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="2c15acb431bcde20beb0277c3acdab6d0b4894ef"/>
-  <project name="linux.git" path="linux" remote="linaro-swg" revision="9f38d0f9d4aa32c8c2802be600d002eea222f9d1"/>
   <project name="optee_client.git" path="optee_client" remote="optee" revision="refs/tags/2.5.0"/>
   <project name="optee_os.git" path="optee_os" remote="optee" revision="refs/tags/2.5.0"/>
   <project name="optee_test.git" path="optee_test" remote="optee" revision="refs/tags/2.5.0"/>
-  <project name="u-boot.git" path="u-boot" remote="linaro-swg" revision="10577db76e77a513180388df1f176a6642143c84"/>
+  <project name="ti-linux-kernel.git" path="linux" remote="ti-linux" revision="c7509c9ba90a83c71207bbd8f40f218904842b0b"/>
+  <project name="ti-u-boot.git" path="u-boot" remote="ti-u-boot" revision="b79c87e6f7e2d24f262754845c6fc5f45b71bf15"/>
 </manifest>
