@@ -20,6 +20,9 @@
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="rpi3-optee-4.6" />
 
+	<!-- Benchmark app -->
+	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
+
 	<!-- U-boot -->
 	<project remote="linaro-swg" path="u-boot" name="u-boot.git" revision="rpi3_initial_drop"/>
 
