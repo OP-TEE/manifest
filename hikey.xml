@@ -36,10 +36,10 @@
 	<project remote="96boards" path="edk2" name="edk2" revision="hikey" />
 
 	<!-- grub -->
-	<project remote="savannah" path="grub" name="grub" revision="refs/tags/2.02"/>
+	<project remote="savannah" path="grub" name="grub" revision="refs/tags/2.02" />
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux" revision="optee"/>
+	<project remote="linaro-swg" path="linux" name="linux" revision="optee" />
 
 	<!-- Hello world TA -->
 	<project remote="linaro-swg" path="hello_world" name="hello_world" />
