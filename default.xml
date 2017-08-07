@@ -22,7 +22,9 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
-	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
+
+	<!-- Sample applications -->
+	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Benchmark app -->
 	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>

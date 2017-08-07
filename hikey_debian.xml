@@ -43,8 +43,8 @@
 	<!-- debian kernel packaging -->
 	<project remote="linaro-git" path="debian-kernel-packaging" name="ci/debian-kernel-packaging" revision="rpb-stretch" />
 
-	<!-- Hello world TA -->
-	<project remote="linaro-swg" path="hello_world" name="hello_world" />
+	<!-- Sample applications -->
+	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- patches -->
 	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />

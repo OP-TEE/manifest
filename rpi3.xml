@@ -28,8 +28,8 @@
 	<!-- U-boot -->
 	<project remote="linaro-swg" path="u-boot" name="u-boot.git" revision="rpi3_initial_drop"/>
 
-	<!-- Hello world TA -->
-	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
+	<!-- Sample applications -->
+	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />

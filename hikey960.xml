@@ -41,8 +41,8 @@
 	<!-- Linux kernel -->
 	<project remote="96b-hk" path="linux" name="linux" revision="hikey960-v4.9" />
 
-	<!-- Hello world TA -->
-	<project remote="linaro-swg" path="hello_world" name="hello_world" />
+	<!-- Sample applications -->
+	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
