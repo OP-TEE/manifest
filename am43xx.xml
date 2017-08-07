@@ -20,8 +20,8 @@
 	<!-- Linux kernel -->
 	<project remote="ti-linux" path="linux" name="ti-linux-kernel.git" revision="ti-lsk-linux-4.9.y" />
 
-	<!-- Hello world TA -->
-	<project remote="linaro-swg" path="hello_world" name="hello_world.git" revision="master" />
+	<!-- Sample applications -->
+	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" revision="master" />
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="master" />
