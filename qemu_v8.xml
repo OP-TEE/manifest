@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+	<remote name="arm" fetch="https://github.com/ARM-software" />
 	<remote name="busybox" fetch="git://busybox.net" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
@@ -35,8 +36,7 @@
 	<project remote="qemu" path="qemu" name="qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
 	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
 
-	<!-- We're using Linaro SWG for ARM-TF until merged officially -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_arm-tf_2017-06-22" />
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
 
         <!-- Tianocore, EDK2 -->
 	<!-- Pinned revision because master is currently broken -->
