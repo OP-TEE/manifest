@@ -17,8 +17,7 @@
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- ARM gits, FVP -->
-	<!-- <project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" /> -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_arm-tf_2017-06-22" />
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
 
 	<!-- Tianocore, EDK2 -->
 	<project remote="landing-teams" path="edk2" name="working/arm/edk2.git" revision="16.01" />
