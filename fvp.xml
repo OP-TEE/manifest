@@ -27,7 +27,7 @@
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
 
 	<!-- Hello world TA -->
-	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
+	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
