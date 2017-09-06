@@ -23,7 +23,7 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" clone-depth="1" />
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" clone-depth="1" />
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" clone-depth="1" />
-	<project remote="linaro-swg" path="hello_world" name="hello_world.git" />
+	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Temporary use the defined commit since upstream tip didn't work -->
 	<project remote="qemu" path="qemu" name="qemu.git" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064" />
