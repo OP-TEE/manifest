@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<!-- remote name="arm" fetch="https://github.com/ARM-software" /-->
+	<remote name="arm" fetch="https://github.com/ARM-software" />
 	<remote name="linaro" fetch="https://github.com/Linaro" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="linaro-git" fetch="https://git.linaro.org" />
@@ -16,7 +16,10 @@
 	<project remote="sfnet" path="strace" name="code" />
 
 	<!-- l-loader -->
-	<project remote="96b-hk" path="l-loader" name="l-loader" />
+	<project remote="96b-hk" path="l-loader" name="l-loader" revision="testing/hikey960_v1.2" />
+
+	<!-- atf-fastboot -->
+	<project remote="96b-hk" path="atf-fastboot" name="atf-fastboot" />
 
 	<!-- burn-boot -->
 	<project remote="96boards" path="burn-boot" name="burn-boot" />
@@ -27,12 +30,11 @@
 	<project path="optee_test" name="optee_test" />
 
 	<!-- ARM gits -->
-	<!-- project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" /-->
-	<project remote="96b-hk" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="hikey" />
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" />
 
 	<!-- Tianocore, EDK2 -->
-	<project remote="96b-hk" path="edk2" name="edk2" revision="hikey-aosp" />
-	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="hikey-aosp" />
+	<project remote="96b-hk" path="edk2" name="edk2" revision="testing/hikey960_v2.5" />
+	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="testing/hikey960_v1.3.4" />
 
 	<!-- grub -->
 	<project remote="savannah" path="grub" name="grub" revision="refs/tags/2.02"/>
