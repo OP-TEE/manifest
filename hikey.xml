@@ -5,7 +5,6 @@
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
-	<remote name="96boards" fetch="https://github.com/96boards" />
 	<remote name="96b-hk" fetch="https://github.com/96boards-hikey" />
 	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
 
@@ -21,7 +20,7 @@
 	<project remote="96b-hk" path="atf-fastboot" name="atf-fastboot" />
 
 	<!-- burn-boot -->
-	<project remote="96boards" path="burn-boot" name="burn-boot" />
+	<project remote="96b-hk" path="burn-boot" name="burn-boot" />
 
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os" />
