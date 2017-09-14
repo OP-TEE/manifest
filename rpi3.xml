@@ -4,6 +4,7 @@
 	<remote name="busybox_mirror" fetch="https://github.com/mirror" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
+	<remote name="raspberrypi" fetch="https://github.com/raspberrypi" />
 
 	<default remote="optee" revision="master" />
 
@@ -33,6 +34,9 @@
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
+
+	<!-- Firmware -->
+	<project remote="raspberrypi" path="firmware" name="firmware.git" revision="da504fcd4c673ecf85841ea80c28a8bb8b94e612" clone-depth="1" />
 
 	<!-- Build -->
 	<project path="build" name="build.git">
