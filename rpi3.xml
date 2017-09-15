@@ -36,7 +36,7 @@
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
 
 	<!-- Firmware -->
-	<project remote="raspberrypi" path="firmware" name="firmware.git" revision="da504fcd4c673ecf85841ea80c28a8bb8b94e612" clone-depth="1" />
+	<project remote="raspberrypi" path="firmware" name="firmware.git" revision="refs/tags/1.20170215" clone-depth="1" />
 
 	<!-- Build -->
 	<project path="build" name="build.git">
