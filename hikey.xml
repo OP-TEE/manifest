@@ -41,6 +41,9 @@
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux" revision="optee" />
 
+	<!-- Benchmark app -->
+	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git" />
+
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
