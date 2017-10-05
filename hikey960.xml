@@ -18,7 +18,7 @@
 	<project remote="96b-hk" path="l-loader" name="l-loader" revision="testing/hikey960_v1.2" />
 
 	<!-- tools -->
-	<project remote="96b-hk" path="tools-images-hikey960" name="tools-images-hikey960" />
+	<project remote="96b-hk" path="tools-images-hikey960" name="tools-images-hikey960" revision="ccb401f726346355e948ec776a411ad037bab4cc" />
 
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os" />
