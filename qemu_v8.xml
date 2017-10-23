@@ -36,7 +36,7 @@
 	<project remote="qemu" path="qemu" name="qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
 	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
 
-	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="d55a445069736e2652b44ddfeb9ea4d306796a0a" />
 
         <!-- Tianocore, EDK2 -->
 	<!-- Pinned revision because master is currently broken -->
