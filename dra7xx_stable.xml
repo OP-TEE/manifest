@@ -5,15 +5,15 @@
   <remote fetch="https://github.com/OP-TEE" name="optee"/>
   <remote fetch="git://git.ti.com/ti-linux-kernel" name="ti-linux"/>
   <remote fetch="git://git.ti.com/ti-u-boot" name="ti-u-boot"/>
-  <project name="build.git" path="build" remote="optee" revision="refs/tags/2.5.0">
+  <project name="build.git" path="build" remote="optee" revision="refs/tags/2.6.0">
     <linkfile dest="build/Makefile" src="dra7xx.mk"/>
   </project>
   <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="cb8c7736a46d1ff459f159b2115395d504c96b45"/>
-  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="2c15acb431bcde20beb0277c3acdab6d0b4894ef"/>
-  <project name="optee_client.git" path="optee_client" remote="optee" revision="refs/tags/2.5.0"/>
-  <project name="optee_os.git" path="optee_os" remote="optee" revision="refs/tags/2.5.0"/>
-  <project name="optee_test.git" path="optee_test" remote="optee" revision="refs/tags/2.5.0"/>
-  <project name="ti-linux-kernel.git" path="linux" remote="ti-linux" revision="c7509c9ba90a83c71207bbd8f40f218904842b0b"/>
-  <project name="ti-u-boot.git" path="u-boot" remote="ti-u-boot" revision="b79c87e6f7e2d24f262754845c6fc5f45b71bf15"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="fe617d470e45778c909038bf3e7ca15174a4f893"/>
+  <project name="optee_client.git" path="optee_client" remote="optee" revision="refs/tags/2.6.0"/>
+  <project name="optee_examples.git" path="optee_examples" remote="linaro-swg" revision="refs/tags/2.6.0"/>
+  <project name="optee_os.git" path="optee_os" remote="optee" revision="refs/tags/2.6.0"/>
+  <project name="optee_test.git" path="optee_test" remote="optee" revision="refs/tags/2.6.0"/>
+  <project name="ti-linux-kernel.git" path="linux" remote="ti-linux" revision="fa9448e5ca17ea67d2ded2a169c58fcf7e243fb4"/>
+  <project name="ti-u-boot.git" path="u-boot" remote="ti-u-boot" revision="340fb36f043fc1c41b987c57350426ca7ee895bf"/>
 </manifest>
