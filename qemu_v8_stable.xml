@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
+  <remote fetch="https://github.com/ARM-software" name="arm"/>
   <remote fetch="git://busybox.net" name="busybox"/>
   <remote fetch="https://github.com/linaro-swg" name="linaro-swg"/>
   <remote fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" name="linux"/>
@@ -8,21 +9,22 @@
   <remote fetch="http://git.code.sf.net/p/strace" name="sfnet"/>
   <remote fetch="https://github.com/tianocore" name="tianocore"/>
   <default remote="optee" revision="master"/>
-  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="linaro-swg" revision="bdadbc6fc1109110181a417c6aaf6723aa62dc09"/>
-  <project name="build.git" path="build" revision="refs/tags/2.5.0">
+  <project name="arm-trusted-firmware.git" path="arm-trusted-firmware" remote="arm" revision="3b39efa49d9949c80b6e76b99829f84619b46110"/>
+  <project name="build.git" path="build" revision="refs/tags/2.6.0">
     <linkfile dest="build/Makefile" src="qemu_v8.mk"/>
     <linkfile dest="build/gdb" src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb"/>
   </project>
   <project name="busybox.git" path="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="code" path="strace" remote="sfnet" revision="735c2ad872047e5d66c28eab2dc1aae31aac96ab"/>
-  <project name="dtc.git" path="qemu/dtc" remote="qemu" revision="d990b8013889b816ec054c7e07a77db59c56c400"/>
+  <project name="code" path="strace" remote="sfnet" revision="69c68ef5bf588fe22f1e76cc6464c70227418da7"/>
+  <project name="dtc.git" path="qemu/dtc" remote="qemu" revision="c1e55a5513e9bca41dc78a0f20245cc928596a3a"/>
   <project name="edk2.git" path="edk2" remote="tianocore" revision="f7bd152c2a05bd75471305184c25f14f01ccf0b7"/>
-  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="cb8c7736a46d1ff459f159b2115395d504c96b45"/>
-  <project name="hello_world.git" path="hello_world" remote="linaro-swg" revision="2c15acb431bcde20beb0277c3acdab6d0b4894ef"/>
-  <project name="linux.git" path="linux" remote="linaro-swg" revision="cc2e97bbe2ed6290df25087d8967429071abb214"/>
-  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.5.0"/>
-  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.5.0"/>
-  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.5.0"/>
+  <project name="gen_rootfs.git" path="gen_rootfs" remote="linaro-swg" revision="fe617d470e45778c909038bf3e7ca15174a4f893"/>
+  <project name="linux.git" path="linux" remote="linaro-swg" revision="50403184d40d04b3daf140417e031c16c2985eaf"/>
+  <project name="optee_benchmark.git" path="optee_benchmark" remote="linaro-swg" revision="refs/tags/2.6.0"/>
+  <project name="optee_client.git" path="optee_client" revision="refs/tags/2.6.0"/>
+  <project name="optee_examples.git" path="optee_examples" remote="linaro-swg" revision="refs/tags/2.6.0"/>
+  <project name="optee_os.git" path="optee_os" revision="refs/tags/2.6.0"/>
+  <project name="optee_test.git" path="optee_test" revision="refs/tags/2.6.0"/>
   <project name="qemu.git" path="qemu" remote="qemu" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e"/>
   <project name="soc_term.git" path="soc_term" remote="linaro-swg" revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20"/>
 </manifest>
