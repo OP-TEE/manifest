@@ -36,7 +36,7 @@
 	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="testing/hikey960_v1.3.4" />
 
 	<!-- grub -->
-	<project remote="savannah" path="grub" name="grub" revision="refs/tags/2.02" />
+	<project remote="savannah" path="grub" name="grub" />
 
 	<!-- Linux kernel -->
 	<project remote="96b-hk" path="linux" name="linux" revision="hikey960-v4.9" />
