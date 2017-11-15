@@ -11,6 +11,7 @@
 	<remote name="qemu" fetch="https://github.com/qemu" />
 	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
 	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
+	<remote name="tianocore" fetch="https://github.com/tianocore" />
 	<remote name="u-boot" fetch="git://git.denx.de" />
 
 	<default remote="optee" revision="master" />
@@ -30,8 +31,10 @@
 	<project remote="linaro" path="vexpress-firmware" name="arm/vexpress-firmware.git" revision="cad383a2c4ffeb9192605fda54c07fd1aa09a1b0"/>
 
 	<!-- Tianocore, EDK2 -->
-	<project remote="96boards-hikey" path="edk2" name="edk2.git" revision="testing/hikey960_v2.5" />
+	<!-- <project remote="96boards-hikey" path="edk2" name="edk2.git" revision="testing/hikey960_v2.5" /> -->
 	<project remote="96boards-hikey" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="testing/hikey960_v1.3.4" />
+	<project remote="tianocore" path="edk2" name="edk2.git" />
+	<project remote="tianocore" path="edk2-platforms" name="edk2-platforms.git" />
 
 	<!-- l-loader -->
 	<project remote="96boards" path="l-loader" name="l-loader" />
