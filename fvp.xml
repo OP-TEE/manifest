@@ -5,6 +5,7 @@
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="landing-teams" fetch="https://git.linaro.org/landing-teams" />
+	<remote name="savannah" fetch="https://git.savannah.gnu.org/git" />
 
 	<default remote="optee" revision="master" />
 
@@ -30,6 +31,9 @@
 
 	<!-- Filesystem -->
 	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
+
+	<!-- Grub -->
+	<project remote="savannah" path="grub" name="grub.git" />
 
 	<!-- Build -->
 	<project path="build" name="build.git">
