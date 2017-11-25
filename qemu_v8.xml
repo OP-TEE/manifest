@@ -39,8 +39,8 @@
 	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
 
         <!-- Tianocore, EDK2 -->
-	<!-- Pinned revision because master is currently broken -->
-	<project remote="tianocore" path="edk2" name="edk2.git" revision="f7bd152c2a05bd75471305184c25f14f01ccf0b7" />
+	<project remote="tianocore" path="edk2" name="edk2.git" />
+	<project remote="tianocore" path="edk2-platforms" name="edk2-platforms.git" />
 
 	<!-- strace -->
 	<project remote="sfnet" path="strace" name="code" />
