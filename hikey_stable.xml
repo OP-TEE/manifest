@@ -21,7 +21,7 @@
   <project name="gen_rootfs" remote="linaro-swg" revision="fe617d470e45778c909038bf3e7ca15174a4f893"/>
   <project name="grub" remote="savannah" revision="e54c99aaff5e5f6f5d3b06028506c57e66d8ef77"/>
   <project name="l-loader" remote="96b-hk" revision="8f9ac6cca2787a5a683989bdd96f6dcd4629a30a"/>
-  <project name="linux" remote="linaro-swg" revision="50403184d40d04b3daf140417e031c16c2985eaf"/>
+  <project name="linux" remote="linaro-swg" revision="6e954e2f2cbd412f7bc874bb9145f69713194e52"/>
   <project name="optee_client" revision="refs/tags/2.6.0"/>
   <project name="optee_examples.git" path="optee_examples" remote="linaro-swg" revision="refs/tags/2.6.0"/>
   <project name="optee_os" revision="refs/tags/2.6.0"/>
