@@ -8,23 +8,23 @@
   <remote fetch="git://git.savannah.gnu.org" name="savannah"/>
   <remote fetch="git://git.code.sf.net/p/strace" name="sfnet"/>
   <default remote="optee" revision="master"/>
-  <project name="OpenPlatformPkg" remote="96b-hk" revision="8c2f9655ec46036ed7e412defe851b99fa205b75"/>
-  <project name="arm-trusted-firmware" remote="arm" revision="3b39efa49d9949c80b6e76b99829f84619b46110"/>
-  <project name="atf-fastboot" remote="96b-hk" revision="5b0d44c057bc0005965da990e8add72670810996"/>
-  <project name="build" revision="refs/tags/2.6.0">
+  <project name="OpenPlatformPkg" remote="96b-hk" revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502"/>
+  <project name="arm-trusted-firmware" remote="arm" revision="f478253da84ee14f36d0524d54719e7b0f88f4f1"/>
+  <project name="atf-fastboot" remote="96b-hk" revision="0743e48eb793749cc801adbb63d3a9d27da4b1ec"/>
+  <project name="build" revision="refs/tags/3.0.0">
     <linkfile dest="build/Makefile" src="hikey.mk"/>
   </project>
   <project name="burn-boot" remote="96b-hk" revision="bee2ea1660f3a03df8d391fb75aa08dbc3441856"/>
   <project name="busybox" remote="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
-  <project name="code" path="strace" remote="sfnet" revision="69c68ef5bf588fe22f1e76cc6464c70227418da7"/>
-  <project name="edk2" remote="96b-hk" revision="19f735580a73a349e46214f22be5688ad834a334"/>
-  <project name="gen_rootfs" remote="linaro-swg" revision="fe617d470e45778c909038bf3e7ca15174a4f893"/>
-  <project name="grub" remote="savannah" revision="e54c99aaff5e5f6f5d3b06028506c57e66d8ef77"/>
-  <project name="l-loader" remote="96b-hk" revision="8f9ac6cca2787a5a683989bdd96f6dcd4629a30a"/>
+  <project name="code" path="strace" remote="sfnet" revision="baec073f01a271442cc4d11f229bcbdb08f92dec"/>
+  <project name="edk2" remote="96b-hk" revision="2d899728eda95d57f8e9d9bee6cc9b6eefe422b7"/>
+  <project name="gen_rootfs" remote="linaro-swg" revision="d5429c154fb81fdae75886d505c385b2f0bb7153"/>
+  <project name="grub" remote="savannah" revision="d34977cb662d9d3c74532dc175103758c47f552f"/>
+  <project name="l-loader" remote="96b-hk" revision="01d287e4e53642d592d9c24cccc9f551e8dab077"/>
   <project name="linux" remote="linaro-swg" revision="6e954e2f2cbd412f7bc874bb9145f69713194e52"/>
-  <project name="optee_client" revision="refs/tags/2.6.0"/>
-  <project name="optee_examples.git" path="optee_examples" remote="linaro-swg" revision="refs/tags/2.6.0"/>
-  <project name="optee_os" revision="refs/tags/2.6.0"/>
-  <project name="optee_test" revision="refs/tags/2.6.0"/>
+  <project name="optee_client" revision="refs/tags/3.0.0"/>
+  <project name="optee_examples.git" path="optee_examples" remote="linaro-swg" revision="refs/tags/3.0.0"/>
+  <project name="optee_os" revision="refs/tags/3.0.0"/>
+  <project name="optee_test" revision="refs/tags/3.0.0"/>
   <project name="patches_hikey" remote="linaro-swg" revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96"/>
 </manifest>
