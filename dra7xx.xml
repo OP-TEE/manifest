@@ -20,6 +20,9 @@
 	<!-- Linux kernel -->
 	<project remote="ti-linux" path="linux" name="ti-linux-kernel.git" revision="ti-lsk-linux-4.9.y" />
 
+	<!-- Benchmark app -->
+	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git" />
+
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" revision="master" />
 
