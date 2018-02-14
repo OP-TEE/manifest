@@ -13,6 +13,8 @@
 	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
 	<remote name="tianocore" fetch="https://github.com/tianocore" />
 	<remote name="u-boot" fetch="git://git.denx.de" />
+	<remote name="github" fetch="https://github.com" />
+	<remote name="github-private" fetch="ssh://git@github.com" />
 
 	<default remote="optee" revision="master" />
 
@@ -72,6 +74,11 @@
 	<!-- MediaTek -->
 	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
 	<project remote="linaro-swg" path="evb-utils" name="evb-utils.git" />
+
+	<!-- v8M related -->
+	<project remote="github-private" path="trusted-firmware-m" name="ARM-software/trusted-firmware-m.git" revision="tfm-prototype-v0_1" />
+	<project remote="github" path="CMSIS_5" name="ARM-software/CMSIS_5.git" revision="refs/tags/5.2.0" />
+	<project remote="github" path="mbedtls" name="ARMmbed/mbedtls.git" revision="refs/tags/mbedtls-2.5.1" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git">
