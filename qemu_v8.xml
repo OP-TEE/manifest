@@ -7,7 +7,7 @@
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
         <remote name="tianocore" fetch="https://github.com/tianocore" />
 	<remote name="qemu" fetch="https://github.com/qemu" />
-	<remote name="sfnet" fetch="http://git.code.sf.net/p/strace" />
+	<remote name="strace" fetch="https://github.com/strace" />
 
 	<default remote="optee" revision="master" />
 
@@ -43,7 +43,7 @@
 	<project remote="tianocore" path="edk2-platforms" name="edk2-platforms.git" />
 
 	<!-- strace -->
-	<project remote="sfnet" path="strace" name="code" />
+	<project remote="strace" path="strace" name="strace" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git">

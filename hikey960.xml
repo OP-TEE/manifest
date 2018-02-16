@@ -7,12 +7,12 @@
 	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
 	<remote name="96boards" fetch="https://github.com/96boards" />
 	<remote name="96b-hk" fetch="https://github.com/96boards-hikey" />
-	<remote name="sfnet" fetch="git://git.code.sf.net/p/strace" />
+	<remote name="strace" fetch="https://github.com/strace" />
 
 	<default remote="optee" revision="master" />
 
 	<!-- strace -->
-	<project remote="sfnet" path="strace" name="code" />
+	<project remote="strace" path="strace" name="strace" />
 
 	<!-- l-loader -->
 	<project remote="96b-hk" path="l-loader" name="l-loader" revision="testing/hikey960_v1.2" />
