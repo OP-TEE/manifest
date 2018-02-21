@@ -23,5 +23,5 @@
         <!-- Misc gits -->
         <project path="busybox"            name="mirror/busybox.git" />
         <project path="qemu/dtc"           name="qemu/dtc.git" />
-        <project path="qemu"               name="qemu/qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
+        <project path="qemu"               name="qemu/qemu.git" revision="4672cbd7bed88dc67f089e84a0fd5d7739020c92" />
 </manifest>
