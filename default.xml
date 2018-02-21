@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="busybox" fetch="git://busybox.net" />
+	<remote name="busybox" fetch="https://github.com/mirror" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="qemu" fetch="https://github.com/qemu" />
