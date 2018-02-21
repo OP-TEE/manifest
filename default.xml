@@ -1,40 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="busybox" fetch="https://github.com/mirror" />
-	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="optee" fetch="https://github.com/OP-TEE" />
-	<remote name="qemu" fetch="https://github.com/qemu" />
+        <remote name="github" fetch="https://github.com" />
 
-	<default remote="optee" revision="master" />
+        <default remote="github" revision="master" />
 
-	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os.git" />
-	<project path="optee_client" name="optee_client.git" />
-	<project path="optee_test" name="optee_test.git" />
+        <!-- OP-TEE gits -->
+        <project path="optee_client"       name="OP-TEE/optee_client.git" />
+        <project path="optee_os"           name="OP-TEE/optee_os.git" />
+        <project path="optee_test"         name="OP-TEE/optee_test.git" />
+        <project path="build"              name="OP-TEE/build.git">
+                <linkfile src="qemu.mk" dest="build/Makefile" />
+        </project>
 
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+        <!-- linaro-swg gits -->
+        <project path="bios_qemu_tz_arm"   name="linaro-swg/bios_qemu_tz_arm.git" />
+        <project path="gen_rootfs"         name="linaro-swg/gen_rootfs.git" />
+        <project path="linux"              name="linaro-swg/linux.git" revision="optee"/>
+        <project path="optee_benchmark"    name="linaro-swg/optee_benchmark.git"/>
+        <project path="optee_examples"     name="linaro-swg/optee_examples.git" />
+        <project path="soc_term"           name="linaro-swg/soc_term.git" />
 
-	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
-
-	<!-- linaro-swg gits -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
-	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
-	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
-
-	<!-- Sample applications -->
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
-
-	<!-- Benchmark app -->
-	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
-
-	<!-- Temporary use the defined commit since upstream tip didn't work -->
-	<project remote="qemu" path="qemu" name="qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
-	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
-
-	<!-- Build -->
-	<project remote="optee" path="build" name="build.git">
-		<linkfile src="qemu.mk" dest="build/Makefile" />
-	</project>
+        <!-- Misc gits -->
+        <project path="busybox"            name="mirror/busybox.git" />
+        <project path="qemu/dtc"           name="qemu/dtc.git" />
+        <project path="qemu"               name="qemu/qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
 </manifest>
