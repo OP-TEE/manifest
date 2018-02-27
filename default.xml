@@ -80,6 +80,9 @@
 	<project remote="github" path="CMSIS_5" name="ARM-software/CMSIS_5.git" revision="refs/tags/5.2.0" />
 	<project remote="github" path="mbedtls" name="ARMmbed/mbedtls.git" revision="refs/tags/mbedtls-2.5.1" />
 
+	<!-- RPi3 firmware -->
+	<project remote="github" path="firmware" name="raspberrypi/firmware.git" />
+
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git">
 		<linkfile src="qemu.mk" dest="build/Makefile" />
