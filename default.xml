@@ -14,14 +14,13 @@
 
         <!-- linaro-swg gits -->
         <project path="bios_qemu_tz_arm"   name="linaro-swg/bios_qemu_tz_arm.git" />
-        <project path="gen_rootfs"         name="linaro-swg/gen_rootfs.git" />
         <project path="linux"              name="linaro-swg/linux.git" revision="optee"/>
         <project path="optee_benchmark"    name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"     name="linaro-swg/optee_examples.git" />
         <project path="soc_term"           name="linaro-swg/soc_term.git" />
 
         <!-- Misc gits -->
-        <project path="busybox"            name="mirror/busybox.git" />
+        <project path="buildroot"          name="buildroot/buildroot.git" revision="refs/tags/2017.11" />
         <project path="qemu/dtc"           name="qemu/dtc.git" />
         <project path="qemu"               name="qemu/qemu.git" revision="4672cbd7bed88dc67f089e84a0fd5d7739020c92" />
 </manifest>
