@@ -61,10 +61,10 @@ script:
                 slug=$TRAVIS_REPO_SLUG
                 branch=$TRAVIS_BRANCH
         fi
-        echo "Getting ${REPO_PROJ}_stable.xml from https://github.com/$slug using branch $branch"
-        cd $HOME/$REPO_PROJ && repo init -u https://github.com/$slug -b $branch -m ${REPO_PROJ}_stable.xml </dev/null && repo sync -j2 --no-clone-bundle --no-tags --quiet
+        echo "Getting ${REPO_PROJ}.xml from https://github.com/$slug using branch $branch"
+        cd $HOME/$REPO_PROJ && repo init -u https://github.com/$slug -b $branch -m ${REPO_PROJ}.xml </dev/null && repo sync -j2 --no-clone-bundle --no-tags --quiet
   # Fetch a local copy of dtc+libfdt to avoid issues with a possibly outdated libfdt-dev
   - if [ $REPO_PROJ == "qemu_v8" ]; then cd $HOME/$REPO_PROJ/qemu && git submodule update --init dtc; fi
   # Dump the content of the manifest (for debug purpose)
-  - cat $HOME/$REPO_PROJ/.repo/manifests/${REPO_PROJ}_stable.xml
+  - cat $HOME/$REPO_PROJ/.repo/manifests/${REPO_PROJ}.xml
   - cd $HOME/$REPO_PROJ/build && make -f toolchain.mk toolchains -j3 && make all -j`nproc`
