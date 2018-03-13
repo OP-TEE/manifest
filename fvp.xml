@@ -18,23 +18,23 @@
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- ARM gits, FVP -->
-	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="f478253da84ee14f36d0524d54719e7b0f88f4f1" />
 
 	<!-- Tianocore, EDK2 -->
-	<project remote="tianocore" path="edk2" name="edk2.git" />
-	<project remote="tianocore" path="edk2-platforms" name="edk2-platforms.git" />
+	<project remote="tianocore" path="edk2" name="edk2.git" revision="c4122dcaadb964a3e5d2fe106939bca4f1c261e8" />
+	<project remote="tianocore" path="edk2-platforms" name="edk2-platforms.git" revision="c76bf98bc8f988ea2f3953563f94fab8268ec3bd" />
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
 
 	<!-- Hello world TA -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
 
 	<!-- Grub -->
-	<project remote="savannah" path="grub" name="grub.git" />
+	<project remote="savannah" path="grub" name="grub.git" revision="d34977cb662d9d3c74532dc175103758c47f552f" />
 
 	<!-- Build -->
 	<project path="build" name="build.git">

@@ -12,13 +12,13 @@
 	<default remote="optee" revision="master" />
 
 	<!-- strace -->
-	<project remote="strace" path="strace" name="strace" />
+	<project remote="strace" path="strace" name="strace" revision="baec073f01a271442cc4d11f229bcbdb08f92dec" />
 
 	<!-- l-loader -->
-	<project remote="96b-hk" path="l-loader" name="l-loader" revision="testing/hikey960_v1.2" />
+	<project remote="96b-hk" path="l-loader" name="l-loader" revision="01d287e4e53642d592d9c24cccc9f551e8dab077" />
 
 	<!-- tools -->
-	<project remote="96b-hk" path="tools-images-hikey960" name="tools-images-hikey960" />
+	<project remote="96b-hk" path="tools-images-hikey960" name="tools-images-hikey960" revision="cf2ee0c6c1823d1a5b5a41942487054273b71813" />
 
 	<!-- OP-TEE gits -->
 	<project path="optee_os" name="optee_os" />
@@ -29,26 +29,26 @@
 	<project remote="busybox" path="busybox" name="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- ARM gits -->
-	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" />
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="f478253da84ee14f36d0524d54719e7b0f88f4f1" />
 
 	<!-- Tianocore, EDK2 -->
-	<project remote="96b-hk" path="edk2" name="edk2" revision="testing/hikey960_v2.5" />
-	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="testing/hikey960_v1.3.4" />
+	<project remote="96b-hk" path="edk2" name="edk2" revision="2d899728eda95d57f8e9d9bee6cc9b6eefe422b7" />
+	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
 
 	<!-- grub -->
-	<project remote="savannah" path="grub" name="grub" />
+	<project remote="savannah" path="grub" name="grub" revision="566a03a623ca5ec07c815683625aecc410dc3095" />
 
 	<!-- Linux kernel -->
-	<project remote="96b-hk" path="linux" name="linux" revision="hikey960-v4.9" />
+	<project remote="96b-hk" path="linux" name="linux" revision="0e82bc3b3afaf5c154c781a5f62e1e9000e94e6a" />
 
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" />
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
 
 	<!-- patches -->
-	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" />
+	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96" />
 
 	<!-- Build -->
 	<project path="build" name="build" >

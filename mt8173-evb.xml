@@ -12,23 +12,23 @@
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- ARM-TF -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="mt8173_evb" />
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="8b2410cd5ab9189337379a9449c0f5588ae9b4a6" />
 
 	<!-- busybox -->
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- MediaTek Download Tools -->
-	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" />
-	<project remote="linaro-swg" path="evb-utils" name="evb-utils.git" />
+	<project remote="linaro-swg" path="mtk_tools" name="mtk_tools.git" revision="1460d821a19c7c81520605801026747e6be0e20e" />
+	<project remote="linaro-swg" path="evb-utils" name="evb-utils.git" revision="5494df3c6881739ff2faff636379aaef569c0281" />
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee" />
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
 
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git">

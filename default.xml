@@ -13,14 +13,14 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="bios_qemu_tz_arm"   name="linaro-swg/bios_qemu_tz_arm.git" />
-        <project path="linux"              name="linaro-swg/linux.git" revision="optee"/>
-        <project path="optee_benchmark"    name="linaro-swg/optee_benchmark.git"/>
+        <project path="bios_qemu_tz_arm"   name="linaro-swg/bios_qemu_tz_arm.git" revision="0271acbfa81d93e64c2fdd6ae8b0be14a8c45719" />
+        <project path="linux"              name="linaro-swg/linux.git"            revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
+        <project path="optee_benchmark"    name="linaro-swg/optee_benchmark.git" />
         <project path="optee_examples"     name="linaro-swg/optee_examples.git" />
-        <project path="soc_term"           name="linaro-swg/soc_term.git" />
+        <project path="soc_term"           name="linaro-swg/soc_term.git"         revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
 
         <!-- Misc gits -->
-        <project path="buildroot"          name="buildroot/buildroot.git" revision="refs/tags/2017.11" />
-        <project path="qemu/dtc"           name="qemu/dtc.git" />
-        <project path="qemu"               name="qemu/qemu.git" revision="4672cbd7bed88dc67f089e84a0fd5d7739020c92" />
+        <project path="buildroot"          name="buildroot/buildroot.git"         revision="refs/tags/2017.11" />
+        <project path="qemu/dtc"           name="qemu/dtc.git"                    revision="f1879e1a50ebc3786540a075701ccaead2bfbe1f"/>
+        <project path="qemu"               name="qemu/qemu.git"                   revision="4672cbd7bed88dc67f089e84a0fd5d7739020c92" />
 </manifest>

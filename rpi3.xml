@@ -14,29 +14,28 @@
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- BusyBox -->
-	<!-- <project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" /> -->
 	<project remote="busybox_mirror" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- ARM Trusted Firmware -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="rpi3_initial_drop"/>
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="1da4e15529a32fa244f5e3effc9a90549beb1a26"/>
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="rpi3-optee-4.6" />
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="7d976fc52ae3f04618062967948e626166f1904a" />
 
 	<!-- Benchmark app -->
 	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
 
 	<!-- U-boot -->
-	<project remote="linaro-swg" path="u-boot" name="u-boot.git" revision="rpi3_initial_drop"/>
+	<project remote="linaro-swg" path="u-boot" name="u-boot.git" revision="bc6d93cf5eee9fc979a7c5141ff6312bed2835a2"/>
 
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
 
 	<!-- Firmware -->
-	<project remote="raspberrypi" path="firmware" name="firmware.git" revision="refs/tags/1.20170215" clone-depth="1" />
+	<project remote="raspberrypi" path="firmware" name="firmware.git" revision="3fb63c413cabfddb7fb9ed286bfc62abe73cc310" clone-depth="1" />
 
 	<!-- Build -->
 	<project path="build" name="build.git">

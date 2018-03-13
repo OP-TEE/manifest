@@ -18,22 +18,22 @@
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- ARM-TF -->
-	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="f478253da84ee14f36d0524d54719e7b0f88f4f1" />
 
 	<!-- U-Boot -->
-	<project remote="u-boot" path="u-boot" name="u-boot.git" />
+	<project remote="u-boot" path="u-boot" name="u-boot.git" revision="bd39d86420434eb8139a111c2582366bc90e65c6" />
 
 	<!-- Recovery files -->
 	<project remote="linaro" path="vexpress-firmware" name="arm/vexpress-firmware.git" revision="cad383a2c4ffeb9192605fda54c07fd1aa09a1b0"/>
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
+	<project remote="linaro-swg" path="linux" name="linux.git" revision="6e954e2f2cbd412f7bc874bb9145f69713194e52"/>
 
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
 
 	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
 
 	<!-- Build -->
 	<project path="build" name="build.git">
