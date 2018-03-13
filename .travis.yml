@@ -5,7 +5,7 @@ language: bash
 notifications:
   email:
     recipients:
-      - joakim.bech@linaro.org
+      - op-tee@linaro.org
     on_success: change
     on_failure: always
 
