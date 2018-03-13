@@ -15,16 +15,16 @@
 	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
 
 	<!-- U-Boot -->
-	<project remote="ti-u-boot" path="u-boot" name="ti-u-boot.git" revision="ti-u-boot-2017.01" />
+	<project remote="ti-u-boot" path="u-boot" name="ti-u-boot.git" revision="c68ed086bd00054e28c46e033385f79104c3f84c" />
 
 	<!-- Linux kernel -->
-	<project remote="ti-linux" path="linux" name="ti-linux-kernel.git" revision="ti-lsk-linux-4.9.y" />
+	<project remote="ti-linux" path="linux" name="ti-linux-kernel.git" revision="00a3beacce33dc14fa301eb5f3fb5a341212e9b4" />
 
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" revision="master" />
 
 	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="master" />
+	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
 
 	<!-- Build -->
 	<project remote="optee" path="build" name="build.git" revision="master">
