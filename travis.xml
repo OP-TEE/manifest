@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="busybox" fetch="git://busybox.net" />
+	<remote name="buildroot" fetch="https://github.com/buildroot" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
@@ -13,14 +13,13 @@
 	<project path="optee_client" name="optee_client.git" clone-depth="1" />
 	<project path="optee_test" name="optee_test.git" clone-depth="1" />
 
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="refs/tags/1_24_1" clone-depth="1" />
+	<!-- buildroot -->
+	<project remote="buildroot" path="buildroot" name="buildroot.git" revision="refs/tags/2017.11" />
 
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee" clone-depth="1" />
 
 	<!-- linaro-swg gits -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" clone-depth="1" />
 	<project remote="linaro-swg" path="soc_term" name="soc_term.git" clone-depth="1" />
 	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" clone-depth="1" />
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
