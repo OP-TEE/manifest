@@ -11,7 +11,6 @@ notifications:
 
 dist: trusty
 sudo: required
-group: beta
 
 cache:
   directories:
@@ -42,6 +41,8 @@ env:
   - $REPO_PROJ=rpi3
 
 before_script:
+  - export CCACHE_BASEDIR=$HOME/$REPO_PROJ
+  - export CCACHE_NOHASHDIR=1
   - mkdir -p $HOME/bin
   - cd $HOME/bin && wget https://storage.googleapis.com/git-repo-downloads/repo && chmod +x repo
   - export PATH=$HOME/bin:$PATH
@@ -61,7 +62,7 @@ script:
                 branch=$TRAVIS_BRANCH
         fi
         echo "Getting ${REPO_PROJ}.xml from https://github.com/$slug using branch $branch"
-        cd $HOME/$REPO_PROJ && repo init -u https://github.com/$slug -b $branch -m ${REPO_PROJ}.xml </dev/null && repo sync -j2 --no-clone-bundle --no-tags --quiet
+        cd $HOME/$REPO_PROJ && repo init -u https://github.com/$slug -b $branch -m ${REPO_PROJ}.xml </dev/null && repo sync -j10 --no-clone-bundle --no-tags --quiet
   # Fetch a local copy of dtc+libfdt to avoid issues with a possibly outdated libfdt-dev
   - if [ $REPO_PROJ == "qemu_v8" ]; then cd $HOME/$REPO_PROJ/qemu && git submodule update --init dtc; fi
   # Dump the content of the manifest (for debug purpose)
