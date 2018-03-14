@@ -1,59 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="arm" fetch="https://github.com/ARM-software" />
-	<remote name="busybox" fetch="git://busybox.net" />
-	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="optee" fetch="https://github.com/OP-TEE" />
-	<remote name="savannah" fetch="git://git.savannah.gnu.org" />
-	<remote name="96b-hk" fetch="https://github.com/96boards-hikey" />
-	<remote name="strace" fetch="https://github.com/strace" />
+        <remote name="github"   fetch="https://github.com" />
+        <remote name="savannah" fetch="git://git.savannah.gnu.org" />
 
-	<default remote="optee" revision="master" />
+        <default remote="github" revision="master" />
 
-	<!-- strace -->
-	<project remote="strace" path="strace" name="strace" revision="refs/tags/v4.21" clone-depth="1" />
+        <!-- OP-TEE gits -->
+        <project path="optee_client"         name="OP-TEE/optee_client.git" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+        <project path="build"                name="OP-TEE/build.git">
+                <linkfile src="hikey.mk" dest="build/Makefile" />
+        </project>
 
-	<!-- l-loader -->
-	<project remote="96b-hk" path="l-loader" name="l-loader" revision="refs/tags/96boards-hikey-15.11" clone-depth="1" />
+        <!-- linaro-swg gits -->
+        <project path="gen_rootfs"           name="linaro-swg/gen_rootfs.git"             revision="d5429c154fb81fdae75886d505c385b2f0bb7153"/>
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="patches_hikey"        name="linaro-swg/patches_hikey.git"          revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96" />
 
-	<!-- atf-fastboot -->
-	<project remote="96b-hk" path="atf-fastboot" name="atf-fastboot" revision="0743e48eb793749cc801adbb63d3a9d27da4b1ec" />
-
-	<!-- burn-boot -->
-	<project remote="96b-hk" path="burn-boot" name="burn-boot" revision="bee2ea1660f3a03df8d391fb75aa08dbc3441856" />
-
-	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os" />
-	<project path="optee_client" name="optee_client" />
-	<project path="optee_test" name="optee_test" />
-
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox" revision="refs/tags/1_24_0" clone-depth="1" />
-
-	<!-- ARM gits -->
-	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="refs/tags/v1.4" clone-depth="1" />
-
-	<!-- Tianocore, EDK2 -->
-	<project remote="96b-hk" path="edk2" name="edk2" revision="2d899728eda95d57f8e9d9bee6cc9b6eefe422b7" />
-	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg"  revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
-
-	<!-- grub -->
-	<project remote="savannah" path="grub" name="grub" revision="refs/tags/grub-2.02" clone-depth="1" />
-
-	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux" revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
-
-	<!-- Sample applications -->
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
-
-	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs" revision="d5429c154fb81fdae75886d505c385b2f0bb7153"/>
-
-	<!-- patches -->
-	<project remote="linaro-swg" path="patches_hikey" name="patches_hikey" revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96" />
-
-	<!-- Build -->
-	<project path="build" name="build" >
-		<linkfile src="hikey.mk" dest="build/Makefile" />
-	</project>
+        <!-- Misc gits -->
+        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v1.4" clone-depth="1" />
+        <project path="atf-fastboot"         name="96boards-hikey/atf-fastboot.git"       revision="0743e48eb793749cc801adbb63d3a9d27da4b1ec" />
+        <project path="burn-boot"            name="96boards-hikey/burn-boot.git"          revision="bee2ea1660f3a03df8d391fb75aa08dbc3441856" />
+        <project path="busybox"              name="mirror/busybox.git"                    revision="refs/tags/1_24_0" clone-depth="1" />
+        <project path="edk2"                 name="96boards-hikey/edk2.git"               revision="2d899728eda95d57f8e9d9bee6cc9b6eefe422b7" />
+        <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
+	<project path="l-loader"             name="96boards-hikey/l-loader.git"           revision="c1cbbf8ab824820b5c1769a1c80dd234c5b57ffc" />
+        <project path="OpenPlatformPkg"      name="96boards-hikey/OpenPlatformPkg.git"    revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
+        <project path="strace"               name="strace/strace.git"                     revision="refs/tags/v4.21" clone-depth="1" />
 </manifest>
