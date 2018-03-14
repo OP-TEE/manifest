@@ -12,10 +12,10 @@
 	<default remote="optee" revision="master" />
 
 	<!-- strace -->
-	<project remote="strace" path="strace" name="strace" revision="baec073f01a271442cc4d11f229bcbdb08f92dec" />
+	<project remote="strace" path="strace" name="strace" revision="refs/tags/v4.21" clone-depth="1" />
 
 	<!-- l-loader -->
-	<project remote="96b-hk" path="l-loader" name="l-loader" revision="01d287e4e53642d592d9c24cccc9f551e8dab077" />
+	<project remote="96b-hk" path="l-loader" name="l-loader" revision="refs/tags/96boards-hikey-15.11" clone-depth="1" />
 
 	<!-- tools -->
 	<project remote="96b-hk" path="tools-images-hikey960" name="tools-images-hikey960" revision="cf2ee0c6c1823d1a5b5a41942487054273b71813" />
@@ -26,17 +26,17 @@
 	<project path="optee_test" name="optee_test" />
 
 	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+	<project remote="busybox" path="busybox" name="busybox" revision="refs/tags/1_24_0" clone-depth="1" />
 
 	<!-- ARM gits -->
-	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="f478253da84ee14f36d0524d54719e7b0f88f4f1" />
+	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware" revision="refs/tags/v1.5-rc2" clone-depth="1" />
 
 	<!-- Tianocore, EDK2 -->
 	<project remote="96b-hk" path="edk2" name="edk2" revision="2d899728eda95d57f8e9d9bee6cc9b6eefe422b7" />
 	<project remote="96b-hk" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
 
 	<!-- grub -->
-	<project remote="savannah" path="grub" name="grub" revision="566a03a623ca5ec07c815683625aecc410dc3095" />
+	<project remote="savannah" path="grub" name="grub" revision="refs/tags/grub-2.02" clone-depth="1" />
 
 	<!-- Linux kernel -->
 	<project remote="96b-hk" path="linux" name="linux" revision="0e82bc3b3afaf5c154c781a5f62e1e9000e94e6a" />
