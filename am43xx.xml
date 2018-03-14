@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="busybox" fetch="git://busybox.net" />
-	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="optee" fetch="https://github.com/OP-TEE" />
-	<remote name="ti-u-boot" fetch="git://git.ti.com/ti-u-boot" />
-	<remote name="ti-linux" fetch="git://git.ti.com/ti-linux-kernel" />
+        <remote name="github" fetch="https://github.com" />
+        <remote name="ti" fetch="git://git.ti.com" />
 
-	<!-- OP-TEE gits -->
-	<project remote="optee" path="optee_os" name="optee_os.git" revision="master" />
-	<project remote="optee" path="optee_client" name="optee_client.git" revision="master" />
-	<project remote="optee" path="optee_test" name="optee_test.git" revision="master" />
+        <default remote="github" revision="master" />
 
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+        <!-- OP-TEE gits -->
+        <project path="optee_client"   name="OP-TEE/optee_client.git" />
+        <project path="optee_os"       name="OP-TEE/optee_os.git" />
+        <project path="optee_test"     name="OP-TEE/optee_test.git" />
+        <project path="build"          name="OP-TEE/build.git">
+                <linkfile src="am43xx.mk" dest="build/Makefile" />
+        </project>
 
-	<!-- U-Boot -->
-	<project remote="ti-u-boot" path="u-boot" name="ti-u-boot.git" revision="c68ed086bd00054e28c46e033385f79104c3f84c" />
+        <!-- linaro-swg gits -->
+        <project path="gen_rootfs"     name="linaro-swg/gen_rootfs.git"           revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
+        <project path="optee_examples" name="linaro-swg/optee_examples.git"       revision="master" />
 
-	<!-- Linux kernel -->
-	<project remote="ti-linux" path="linux" name="ti-linux-kernel.git" revision="00a3beacce33dc14fa301eb5f3fb5a341212e9b4" />
-
-	<!-- Sample applications -->
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" revision="master" />
-
-	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
-
-	<!-- Build -->
-	<project remote="optee" path="build" name="build.git" revision="master">
-		<linkfile src="am43xx.mk" dest="build/Makefile" />
-	</project>
+        <!-- Misc gits -->
+        <project path="busybox"        name="mirror/busybox.git"                  revision="refs/tags/1_24_0" clone-depth="1" />
+        <project path="linux"          name="ti-linux-kernel/ti-linux-kernel.git" revision="00a3beacce33dc14fa301eb5f3fb5a341212e9b4" remote="ti" />
+        <project path="u-boot"         name="ti-u-boot/ti-u-boot.git"             revision="c68ed086bd00054e28c46e033385f79104c3f84c" remote="ti" />
 </manifest>
