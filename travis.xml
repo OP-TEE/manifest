@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="buildroot" fetch="https://github.com/buildroot" />
-	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="linux" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds" />
-	<remote name="optee" fetch="https://github.com/OP-TEE" />
-	<remote name="qemu" fetch="https://github.com/qemu" />
+        <remote name="github"   fetch="https://github.com" />
 
-	<default remote="optee" revision="master" />
+        <default remote="github" revision="master" />
 
-	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os.git" clone-depth="1" />
-	<project path="optee_client" name="optee_client.git" clone-depth="1" />
-	<project path="optee_test" name="optee_test.git" clone-depth="1" />
+        <!-- OP-TEE gits -->
+        <project path="optee_client"         name="OP-TEE/optee_client.git" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+        <project path="build"                name="OP-TEE/build.git">
+                <linkfile src="qemu.mk" dest="build/Makefile" />
+        </project>
 
-	<!-- buildroot -->
-	<project remote="buildroot" path="buildroot" name="buildroot.git" revision="refs/tags/2017.11" clone-depth="1" />
+        <!-- linaro-swg gits -->
+        <project path="bios_qemu_tz_arm"     name="linaro-swg/bios_qemu_tz_arm.git" revision="refs/heads/master" clone-depth="1" />
+        <project path="linux"                name="linaro-swg/linux.git"            revision="refs/heads/optee" clone-depth="1" />
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="soc_term"             name="linaro-swg/soc_term.git"         revision="refs/heads/master" clone-depth="1" />
 
-	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee" clone-depth="1" />
-
-	<!-- linaro-swg gits -->
-	<project remote="linaro-swg" path="soc_term" name="soc_term.git" clone-depth="1" />
-	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" clone-depth="1" />
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
-
-	<!-- Temporary use the defined commit since upstream tip didn't work -->
-	<project remote="qemu" path="qemu" name="qemu.git" revision="c5d128ffeb5357df1ea3e6de0c13b3d6a09f6064" />
-
-	<!-- Build -->
-	<project remote="optee" path="build" name="build.git" clone-depth="1" >
-		<linkfile src="qemu.mk" dest="build/Makefile" />
-	</project>
+        <!-- Misc gits -->
+        <project path="buildroot"            name="buildroot/buildroot.git"         revision="refs/tags/2017.11" clone-depth="1" />
+        <project path="qemu"                 name="qemu/qemu.git"                   revision="refs/tags/v2.10.0" clone-depth="1" />
 </manifest>
