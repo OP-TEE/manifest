@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="arm" fetch="https://github.com/ARM-software" />
-	<remote name="busybox" fetch="git://busybox.net" />
-	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="optee" fetch="https://github.com/OP-TEE" />
-	<remote name="tianocore" fetch="https://github.com/tianocore" />
-	<remote name="savannah" fetch="https://git.savannah.gnu.org/git" />
+        <remote name="github" fetch="https://github.com" />
+        <remote name="savannah" fetch="https://git.savannah.gnu.org/git" />
 
-	<default remote="optee" revision="master" />
+        <default remote="github" revision="master" />
 
-	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os.git" />
-	<project path="optee_client" name="optee_client.git" />
-	<project path="optee_test" name="optee_test.git" />
+        <!-- OP-TEE gits -->
+        <project path="optee_client"         name="OP-TEE/optee_client.git" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+        <project path="build"                name="OP-TEE/build.git">
+                <linkfile src="fvp.mk" dest="build/Makefile" />
+        </project>
 
-	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="refs/tags/1_24_0" clone-depth="1" />
+        <!-- linaro-swg gits -->
+        <project path="gen_rootfs"           name="linaro-swg/gen_rootfs.git"             revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
-	<!-- ARM gits, FVP -->
-	<project remote="arm" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="refs/tags/v1.5-rc2" clone-depth="1" />
-
-	<!-- Tianocore, EDK2 -->
-	<project remote="tianocore" path="edk2" name="edk2.git" revision="c4122dcaadb964a3e5d2fe106939bca4f1c261e8" />
-	<project remote="tianocore" path="edk2-platforms" name="edk2-platforms.git" revision="c76bf98bc8f988ea2f3953563f94fab8268ec3bd" />
-
-	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
-
-	<!-- Hello world TA -->
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
-
-	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
-
-	<!-- Grub -->
-	<project remote="savannah" path="grub" name="grub.git" revision="refs/tags/grub-2.02" clone-depth="1" />
-
-	<!-- Build -->
-	<project path="build" name="build.git">
-		<linkfile src="fvp.mk" dest="build/Makefile" />
-	</project>
+        <!-- Misc gits -->
+        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v1.5-rc2" clone-depth="1" />
+        <project path="busybox"              name="mirror/busybox.git"                    revision="refs/tags/1_24_0" clone-depth="1" />
+        <project path="edk2"                 name="tianocore/edk2.git"                    revision="c4122dcaadb964a3e5d2fe106939bca4f1c261e8" />
+        <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="c76bf98bc8f988ea2f3953563f94fab8268ec3bd" />
+        <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
 </manifest>
