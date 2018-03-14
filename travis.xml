@@ -14,7 +14,7 @@
 	<project path="optee_test" name="optee_test.git" clone-depth="1" />
 
 	<!-- buildroot -->
-	<project remote="buildroot" path="buildroot" name="buildroot.git" revision="refs/tags/2017.11" />
+	<project remote="buildroot" path="buildroot" name="buildroot.git" revision="refs/tags/2017.11" clone-depth="1" />
 
 	<!-- Linux kernel -->
 	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee" clone-depth="1" />
