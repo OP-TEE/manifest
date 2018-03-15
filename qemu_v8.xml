@@ -25,7 +25,6 @@
         <project path="busybox"              name="mirror/busybox.git"                    revision="refs/tags/1_24_0" clone-depth="1" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="c4122dcaadb964a3e5d2fe106939bca4f1c261e8" />
         <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="c76bf98bc8f988ea2f3953563f94fab8268ec3bd" />
-        <project path="qemu/dtc"             name="qemu/dtc.git"                          revision="refs/tags/v1.4.6" clone-depth="1" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v2.9.0" clone-depth="1" />
         <project path="strace"               name="strace/strace.git"                     revision="refs/tags/v4.21" clone-depth="1" />
 </manifest>
