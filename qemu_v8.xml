@@ -14,7 +14,6 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="gen_rootfs"           name="linaro-swg/gen_rootfs.git"             revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
         <project path="linux"                name="linaro-swg/linux.git"                  revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
@@ -26,5 +25,5 @@
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="c4122dcaadb964a3e5d2fe106939bca4f1c261e8" />
         <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="c76bf98bc8f988ea2f3953563f94fab8268ec3bd" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v2.9.0" clone-depth="1" />
-        <project path="strace"               name="strace/strace.git"                     revision="refs/tags/v4.21" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2017.11" clone-depth="1" />
 </manifest>
