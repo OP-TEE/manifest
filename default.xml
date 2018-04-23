@@ -13,7 +13,7 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="bios_qemu_tz_arm"   name="linaro-swg/bios_qemu_tz_arm.git" revision="0271acbfa81d93e64c2fdd6ae8b0be14a8c45719" />
+        <project path="bios_qemu_tz_arm"   name="linaro-swg/bios_qemu_tz_arm.git" revision="b099845f32cb424b0bbb72ba613aa6e85fc16326" />
         <project path="linux"              name="linaro-swg/linux.git"            revision="6e954e2f2cbd412f7bc874bb9145f69713194e52" />
         <project path="optee_benchmark"    name="linaro-swg/optee_benchmark.git" />
         <project path="optee_examples"     name="linaro-swg/optee_examples.git" />
