@@ -14,18 +14,16 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="gen_rootfs"            name="linaro-swg/gen_rootfs.git"                revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
         <project path="optee_examples"        name="linaro-swg/optee_examples.git" />
         <project path="patches_hikey"         name="linaro-swg/patches_hikey.git"             revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96" />
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware"  name="ARM-software/arm-trusted-firmware.git"    revision="refs/tags/v1.5-rc2" clone-depth="1" />
-        <project path="busybox"               name="mirror/busybox.git"                       revision="refs/tags/1_24_0" clone-depth="1" />
         <project path="edk2"                  name="96boards-hikey/edk2.git"                  revision="2d899728eda95d57f8e9d9bee6cc9b6eefe422b7" />
         <project path="grub"                  name="grub.git"                                 revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
         <project path="linux"                 name="96boards-hikey/linux.git"                 revision="0e82bc3b3afaf5c154c781a5f62e1e9000e94e6a" />
         <project path="l-loader"              name="96boards-hikey/l-loader.git"              revision="c1cbbf8ab824820b5c1769a1c80dd234c5b57ffc" />
         <project path="OpenPlatformPkg"       name="96boards-hikey/OpenPlatformPkg.git"       revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
-        <project path="strace"                name="strace/strace.git"                        revision="refs/tags/v4.21" clone-depth="1" />
         <project path="tools-images-hikey960" name="96boards-hikey/tools-images-hikey960.git" revision="a10d2bf1dca7a1be50fc60e58ed93253c95de076" />
+        <project path="buildroot"             name="buildroot/buildroot.git"                  revision="refs/tags/2017.11" clone-depth="1" />
 </manifest>
