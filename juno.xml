@@ -14,13 +14,12 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="gen_rootfs"           name="linaro-swg/gen_rootfs.git"             revision="d5429c154fb81fdae75886d505c385b2f0bb7153" />
         <project path="linux"                name="linaro-swg/linux.git"                  revision="6e954e2f2cbd412f7bc874bb9145f69713194e52"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v1.5" clone-depth="1" />
-        <project path="busybox"              name="mirror/busybox.git"                    revision="refs/tags/1_24_0" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2018.03" clone-depth="1" />
         <project path="vexpress-firmware"    name="arm/vexpress-firmware.git"             revision="670a8336738046ac910f4ed3746edc1b4ecf086c" remote="linaro"/>
 </manifest>
