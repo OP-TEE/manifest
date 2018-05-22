@@ -21,7 +21,6 @@
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v1.5-rc2" clone-depth="1" />
-        <project path="busybox"              name="mirror/busybox.git"                    revision="refs/tags/1_24_0" clone-depth="1" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="c4122dcaadb964a3e5d2fe106939bca4f1c261e8" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v2.9.0" clone-depth="1" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2017.11" clone-depth="1" />
