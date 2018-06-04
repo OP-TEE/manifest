@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="github"   fetch="https://github.com" />
+
+        <default remote="github" revision="master" />
+
+        <!-- OP-TEE gits -->
+        <project path="build"                name="OP-TEE/build.git" >
+                <linkfile src="poplar.mk" dest="build/Makefile" />
+        </project>
+        <project path="optee_client"         name="OP-TEE/optee_client.git" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+
+        <!-- linaro-swg gits -->
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+
+        <!-- 96boards-poplar gits -->
+        <project path="linux"                name="96boards-poplar/linux.git"             revision="poplar-4.9" clone-depth="1" />
+        <project path="l-loader"             name="96boards-poplar/l-loader.git"          revision="master" clone-depth="1" />
+        <project path="poplar-tools"         name="96boards-poplar/poplar-tools.git"      revision="master" clone-depth="1" />
+        <project path="u-boot"               name="96boards-poplar/u-boot.git"            revision="latest" clone-depth="1" />
+
+        <!-- Misc gits -->
+        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git"/>
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2017.11" clone-depth="1" />
+</manifest>
