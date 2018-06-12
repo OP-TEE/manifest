@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+	<remote name="github"   fetch="https://github.com" />
+
 	<remote name="96boards" fetch="https://github.com/96boards" />
 	<remote name="96boards-hikey" fetch="https://github.com/96boards-hikey" />
 	<remote name="busybox" fetch="git://busybox.net" />
@@ -30,7 +32,9 @@
 	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_paged_armtf_v1.2" />
 
 	<!-- Recovery files -->
-	<project remote="linaro" path="vexpress-firmware" name="arm/vexpress-firmware.git" revision="cad383a2c4ffeb9192605fda54c07fd1aa09a1b0"/>
+
+	<!-- Buildroot -->
+	<project remote="github" path="buildroot" name="buildroot/buildroot.git" />
 
 	<!-- Tianocore, EDK2 -->
 	<!-- <project remote="96boards-hikey" path="edk2" name="edk2.git" revision="testing/hikey960_v2.5" /> -->
