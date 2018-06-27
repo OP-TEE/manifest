@@ -23,5 +23,5 @@
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git"/>
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2017.11" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
 </manifest>
