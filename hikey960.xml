@@ -25,5 +25,5 @@
         <project path="l-loader"              name="96boards-hikey/l-loader.git"              revision="c1cbbf8ab824820b5c1769a1c80dd234c5b57ffc" />
         <project path="OpenPlatformPkg"       name="96boards-hikey/OpenPlatformPkg.git"       revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
         <project path="tools-images-hikey960" name="96boards-hikey/tools-images-hikey960.git" revision="a10d2bf1dca7a1be50fc60e58ed93253c95de076" />
-        <project path="buildroot"             name="buildroot/buildroot.git"                  revision="refs/tags/2017.11" clone-depth="1" />
+        <project path="buildroot"             name="buildroot/buildroot.git"                  revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
 </manifest>
