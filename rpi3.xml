@@ -16,14 +16,13 @@
 
         <!-- linaro-swg gits -->
                  <!-- ARM Trusted Firmware, cannot use refs/tags, since we need current tip and that is not tagged  -->
-        <project path="arm-trusted-firmware" name="linaro-swg/arm-trusted-firmware.git" revision="1da4e15529a32fa244f5e3effc9a90549beb1a26"/>
-        <project path="linux"                name="linaro-swg/linux.git"                revision="7d976fc52ae3f04618062967948e626166f1904a" />
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-4.14" clone-depth="1" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
-                 <!-- U-Boot, cannot use refs/tags, since we need current tip and that is not tagged  -->
-        <project path="u-boot"               name="linaro-swg/u-boot.git"               revision="bc6d93cf5eee9fc979a7c5141ff6312bed2835a2"/>
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git"             revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
-        <project path="firmware"             name="raspberrypi/firmware.git"            revision="refs/tags/1.20170215" clone-depth="1" />
+        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="8ae41aec32ac7ecf8f97ed296463188737c65bd3" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
+        <project path="firmware"             name="raspberrypi/firmware.git"              revision="refs/tags/1.20170215" clone-depth="1" />
+        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="a032e0a6aed208977f48e78d2cc497b91543beaf" />
 </manifest>
