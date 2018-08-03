@@ -27,5 +27,5 @@
         <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
         <project path="l-loader"             name="96boards-hikey/l-loader.git"           revision="c1cbbf8ab824820b5c1769a1c80dd234c5b57ffc" />
         <project path="OpenPlatformPkg"      name="96boards-hikey/OpenPlatformPkg.git"    revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2018.08" clone-depth="1" />
 </manifest>

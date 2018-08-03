@@ -22,7 +22,7 @@
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="8ae41aec32ac7ecf8f97ed296463188737c65bd3" />
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="62dca337fe72085d98b7603cfcff1279c48ba7d9" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2018.08" clone-depth="1" />
         <project path="firmware"             name="raspberrypi/firmware.git"              revision="refs/tags/1.20170215" clone-depth="1" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="a032e0a6aed208977f48e78d2cc497b91543beaf" />
 </manifest>

@@ -19,6 +19,6 @@
         <project path="soc_term"             name="linaro-swg/soc_term.git"         revision="refs/heads/master" clone-depth="1" />
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git"         revision="refs/tags/2017.11" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"         revision="81ea4a243b63d7bb1fec580910c553af4ae072c1" />
         <project path="qemu"                 name="qemu/qemu.git"                   revision="refs/tags/v2.10.0" clone-depth="1" />
 </manifest>
