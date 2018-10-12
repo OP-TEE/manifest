@@ -5,10 +5,10 @@
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
-        <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="optee_client"         name="OP-TEE/optee_client.git" revision="refs/tags/3.3.0" clone-depth="1" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" revision="refs/tags/3.3.0" clone-depth="1" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" revision="refs/tags/3.3.0" clone-depth="1" />
+        <project path="build"                name="OP-TEE/build.git" revision="refs/tags/3.3.0" clone-depth="1">
                 <linkfile src="rpi3.mk" dest="build/Makefile" />
                 <linkfile src="rpi3/debugger/pi3.cfg" dest="build/pi3.cfg" />
                 <linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
@@ -17,8 +17,8 @@
         <!-- linaro-swg gits -->
                  <!-- ARM Trusted Firmware, cannot use refs/tags, since we need current tip and that is not tagged  -->
         <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-4.14" clone-depth="1" />
-        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" revision="refs/tags/3.3.0" clone-depth="1"/>
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" revision="refs/tags/3.3.0" clone-depth="1" />
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="8ae41aec32ac7ecf8f97ed296463188737c65bd3" />

@@ -6,16 +6,16 @@
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
-        <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="optee_client"         name="OP-TEE/optee_client.git" revision="refs/tags/3.3.0" clone-depth="1" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" revision="refs/tags/3.3.0" clone-depth="1" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" revision="refs/tags/3.3.0" clone-depth="1" />
+        <project path="build"                name="OP-TEE/build.git" revision="refs/tags/3.3.0" clone-depth="1">
                 <linkfile src="juno.mk" dest="build/Makefile" />
         </project>
 
         <!-- linaro-swg gits -->
         <project path="linux"                name="linaro-swg/linux.git"                  revision="75065d7a22b08115477ae75b42139c5336e28293"/>
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" revision="refs/tags/3.3.0" clone-depth="1" />
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v1.5" clone-depth="1" />
