@@ -21,7 +21,7 @@
         <project path="arm-trusted-firmware"  name="ARM-software/arm-trusted-firmware.git"    revision="refs/tags/v1.5-rc2" clone-depth="1" />
         <project path="edk2"                  name="96boards-hikey/edk2.git"                  revision="77326b5a153513c826d5a50363eace6ef6b59413" />
         <project path="grub"                  name="grub.git"                                 revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
-        <project path="linux"                 name="96boards-hikey/linux.git"                 revision="3ad676355df5813eed03c10d9b259fe06227f41e" />
+        <project path="linux"                 name="linaro-swg/linux.git"                     revision="221a1acee8047ae65c2d5980e3a7c5f73362c59d" />
         <project path="l-loader"              name="96boards-hikey/l-loader.git"              revision="c1cbbf8ab824820b5c1769a1c80dd234c5b57ffc" />
         <project path="OpenPlatformPkg"       name="96boards-hikey/OpenPlatformPkg.git"       revision="91eb48cee84cf3f74ea4753309500ea428ebdfff" />
         <project path="tools-images-hikey960" name="96boards-hikey/tools-images-hikey960.git" revision="a10d2bf1dca7a1be50fc60e58ed93253c95de076" />
