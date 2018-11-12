@@ -18,7 +18,7 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v1.5" clone-depth="1" />
+        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v2.0" clone-depth="1" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2018.08" clone-depth="1" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2018.03" clone-depth="1" />
         <project path="vexpress-firmware"    name="arm/vexpress-firmware.git"             revision="670a8336738046ac910f4ed3746edc1b4ecf086c" remote="linaro"/>
