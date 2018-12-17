@@ -20,12 +20,12 @@
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v2.0" clone-depth="1" />
-        <project path="atf-fastboot"         name="96boards-hikey/atf-fastboot.git"       revision="af5ddb16266e54745d3b2e354d32b54fefbbbd78" />
+        <project path="atf-fastboot"         name="96boards-hikey/atf-fastboot.git"       revision="d75cfac3877be68bb5e36be3fc57ba597a2d3710" />
         <project path="burn-boot"            name="96boards-hikey/burn-boot.git"          revision="bee2ea1660f3a03df8d391fb75aa08dbc3441856" />
         <project path="busybox"              name="mirror/busybox.git"                    revision="refs/tags/1_24_0" clone-depth="1" />
         <project path="edk2"                 name="96boards-hikey/edk2.git"               revision="77326b5a153513c826d5a50363eace6ef6b59413" />
         <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
-        <project path="l-loader"             name="96boards-hikey/l-loader.git"           revision="c1cbbf8ab824820b5c1769a1c80dd234c5b57ffc" />
+        <project path="l-loader"             name="96boards-hikey/l-loader.git"           revision="49db0a01f8cc4f2a7e0dea01d843d72092635870" />
         <project path="OpenPlatformPkg"      name="96boards-hikey/OpenPlatformPkg.git"    revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2018.08" clone-depth="1" />
 </manifest>
