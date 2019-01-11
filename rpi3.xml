@@ -15,13 +15,12 @@
         </project>
 
         <!-- linaro-swg gits -->
-                 <!-- ARM Trusted Firmware, cannot use refs/tags, since we need current tip and that is not tagged  -->
         <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-4.14" clone-depth="1" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v2.0" clone-depth="1" />
+        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="34efb683e32254b8c325ac3071c5776d243a7b99" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2018.08" clone-depth="1" />
         <project path="firmware"             name="raspberrypi/firmware.git"              revision="refs/tags/1.20170215" clone-depth="1" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="a032e0a6aed208977f48e78d2cc497b91543beaf" />
