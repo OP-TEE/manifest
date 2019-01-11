@@ -22,6 +22,6 @@
         <project path="u-boot"               name="96boards-poplar/u-boot.git"            revision="latest" clone-depth="1" />
 
         <!-- Misc gits -->
-        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="refs/tags/v2.0" clone-depth="1" />
+        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="34efb683e32254b8c325ac3071c5776d243a7b99" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2018.08" clone-depth="1" />
 </manifest>

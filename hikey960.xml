@@ -18,7 +18,7 @@
         <project path="patches_hikey"         name="linaro-swg/patches_hikey.git"             revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96" />
 
         <!-- Misc gits -->
-        <project path="arm-trusted-firmware"  name="ARM-software/arm-trusted-firmware.git"    revision="refs/tags/v2.0" clone-depth="1" />
+        <project path="arm-trusted-firmware"  name="ARM-software/arm-trusted-firmware.git"    revision="34efb683e32254b8c325ac3071c5776d243a7b99" />
         <project path="edk2"                  name="96boards-hikey/edk2.git"                  revision="77326b5a153513c826d5a50363eace6ef6b59413" />
         <project path="grub"                  name="grub.git"                                 revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
         <project path="linux"                 name="linaro-swg/linux.git"                     revision="221a1acee8047ae65c2d5980e3a7c5f73362c59d" />
