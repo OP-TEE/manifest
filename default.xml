@@ -13,11 +13,11 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="u-boot"               name="linaro-swg/u-boot.git"                 revision="optee" />
         <project path="linux"                name="linaro-swg/linux.git"                  revision="221a1acee8047ae65c2d5980e3a7c5f73362c59d" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" />
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
         <project path="soc_term"             name="linaro-swg/soc_term.git"               revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
+        <project path="u-boot"               name="linaro-swg/u-boot.git"                 revision="optee" />
 
         <!-- Misc gits -->
         <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="34efb683e32254b8c325ac3071c5776d243a7b99" />
