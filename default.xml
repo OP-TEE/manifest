@@ -17,6 +17,7 @@
 	<remote name="u-boot" fetch="git://git.denx.de" />
 	<remote name="github" fetch="https://github.com" />
 	<remote name="github-private" fetch="ssh://git@github.com" />
+	<remote name="tfm" fetch="https://git.trustedfirmware.org" />
 
 	<default remote="optee" revision="master" />
 
@@ -26,10 +27,10 @@
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+	<project remote="busybox" path="busybox" name="busybox.git" />
 
 	<!-- ARM gits, FVP -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="optee_paged_armtf_v1.2" />
+	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" />
 
 	<!-- Recovery files -->
 
@@ -37,8 +38,7 @@
 	<project remote="github" path="buildroot" name="buildroot/buildroot.git" />
 
 	<!-- Tianocore, EDK2 -->
-	<!-- <project remote="96boards-hikey" path="edk2" name="edk2.git" revision="testing/hikey960_v2.5" /> -->
-	<project remote="96boards-hikey" path="OpenPlatformPkg" name="OpenPlatformPkg" revision="testing/hikey960_v1.3.4" />
+	<project remote="96boards-hikey" path="OpenPlatformPkg" name="OpenPlatformPkg" />
 	<project remote="tianocore" path="edk2" name="edk2.git" />
 	<project remote="tianocore" path="edk2-platforms" name="edk2-platforms.git" />
 
@@ -80,9 +80,8 @@
 	<project remote="linaro-swg" path="evb-utils" name="evb-utils.git" />
 
 	<!-- v8M related -->
-	<project remote="github-private" path="trusted-firmware-m" name="ARM-software/trusted-firmware-m.git" revision="tfm-prototype-v0_1" />
-	<project remote="github" path="CMSIS_5" name="ARM-software/CMSIS_5.git" revision="refs/tags/5.2.0" />
-	<project remote="github" path="mbedtls" name="ARMmbed/mbedtls.git" revision="refs/tags/mbedtls-2.5.1" />
+	<project remote="github" path="CMSIS_5" name="ARM-software/CMSIS_5.git" />
+	<project remote="github" path="mbedtls" name="ARMmbed/mbedtls.git" />
 
 	<!-- RPi3 firmware -->
 	<project remote="github" path="firmware" name="raspberrypi/firmware.git" />
