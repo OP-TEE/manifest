@@ -30,10 +30,10 @@
         <project path="buildroot"            name="buildroot/buildroot.git" />
         <project path="burn-boot"            name="96boards-hikey/burn-boot.git" />
         <project path="busybox"              name="mirror/busybox.git" />
-	<project path="CMSIS_5" name="ARM-software/CMSIS_5.git" />
+	<project path="CMSIS_5"              name="ARM-software/CMSIS_5.git" />
         <project path="edk2"                 name="tianocore/edk2.git" />
         <project path="edk2-platforms"       name="tianocore/edk2-platforms.git" />
-	<project path="firmware" name="raspberrypi/firmware.git" />
+	<project path="firmware"             name="raspberrypi/firmware.git" />
         <project path="l-loader"             name="96boards-hikey/l-loader.git" />
 	<project path="mbedtls"              name="ARMmbed/mbedtls.git" />
         <project path="OpenPlatformPkg"      name="96boards-hikey/OpenPlatformPkg.git" />
