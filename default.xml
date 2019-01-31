@@ -1,46 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="github"                fetch="https://github.com" />
-	<remote name="savannah"              fetch="git://git.savannah.gnu.org" />
-	<remote name="tfm"                   fetch="https://git.trustedfirmware.org" />
+	<remote name="github"                   fetch="https://github.com" />
+	<remote name="savannah"                 fetch="git://git.savannah.gnu.org" />
+	<remote name="tfm"                      fetch="https://git.trustedfirmware.org" />
 
-	<default remote="github"             revision="master" />
+	<default remote="github"                revision="master" />
 
 	<!-- OP-TEE gits -->
-        <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
-	<project path="build"                name="OP-TEE/build.git" />
+        <project path="optee_client"            name="OP-TEE/optee_client.git" />
+        <project path="optee_os"                name="OP-TEE/optee_os.git" />
+        <project path="optee_test"              name="OP-TEE/optee_test.git" />
+	<project path="build"                   name="OP-TEE/build.git" />
 
         <!-- linaro-swg gits -->
-	<project path="bios_qemu_tz_arm"     name="linaro-swg/bios_qemu_tz_arm.git" />
-	<project path="evb-utils"            name="linaro-swg/evb-utils.git" />
-	<project path="gen_rootfs"           name="linaro-swg/gen_rootfs.git" />
-	<project path="hello_world"          name="linaro-swg/hello_world.git" />
-	<project path="linux"                name="linaro-swg/linux.git" revision="optee"/>
-	<project path="mtk_tools"            name="linaro-swg/mtk_tools.git" />
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
-        <project path="patches_hikey"        name="linaro-swg/patches_hikey.git" />
-	<project path="sha-perf"             name="linaro-swg/sha-perf.git" />
-	<project path="soc_term"             name="linaro-swg/soc_term.git" />
+	<project path="bios_qemu_tz_arm"        name="linaro-swg/bios_qemu_tz_arm.git" />
+	<project path="evb-utils"               name="linaro-swg/evb-utils.git" />
+	<project path="gen_rootfs"              name="linaro-swg/gen_rootfs.git" />
+	<project path="hello_world"             name="linaro-swg/hello_world.git" />
+	<project path="linux"                   name="linaro-swg/linux.git" revision="optee"/>
+	<project path="mtk_tools"               name="linaro-swg/mtk_tools.git" />
+        <project path="optee_android_manifest"	name="linaro-swg/optee_android_manifest.git" />
+        <project path="optee_benchmark"         name="linaro-swg/optee_benchmark.git" />
+        <project path="optee_examples"          name="linaro-swg/optee_examples.git" />
+        <project path="patches_hikey"           name="linaro-swg/patches_hikey.git" />
+	<project path="sha-perf"                name="linaro-swg/sha-perf.git" />
+	<project path="soc_term"                name="linaro-swg/soc_term.git" />
 
         <!-- Misc GitHub remotes -->
-        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" />
-        <project path="atf-fastboot"         name="96boards-hikey/atf-fastboot.git" />
-        <project path="buildroot"            name="buildroot/buildroot.git" />
-        <project path="burn-boot"            name="96boards-hikey/burn-boot.git" />
-        <project path="busybox"              name="mirror/busybox.git" />
-	<project path="CMSIS_5"              name="ARM-software/CMSIS_5.git" />
-        <project path="edk2"                 name="tianocore/edk2.git" />
-        <project path="edk2-platforms"       name="tianocore/edk2-platforms.git" />
-	<project path="firmware"             name="raspberrypi/firmware.git" />
-        <project path="l-loader"             name="96boards-hikey/l-loader.git" />
-	<project path="mbedtls"              name="ARMmbed/mbedtls.git" />
-        <project path="OpenPlatformPkg"      name="96boards-hikey/OpenPlatformPkg.git" />
-        <project path="qemu"                 name="qemu/qemu.git" />
-        <project path="u-boot"               name="u-boot/u-boot.git" />
+        <project path="arm-trusted-firmware"    name="ARM-software/arm-trusted-firmware.git" />
+        <project path="atf-fastboot"            name="96boards-hikey/atf-fastboot.git" />
+        <project path="buildroot"               name="buildroot/buildroot.git" />
+        <project path="burn-boot"               name="96boards-hikey/burn-boot.git" />
+        <project path="busybox"                 name="mirror/busybox.git" />
+	<project path="CMSIS_5"                 name="ARM-software/CMSIS_5.git" />
+        <project path="edk2"                    name="tianocore/edk2.git" />
+        <project path="edk2-platforms"          name="tianocore/edk2-platforms.git" />
+	<project path="firmware"                name="raspberrypi/firmware.git" />
+        <project path="l-loader"                name="96boards-hikey/l-loader.git" />
+	<project path="mbedtls"                 name="ARMmbed/mbedtls.git" />
+        <project path="OpenPlatformPkg"         name="96boards-hikey/OpenPlatformPkg.git" />
+        <project path="qemu"                    name="qemu/qemu.git" />
+        <project path="u-boot"                  name="u-boot/u-boot.git" />
 
         <!-- Misc other remotes -->
-        <project path="grub"                 name="grub.git"                remote="savannah" />
-        <project path="trusted-firmware-m"   name="trusted-firmware-m.git"  remote="tfm" />
+        <project path="grub"                    name="grub.git"                remote="savannah" />
+        <project path="trusted-firmware-m"      name="trusted-firmware-m.git"  remote="tfm" />
 </manifest>
