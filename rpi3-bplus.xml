@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="github"   fetch="https://github.com" />
+
+        <default remote="github" revision="master" />
+
+        <!-- OP-TEE gits -->
+        <project path="optee_client"         name="OP-TEE/optee_client.git" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+        <project path="build"                name="OP-TEE/build.git">
+                <linkfile src="rpi3-bplus.mk" dest="build/Makefile" />
+                <linkfile src="rpi3/debugger/pi3.cfg" dest="build/pi3.cfg" />
+                <linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
+        </project>
+
+        <!-- linaro-swg gits -->
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-4.14" clone-depth="1" />
+        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+
+        <!-- Misc gits -->
+        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="023bc019e95ca98687f015074c938941a0546eb7" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2018.08" clone-depth="1" />
+        <project path="firmware"             name="raspberrypi/firmware.git"              revision="refs/tags/1.20190401" clone-depth="1" />
+        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="aac0c29d4b8418c5c78b552070ffeda022b16949" />
+</manifest>
