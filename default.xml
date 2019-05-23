@@ -10,6 +10,7 @@
         <project path="optee_test"          name="OP-TEE/optee_test.git" />
         <project path="build"               name="OP-TEE/build.git">
                 <linkfile src="qemu.mk" dest="build/Makefile" />
+                <linkfile src="../toolchains/aarch32/bin/arm-linux-gnueabihf-gdb" dest="build/gdb" />
         </project>
 
         <!-- linaro-swg gits -->
