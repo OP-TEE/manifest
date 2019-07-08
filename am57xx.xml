@@ -14,7 +14,7 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="optee_examples" name="linaro-swg/optee_examples.git"       revision="master" />
+        <project path="optee_examples" name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
         <project path="buildroot"      name="buildroot/buildroot.git"             revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
