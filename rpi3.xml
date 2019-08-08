@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="github"   fetch="https://github.com" />
+        <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
 
         <default remote="github" revision="master" />
 
@@ -20,8 +21,8 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="023bc019e95ca98687f015074c938941a0546eb7" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
         <project path="firmware"             name="raspberrypi/firmware.git"              revision="refs/tags/1.20190401" clone-depth="1" />
+        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="023bc019e95ca98687f015074c938941a0546eb7" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="aac0c29d4b8418c5c78b552070ffeda022b16949" />
 </manifest>

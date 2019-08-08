@@ -2,6 +2,7 @@
 <manifest>
         <remote name="github" fetch="https://github.com" />
         <remote name="savannah" fetch="git://git.savannah.gnu.org" />
+        <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
 
         <default remote="github" revision="master" />
 
@@ -18,7 +19,6 @@
         <project path="patches_hikey"         name="linaro-swg/patches_hikey.git"             revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96" />
 
         <!-- Misc gits -->
-        <project path="arm-trusted-firmware"  name="ARM-software/arm-trusted-firmware.git"    revision="34efb683e32254b8c325ac3071c5776d243a7b99" />
         <project path="buildroot"             name="buildroot/buildroot.git"                  revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
         <project path="edk2"                  name="96boards-hikey/edk2.git"                  revision="77326b5a153513c826d5a50363eace6ef6b59413" />
         <project path="grub"                  name="grub.git"                                 revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
@@ -26,4 +26,5 @@
         <project path="l-loader"              name="96boards-hikey/l-loader.git"              revision="a0c5d726cd2a9984f1cb98f0123969cfccce990d" />
         <project path="OpenPlatformPkg"       name="96boards-hikey/OpenPlatformPkg.git"       revision="91eb48cee84cf3f74ea4753309500ea428ebdfff" />
         <project path="tools-images-hikey960" name="96boards-hikey/tools-images-hikey960.git" revision="a10d2bf1dca7a1be50fc60e58ed93253c95de076" />
+        <project path="trusted-firmware-a"    name="TF-A/trusted-firmware-a.git"              revision="34efb683e32254b8c325ac3071c5776d243a7b99" remote="tfo" />
 </manifest>
