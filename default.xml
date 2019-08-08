@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="github" fetch="https://github.com" />
+        <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
 
         <default remote="github" revision="master" />
 
@@ -21,7 +22,7 @@
         <project path="u-boot"               name="linaro-swg/u-boot.git"                 revision="optee" />
 
         <!-- Misc gits -->
-        <project path="arm-trusted-firmware" name="ARM-software/arm-trusted-firmware.git" revision="34efb683e32254b8c325ac3071c5776d243a7b99" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v3.1.0-rc3" clone-depth="1" />
+        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="34efb683e32254b8c325ac3071c5776d243a7b99" remote="tfo" />
 </manifest>
