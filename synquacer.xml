@@ -15,7 +15,7 @@
 
         <!-- Misc gits -->
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="21d9dc21f81828538af02ca9c2d86a36551b0771" />
-        <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="22d5f499135a0b43bfb723a983f93c3148d68494" />
         <project path="edk2-non-osi"         name="tianocore/edk2-non-osi.git"            revision="596043ffb61d5f74a9eb334eaa4df683fa975c92" />
+        <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="22d5f499135a0b43bfb723a983f93c3148d68494" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="49d969bbb3ca7e738bc6ef560e44c0047a9925cc" />
 </manifest>
