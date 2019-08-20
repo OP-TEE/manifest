@@ -25,5 +25,5 @@
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="dd4cae4d82c7477273f3da455084844db5cca0c0" />
         <project path="mbedtls"              name="ARMmbed/mbedtls.git"                   revision="refs/tags/mbedtls-2.16.0" clone-depth="1" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v3.1.0-rc3" clone-depth="1" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="34efb683e32254b8c325ac3071c5776d243a7b99" remote="tfo" />
+        <project path="trusted-firmware-a"   name="ARM-software/arm-trusted-firmware.git" revision="34efb683e32254b8c325ac3071c5776d243a7b99" remote="tfo" />
 </manifest>
