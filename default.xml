@@ -43,6 +43,7 @@
         <project path="u-boot"                  name="u-boot/u-boot.git" />
 
         <!-- Misc other remotes -->
-        <project path="grub"                    name="grub.git"                remote="savannah" />
-        <project path="trusted-firmware-m"      name="trusted-firmware-m.git"  remote="tfm" />
+        <project path="grub"                    name="grub.git"                    remote="savannah" />
+        <project path="trusted-firmware-m"      name="trusted-firmware-m.git"      remote="tfm" />
+	<project path="trusted-firmware-a"      name="TF-A/trusted-firmware-a.git" remote="tfm" />
 </manifest>
