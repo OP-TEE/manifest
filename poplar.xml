@@ -2,6 +2,7 @@
 <manifest>
         <remote name="github"   fetch="https://github.com" />
         <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
+        <remote name="denx"     fetch="https://gitlab.denx.de" />
 
         <default remote="github" revision="master" />
 
@@ -20,7 +21,7 @@
         <project path="linux"                name="96boards-poplar/linux.git"             revision="poplar-4.9" clone-depth="1" />
         <project path="l-loader"             name="96boards-poplar/l-loader.git"          revision="master" clone-depth="1" />
         <project path="poplar-tools"         name="96boards-poplar/poplar-tools.git"      revision="master" clone-depth="1" />
-        <project path="u-boot"               name="96boards-poplar/u-boot.git"            revision="latest" clone-depth="1" />
+        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2019.10" clone-depth="1" remote="denx" />
 
         <!-- Misc gits -->
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
