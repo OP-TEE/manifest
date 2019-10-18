@@ -6,20 +6,20 @@
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
-        <project path="optee_client"        name="OP-TEE/optee_client.git" />
-        <project path="optee_os"            name="OP-TEE/optee_os.git" />
-        <project path="optee_test"          name="OP-TEE/optee_test.git" />
-        <project path="build"               name="OP-TEE/build.git">
+        <project path="optee_client"        name="OP-TEE/optee_client.git" revision="refs/tags/3.7.0" clone-depth="1" />
+        <project path="optee_os"            name="OP-TEE/optee_os.git" revision="refs/tags/3.7.0" clone-depth="1" />
+        <project path="optee_test"          name="OP-TEE/optee_test.git" revision="refs/tags/3.7.0" clone-depth="1" />
+        <project path="build"               name="OP-TEE/build.git" revision="refs/tags/3.7.0" clone-depth="1">
                 <linkfile src="qemu.mk" dest="build/Makefile" />
                 <linkfile src="../toolchains/aarch32/bin/arm-linux-gnueabihf-gdb" dest="build/gdb" />
         </project>
 
         <!-- linaro-swg gits -->
         <project path="linux"                name="linaro-swg/linux.git"                  revision="9823b258b332b4ac98e05fa23448bbc9e937b24c" />
-        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" />
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" revision="refs/tags/3.7.0" clone-depth="1" />
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" revision="refs/tags/3.7.0" clone-depth="1" />
         <project path="soc_term"             name="linaro-swg/soc_term.git"               revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
-        <project path="u-boot"               name="linaro-swg/u-boot.git"                 revision="optee" />
+        <project path="u-boot"               name="linaro-swg/u-boot.git"                 revision="6c35bd586b65d4ff6a86afc6536496cdb8095c3a" />
 
         <!-- Misc gits -->
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
