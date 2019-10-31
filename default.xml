@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="busybox" fetch="git://busybox.net" />
-	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
-	<remote name="optee" fetch="https://github.com/OP-TEE" />
-	<remote name="qemu" fetch="https://github.com/qemu" />
+	<remote name="gitee" fetch="https://gitee.com/muchunfeng"/>
 
-	<default remote="optee" revision="master" />
+        <default remote="gitee" revision="master"/>
 
-	<!-- OP-TEE gits -->
-	<project path="optee_os" name="optee_os.git" />
-	<project path="optee_client" name="optee_client.git" />
-	<project path="optee_test" name="optee_test.git" />
+        <!-- OP-TEE gits -->
+        <project path="optee_os" name="optee_os"/>
+        <project path="optee_client" name="optee_client"/>
+        <project path="optee_test" name="optee_test"/>
 
 	<!-- busybox -->
-	<project remote="busybox" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+        <project path="busybox" name="busybox" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02"/>
 
 	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="optee"/>
+	<project path="linux" name="linux" revision="optee"/>
 
-	<!-- linaro-swg gits -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
-	<project remote="linaro-swg" path="soc_term" name="soc_term.git" />
-	<project remote="linaro-swg" path="bios_qemu_tz_arm" name="bios_qemu_tz_arm.git" />
+        <!-- linaro-swg gits -->
+        <project path="gen_rootfs" name="gen_rootfs"/>
+        <project path="soc_term" name="soc_term"/>
+        <project path="bios_qemu_tz_arm" name="bios_qemu_tz_arm"/>
 
 	<!-- Sample applications -->
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
+        <project path="optee_examples" name="optee_examples"/>
 
 	<!-- Benchmark app -->
-	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
+        <project path="optee_benchmark" name="optee_benchmark"/>
 
 	<!-- Temporary use the defined commit since upstream tip didn't work -->
-	<project remote="qemu" path="qemu" name="qemu.git" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e" />
-	<project remote="qemu" path="qemu/dtc" name="dtc.git" />
+	<project path="qemu" name="qemu" revision="199e19ee538eb61fd08b1c1ee5aa838ebdcc968e"/>
+        <project path="qemu/dtc" name="dtc"/>
 
 	<!-- Build -->
-	<project remote="optee" path="build" name="build.git">
-		<linkfile src="qemu.mk" dest="build/Makefile" />
-	</project>
+        <project path="build" name="build">
+                <linkfile src="qemu.mk" dest="build/Makefile" />
+        </project>
 </manifest>
