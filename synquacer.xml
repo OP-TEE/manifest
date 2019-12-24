@@ -14,6 +14,7 @@
         </project>
 
         <!-- Misc gits -->
+        <project path="SCP-firmware"         name="ARM-software/SCP-firmware.git"         revision="56d4f515bcf1bc1b843abe343e9cf9dc44898ca2" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="21d9dc21f81828538af02ca9c2d86a36551b0771" />
         <project path="edk2-non-osi"         name="tianocore/edk2-non-osi.git"            revision="596043ffb61d5f74a9eb334eaa4df683fa975c92" />
         <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="22d5f499135a0b43bfb723a983f93c3148d68494" />
