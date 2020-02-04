@@ -15,7 +15,7 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="9823b258b332b4ac98e05fa23448bbc9e937b24c" />
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="1ad01d3482219ee7fcc5a4529f8f06570878bf72" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
         <project path="soc_term"             name="linaro-swg/soc_term.git"               revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
