@@ -23,5 +23,5 @@
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="dd4cae4d82c7477273f3da455084844db5cca0c0" />
         <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="02daa58c21f89628b4d8c76f95f3a554289149bc" />
         <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="34efb683e32254b8c325ac3071c5776d243a7b99" remote="tfo" />
+        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.2" clone-depth="1" remote="tfo" />
 </manifest>
