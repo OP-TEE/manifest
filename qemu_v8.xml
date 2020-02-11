@@ -11,7 +11,6 @@
         <project path="optee_test"           name="OP-TEE/optee_test.git" />
         <project path="build"                name="OP-TEE/build.git">
                 <linkfile src="qemu_v8.mk" dest="build/Makefile" />
-                <linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
         </project>
 
         <!-- linaro-swg gits -->
