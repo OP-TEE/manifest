@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="github"   fetch="https://github.com" />
+
+        <default remote="github" revision="master" />
+
+        <!-- OP-TEE gits -->
+        <project path="build"                name="OP-TEE/build.git" >
+                <linkfile src="verdin.mk" dest="build/Makefile" />
+        </project>
+        <project path="optee_client"         name="OP-TEE/optee_client.git" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+
+        <!-- linaro-swg gits -->
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+
+        <!-- temp igoropaniuk gits -->
+        <project path="linux"                name="igoropaniuk/linux"               revision="mainline_verdin" clone-depth="1" />
+        <project path="u-boot"               name="igoropaniuk/u-boot"              revision="verdin_latest" clone-depth="1" />
+        <project path="trusted-firmware-a"   name="igoropaniuk/trusted-firmware-a"  revision="verdin_latest" clone-depth="1" />
+
+        <!-- Misc gits -->
+        <project path="buildroot"            name="buildroot/buildroot.git"         revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
+</manifest>
