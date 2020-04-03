@@ -22,7 +22,7 @@
         <project path="buildroot"             name="buildroot/buildroot.git"                  revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
         <project path="edk2"                  name="96boards-hikey/edk2.git"                  revision="77326b5a153513c826d5a50363eace6ef6b59413" />
         <project path="grub"                  name="grub.git"                                 revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
-        <project path="linux"                 name="linaro-swg/linux.git"                     revision="1ad01d3482219ee7fcc5a4529f8f06570878bf72" />
+        <project path="linux"                 name="linaro-swg/linux.git"                     revision="optee" clone-depth="1" />
         <project path="l-loader"              name="96boards-hikey/l-loader.git"              revision="a0c5d726cd2a9984f1cb98f0123969cfccce990d" />
         <project path="OpenPlatformPkg"       name="96boards-hikey/OpenPlatformPkg.git"       revision="245344ea5421ba126e1eb76484d00b590a4a78f7" />
         <project path="tools-images-hikey960" name="96boards-hikey/tools-images-hikey960.git" revision="a10d2bf1dca7a1be50fc60e58ed93253c95de076" />
