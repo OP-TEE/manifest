@@ -16,9 +16,9 @@
 
         <!-- linaro-swg gits -->
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
 
         <!-- 96boards-poplar gits -->
-        <project path="linux"                name="96boards-poplar/linux.git"             revision="poplar-4.9" clone-depth="1" />
         <project path="l-loader"             name="96boards-poplar/l-loader.git"          revision="master" clone-depth="1" />
         <project path="poplar-tools"         name="96boards-poplar/poplar-tools.git"      revision="master" clone-depth="1" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2019.10" clone-depth="1" remote="denx" />
