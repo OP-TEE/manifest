@@ -2,6 +2,7 @@
 <manifest>
         <remote name="github" fetch="https://github.com" />
         <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
+        <remote name="u-boot" fetch="https://gitlab.denx.de/u-boot" />
 
         <default remote="github" revision="master" />
 
@@ -18,10 +19,10 @@
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" />
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
         <project path="soc_term"             name="linaro-swg/soc_term.git"               revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
-        <project path="u-boot"               name="linaro-swg/u-boot.git"                 revision="optee" />
 
         <!-- Misc gits -->
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v5.0.0" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="e7a5403358bca60a82e6c6d54608f1e2adb83a09" remote="tfo" />
+        <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2020.04" remote="u-boot" clone-depth="1" />
 </manifest>
