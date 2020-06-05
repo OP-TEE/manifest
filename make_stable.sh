@@ -53,5 +53,6 @@ do
 		sed "s/\(linaro-swg\/optee_examples.git\"\)/\1 revision=\"refs\/tags\/${VERSION}\" clone-depth=\"1\"/" |
 		sed "s/\(linaro-swg\/optee_benchmark.git\)revision.*/\1\/>/" | # Removes old revision
 		sed "s/\(linaro-swg\/optee_benchmark.git\"\)/\1 revision=\"refs\/tags\/${VERSION}\" clone-depth=\"1\"/" |
+		sed "s/\(linaro-swg\/linux.git\" *\)revision=\"optee\".*/\1revision=\"refs\/tags\/optee-${VERSION}\" clone-depth=\"1\"/" |
 		tee ${FILE} 2>&1 > /dev/null
 done
