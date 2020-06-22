@@ -22,7 +22,7 @@
         <!-- Misc gits -->
         <project path="atf-fastboot"         name="96boards-hikey/atf-fastboot.git"       revision="d75cfac3877be68bb5e36be3fc57ba597a2d3710" />
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
-        <project path="burn-boot"            name="96boards-hikey/burn-boot.git"          revision="bee2ea1660f3a03df8d391fb75aa08dbc3441856" />
+        <project path="burn-boot"            name="96boards-hikey/burn-boot.git"          revision="a55c068f9a0aaf9da440aacdfaf85182e168e36c" />
         <project path="busybox"              name="mirror/busybox.git"                    revision="refs/tags/1_24_0" clone-depth="1" />
         <project path="edk2"                 name="96boards-hikey/edk2.git"               revision="77326b5a153513c826d5a50363eace6ef6b59413" />
         <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
