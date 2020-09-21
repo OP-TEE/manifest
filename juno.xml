@@ -19,7 +19,7 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2020.08" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.2" clone-depth="1" remote="tfo" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2018.03" clone-depth="1" />
         <project path="vexpress-firmware"    name="arm/vexpress-firmware.git"             revision="670a8336738046ac910f4ed3746edc1b4ecf086c" remote="linaro"/>
