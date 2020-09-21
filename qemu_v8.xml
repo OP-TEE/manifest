@@ -20,7 +20,7 @@
         <project path="soc_term"             name="linaro-swg/soc_term.git"               revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="95942f5fcd35d783a49adce621ccf33480f1c88c" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2020.08" clone-depth="1" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="dd4cae4d82c7477273f3da455084844db5cca0c0" />
         <project path="mbedtls"              name="ARMmbed/mbedtls.git"                   revision="refs/tags/mbedtls-2.16.0" clone-depth="1" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v5.1.0" clone-depth="1" />
