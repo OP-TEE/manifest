@@ -17,7 +17,7 @@
         <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
-        <project path="soc_term"             name="linaro-swg/soc_term.git"               revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
+        <project path="soc_term"             name="linaro-swg/soc_term.git" />
 
         <!-- Misc gits -->
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2020.08" clone-depth="1" />
