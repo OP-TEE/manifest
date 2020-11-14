@@ -14,7 +14,7 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="refs/tags/optee-3.10.0" clone-depth="1"
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="refs/tags/optee-3.10.0" clone-depth="1" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" revision="refs/tags/3.10.0" clone-depth="1"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" revision="refs/tags/3.10.0" clone-depth="1" />
         <project path="soc_term"             name="linaro-swg/soc_term.git"               revision="5493a6e7c264536f5ca63fe7511e5eed991e4f20" />
