@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="github"   fetch="https://github.com" />
-        <remote name="savannah" fetch="git://git.savannah.gnu.org" />
+        <remote name="savannah" fetch="https://git.savannah.gnu.org" />
         <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
 
         <default remote="github" revision="master" />
