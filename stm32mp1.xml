@@ -21,7 +21,7 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git" revision="refs/tags/2020.08" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git" revision="refs/tags/2021.02" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.3" remote="tfo" clone-depth="1" />
         <project path="u-boot"               name="u-boot.git" revision="refs/tags/v2020.04" remote="u-boot" clone-depth="1" />
 </manifest>
