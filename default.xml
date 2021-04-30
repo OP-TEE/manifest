@@ -7,17 +7,17 @@
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
-        <project path="optee_client"        name="OP-TEE/optee_client.git" />
-        <project path="optee_os"            name="OP-TEE/optee_os.git" />
-        <project path="optee_test"          name="OP-TEE/optee_test.git" />
-        <project path="build"               name="OP-TEE/build.git">
+        <project path="optee_client"        name="OP-TEE/optee_client.git" revision="refs/tags/3.13.0" clone-depth="1" />
+        <project path="optee_os"            name="OP-TEE/optee_os.git" revision="refs/tags/3.13.0" clone-depth="1" />
+        <project path="optee_test"          name="OP-TEE/optee_test.git" revision="refs/tags/3.13.0" clone-depth="1" />
+        <project path="build"               name="OP-TEE/build.git" revision="refs/tags/3.13.0" clone-depth="1">
                 <linkfile src="qemu.mk" dest="build/Makefile" />
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
-        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" />
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="refs/tags/optee-3.13.0" clone-depth="1" />
+        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" revision="refs/tags/3.13.0" clone-depth="1" />
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" revision="refs/tags/3.13.0" clone-depth="1" />
         <project path="soc_term"             name="linaro-swg/soc_term.git" />
 
         <!-- Misc gits -->
