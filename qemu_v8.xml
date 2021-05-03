@@ -23,6 +23,6 @@
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.02" clone-depth="1" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="refs/tags/edk2-stable202102" sync-s="true" />
         <project path="mbedtls"              name="ARMmbed/mbedtls.git"                   revision="refs/tags/mbedtls-2.16.0" clone-depth="1" />
-        <project path="qemu"                 name="qemu/qemu.git"                         revision="39912c14da07a2dbc73854addcfa0a42596340ac" clone-depth="1" />
+        <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v6.0.0" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.3" clone-depth="1" remote="tfo" />
 </manifest>
