@@ -3,6 +3,7 @@
         <remote name="github"   fetch="https://github.com" />
         <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
         <remote name="u-boot"   fetch="https://source.denx.de/u-boot" />
+        <remote name="xen-git"  fetch="git://xenbits.xen.org" />
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
@@ -26,4 +27,5 @@
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v6.0.0" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.3" clone-depth="1" remote="tfo" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2021.04" remote="u-boot" clone-depth="1" />
+        <project path="xen"                  name="xen.git"                               revision="refs/tags/RELEASE-4.14.1" remote="xen-git" clone-depth="1" />
 </manifest>
