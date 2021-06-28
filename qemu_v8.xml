@@ -25,7 +25,7 @@
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="refs/tags/edk2-stable202102" sync-s="true" />
         <project path="mbedtls"              name="ARMmbed/mbedtls.git"                   revision="refs/tags/mbedtls-2.16.0" clone-depth="1" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v6.0.0" clone-depth="1" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.3" clone-depth="1" remote="tfo" />
+        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.5" clone-depth="1" remote="tfo" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2021.04" remote="u-boot" clone-depth="1" />
         <project path="xen"                  name="xen.git"                               revision="refs/tags/RELEASE-4.14.1" remote="xen-git" clone-depth="1" />
 </manifest>
