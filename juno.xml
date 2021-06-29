@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="github" fetch="https://github.com" />
-        <remote name="linaro" fetch="https://git.linaro.org" />
         <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
 
         <default remote="github" revision="master" />
@@ -22,5 +21,4 @@
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.02" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.5" clone-depth="1" remote="tfo" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2018.03" clone-depth="1" />
-        <project path="vexpress-firmware"    name="arm/vexpress-firmware.git"             revision="670a8336738046ac910f4ed3746edc1b4ecf086c" remote="linaro"/>
 </manifest>
