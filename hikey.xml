@@ -28,6 +28,6 @@
         <project path="edk2"                 name="96boards-hikey/edk2.git"               revision="77326b5a153513c826d5a50363eace6ef6b59413" />
         <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
         <project path="l-loader"             name="96boards-hikey/l-loader.git"           revision="49db0a01f8cc4f2a7e0dea01d843d72092635870" />
-        <project path="OpenPlatformPkg"      name="96boards-hikey/OpenPlatformPkg.git"    revision="fbdd4aeee4d8de04d1c332379b20efb7a59a9502" />
+        <project path="OpenPlatformPkg"      name="96boards-hikey/OpenPlatformPkg.git"    revision="245344ea5421ba126e1eb76484d00b590a4a78f7" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.2" clone-depth="1" remote="tfo" />
 </manifest>
