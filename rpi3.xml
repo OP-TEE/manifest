@@ -6,18 +6,18 @@
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
-        <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="optee_client"         name="OP-TEE/optee_client.git" revision="refs/tags/3.14.0" clone-depth="1" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" revision="refs/tags/3.14.0" clone-depth="1" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" revision="refs/tags/3.14.0" clone-depth="1" />
+        <project path="build"                name="OP-TEE/build.git" revision="refs/tags/3.14.0" clone-depth="1">
                 <linkfile src="rpi3.mk" dest="build/Makefile" />
                 <linkfile src="rpi3/debugger/pi3.cfg" dest="build/pi3.cfg" />
         </project>
 
         <!-- linaro-swg gits -->
         <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-5.4" clone-depth="1" />
-        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" revision="refs/tags/3.14.0" clone-depth="1"/>
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" revision="refs/tags/3.14.0" clone-depth="1" />
 
         <!-- Misc gits -->
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.02" clone-depth="1" />
