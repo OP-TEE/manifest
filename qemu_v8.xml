@@ -27,4 +27,5 @@
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.5" clone-depth="1" remote="tfo" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2021.04" remote="u-boot" clone-depth="1" />
         <project path="xen"                  name="xen.git"                               revision="refs/tags/RELEASE-4.14.1" remote="xen-git" clone-depth="1" />
+        <project path="optee_rust"           name="apache/incubator-teaclave-trustzone-sdk.git"            revision="dfd51b7286407070e40b23defe6cef33f4f120c7" />
 </manifest>
