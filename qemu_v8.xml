@@ -20,7 +20,7 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.02" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.08" clone-depth="1" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="refs/tags/edk2-stable202105" sync-s="true" />
         <project path="mbedtls"              name="ARMmbed/mbedtls.git"                   revision="refs/tags/mbedtls-2.26.0" clone-depth="1" />
         <project path="optee_rust"           name="apache/incubator-teaclave-trustzone-sdk.git"            revision="dfd51b7286407070e40b23defe6cef33f4f120c7" />
