@@ -24,6 +24,6 @@
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2019.10" clone-depth="1" remote="denx" />
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.02" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.08" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.2" clone-depth="1" remote="tfo" />
 </manifest>
