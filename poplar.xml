@@ -21,7 +21,7 @@
         <!-- 96boards-poplar gits -->
         <project path="l-loader"             name="96boards-poplar/l-loader.git"          revision="master" clone-depth="1" />
         <project path="poplar-tools"         name="96boards-poplar/poplar-tools.git"      revision="master" clone-depth="1" />
-        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2019.10" clone-depth="1" remote="denx" />
+        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2021.07" clone-depth="1" remote="denx" />
 
         <!-- Misc gits -->
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.02" clone-depth="1" />
