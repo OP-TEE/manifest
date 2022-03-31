@@ -22,7 +22,7 @@
         <!-- Misc gits -->
         <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.11" clone-depth="1" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="refs/tags/edk2-stable202105" sync-s="true" />
-        <project path="mbedtls"              name="ARMmbed/mbedtls.git"                   revision="refs/tags/mbedtls-2.26.0" clone-depth="1" />
+        <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                   revision="refs/tags/mbedtls-2.26.0" clone-depth="1" />
         <project path="optee_rust"           name="apache/incubator-teaclave-trustzone-sdk.git"            revision="8520a2018705edcebfb7e729bd2ced12414fc052" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v6.0.0" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" clone-depth="1" remote="tfo" />
