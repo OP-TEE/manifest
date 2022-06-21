@@ -15,7 +15,7 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-5.4" clone-depth="1" />
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-5.17" clone-depth="1" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
