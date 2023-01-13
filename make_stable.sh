@@ -44,15 +44,15 @@ do
 		FILE=$xml
 	fi
 
-	cat $xml | 
-		sed "s/\(OP-TEE\/.*\)revision.*/\1\/>/" | # Removes old revision
-		sed "s/\(OP-TEE.*\"\)/\1 revision=\"refs\/tags\/${VERSION}\" clone-depth=\"1\"/" |
-		sed "s/\(OP-TEE\/build.git.*\) \/>/\1>/" | # Strip away a forward slash from build.git only
+	cat $xml |
+		sed "/^[\t ]*<project/s/\(OP-TEE\/.*\)revision.*/\1\/>/" | # Removes old revision
+		sed "/^[\t ]*<project/s/\(OP-TEE.*\"\)/\1 revision=\"refs\/tags\/${VERSION}\" clone-depth=\"1\"/" |
+		sed "/^[\t ]*<project/s/\(OP-TEE\/build.git.*\) \/>/\1>/" | # Strip away a forward slash from build.git only
 
-		sed "s/\(linaro-swg\/optee_examples.git\)revision.*/\1\/>/" | # Removes old revision
-		sed "s/\(linaro-swg\/optee_examples.git\"\)/\1 revision=\"refs\/tags\/${VERSION}\" clone-depth=\"1\"/" |
-		sed "s/\(linaro-swg\/optee_benchmark.git\)revision.*/\1\/>/" | # Removes old revision
-		sed "s/\(linaro-swg\/optee_benchmark.git\"\)/\1 revision=\"refs\/tags\/${VERSION}\" clone-depth=\"1\"/" |
-		sed "s/\(linaro-swg\/linux.git\" *\)revision=\"optee\".*/\1revision=\"refs\/tags\/optee-${VERSION}\" clone-depth=\"1\" \/>/" |
+		sed "/^[\t ]*<project/s/\(linaro-swg\/optee_examples.git\)revision.*/\1\/>/" | # Removes old revision
+		sed "/^[\t ]*<project/s/\(linaro-swg\/optee_examples.git\"\)/\1 revision=\"refs\/tags\/${VERSION}\" clone-depth=\"1\"/" |
+		sed "/^[\t ]*<project/s/\(linaro-swg\/optee_benchmark.git\)revision.*/\1\/>/" | # Removes old revision
+		sed "/^[\t ]*<project/s/\(linaro-swg\/optee_benchmark.git\"\)/\1 revision=\"refs\/tags\/${VERSION}\" clone-depth=\"1\"/" |
+		sed "/^[\t ]*<project/s/\(linaro-swg\/linux.git\" *\)revision=\"optee\".*/\1revision=\"refs\/tags\/optee-${VERSION}\" clone-depth=\"1\" \/>/" |
 		tee ${FILE} 2>&1 > /dev/null
 done
