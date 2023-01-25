@@ -4,6 +4,7 @@
 	<default remote="github" revision="master" />
 
 	<!-- OP-TEE gits -->
+	<project path="optee_os"		name="OP-TEE/optee_os.git" />
 	<project path="optee_client"		name="OP-TEE/optee_client.git" />
 	<project path="optee_docs"		name="OP-TEE/optee_docs.git" />
 	<project path="optee_test"		name="OP-TEE/optee_test.git" />
@@ -17,7 +18,6 @@
 
 	<!-- Foundries.io gits - upstream work in progress -->
 	<project path="arm-trusted-firmware"	name="foundriesio/arm-trusted-firmware.git"  revision="refs/heads/xlnx-v2.7-versal"/>
-	<project path="optee_os"		name="foundriesio/optee_os.git"              revision="refs/tags/mp-88-3.18+fio"/>
 
 	<!-- Xilinx gits -->
 	<project path="u-boot"			name="Xilinx/u-boot-xlnx.git"	revision="refs/tags/xilinx-v2022.1"/>
