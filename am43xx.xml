@@ -17,7 +17,7 @@
         <project path="optee_examples" name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="buildroot"      name="buildroot/buildroot.git"             revision="refs/tags/2021.11" clone-depth="1" />
+        <project path="buildroot"      name="buildroot/buildroot.git"             revision="refs/tags/2022.11.1" clone-depth="1" />
         <project path="linux"          name="ti-linux-kernel/ti-linux-kernel.git" revision="00a3beacce33dc14fa301eb5f3fb5a341212e9b4" remote="ti" />
         <project path="u-boot"         name="ti-u-boot/ti-u-boot.git"             revision="c68ed086bd00054e28c46e033385f79104c3f84c" remote="ti" />
 </manifest>

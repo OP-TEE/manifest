@@ -19,7 +19,7 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2021.11" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2022.11.1" clone-depth="1" />
         <project path="edk2"                 name="tianocore/edk2.git"                    revision="dd4cae4d82c7477273f3da455084844db5cca0c0" />
         <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="02daa58c21f89628b4d8c76f95f3a554289149bc" />
         <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />

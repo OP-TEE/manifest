@@ -19,7 +19,7 @@
         <project path="patches_hikey"         name="linaro-swg/patches_hikey.git"             revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96" />
 
         <!-- Misc gits -->
-        <project path="buildroot"             name="buildroot/buildroot.git"                  revision="refs/tags/2021.11" clone-depth="1" />
+        <project path="buildroot"             name="buildroot/buildroot.git"                  revision="refs/tags/2022.11.1" clone-depth="1" />
         <project path="edk2"                  name="96boards-hikey/edk2.git"                  revision="77326b5a153513c826d5a50363eace6ef6b59413" />
         <project path="grub"                  name="grub.git"                                 revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
         <project path="linux"                 name="linaro-swg/linux.git"                     revision="optee" clone-depth="1" />
