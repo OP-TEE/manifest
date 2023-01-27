@@ -25,5 +25,5 @@
 	<project path="bootgen"			name="Xilinx/bootgen.git"	revision="refs/tags/xilinx_v2022.1"/>
 
 	<!-- Misc gits -->
-	<project path="buildroot"		name="buildroot/buildroot.git" revision="refs/tags/2021.11" clone-depth="1" />
+	<project path="buildroot"		name="buildroot/buildroot.git" revision="refs/tags/2022.11.1" clone-depth="1" />
 </manifest>

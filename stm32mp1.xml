@@ -21,7 +21,7 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git" revision="refs/tags/2021.11" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git" revision="refs/tags/2022.11.1" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.8" remote="tfo" clone-depth="1" />
         <project path="u-boot"               name="u-boot/u-boot.git" revision="refs/tags/v2022.10" remote="u-boot" clone-depth="1" />
         <project path="scp-firmware"         name="ARM-software/SCP-firmware.git" />
