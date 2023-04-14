@@ -5,15 +5,15 @@
         <default remote="github" revision="master" />
 
         <!-- OP-TEE gits -->
-        <project path="build"                name="OP-TEE/build.git" >
+        <project path="build"                name="OP-TEE/build.git" revision="refs/tags/3.21.0" clone-depth="1" >
                 <linkfile src="verdin.mk" dest="build/Makefile" />
         </project>
-        <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+        <project path="optee_client"         name="OP-TEE/optee_client.git" revision="refs/tags/3.21.0" clone-depth="1" />
+        <project path="optee_os"             name="OP-TEE/optee_os.git" revision="refs/tags/3.21.0" clone-depth="1" />
+        <project path="optee_test"           name="OP-TEE/optee_test.git" revision="refs/tags/3.21.0" clone-depth="1" />
 
         <!-- linaro-swg gits -->
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+        <project path="optee_examples"       name="linaro-swg/optee_examples.git" revision="refs/tags/3.21.0" clone-depth="1" />
 
         <!-- temp igoropaniuk gits -->
         <project path="linux"                name="igoropaniuk/linux"               revision="mainline_verdin" clone-depth="1" />
