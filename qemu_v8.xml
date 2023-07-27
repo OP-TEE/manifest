@@ -26,5 +26,5 @@
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v8.0.0" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.9" clone-depth="1" remote="tfo" />
         <project path="hafnium"   name="hafnium/hafnium.git"           revision="refs/tags/v2.9" clone-depth="1" remote="tfo" />
-        <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2021.04" remote="u-boot" clone-depth="1" />
+        <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2023.07.02" remote="u-boot" clone-depth="1" />
 </manifest>
