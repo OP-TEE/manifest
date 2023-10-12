@@ -22,7 +22,7 @@
         <remove-project path="ms-tpm-20-ref"            name="microsoft/ms-tpm-20-ref" />
         <!-- Add Trusted Services Linux drivers -->
         <project        path="linux-arm-ffa-user"       name="linux-arm/linux-trusted-services.git"     revision="refs/tags/debugfs-v5.0.1"     clone-depth="1" remote="arm-gitlab" />
-        <project        path="linux-arm-ffa-tee"        name="linux-arm/linux-trusted-services.git"     revision="refs/tags/tee-v1.1.2"         clone-depth="1" remote="arm-gitlab" />
+        <project        path="linux-arm-ffa-tee"        name="linux-arm/linux-trusted-services.git"     revision="refs/tags/tee-v2.0.0"         clone-depth="1" remote="arm-gitlab" />
         <!-- Add Trusted Services project -->
-        <project        path="trusted-services"         name="TS/trusted-services.git"                  revision="e56c7b19eef74afd4f4d8962b1b1ce699f25833d"     remote="tfo" />
+        <project        path="trusted-services"         name="TS/trusted-services.git"                  revision="refs/tags/v1.0.0"     remote="tfo" />
 </manifest>
