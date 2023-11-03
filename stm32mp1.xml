@@ -27,5 +27,5 @@
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git" revision="refs/tags/mbedtls-2.28.1" clone-depth="1" />
         <project path="scp-firmware"         name="ARM-software/SCP-firmware.git" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.9" remote="tfo" clone-depth="1" />
-        <project path="u-boot"               name="u-boot/u-boot.git" revision="refs/tags/v2023.10" remote="u-boot" clone-depth="1" />
+        <project path="u-boot"               name="u-boot/u-boot.git" revision="refs/tags/v2024.01-rc1" remote="u-boot" clone-depth="1" />
 </manifest>
