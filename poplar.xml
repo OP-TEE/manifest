@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="github"   fetch="https://github.com" />
         <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
         <remote name="denx"     fetch="https://gitlab.denx.de" />
 
-        <default remote="github" revision="master" />
-
-        <!-- OP-TEE gits -->
+        <include name="common.xml" />
         <project path="build"                name="OP-TEE/build.git" >
                 <linkfile src="poplar.mk" dest="build/Makefile" />
         </project>
-        <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
-
-        <!-- linaro-swg gits -->
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
 
         <!-- 96boards-poplar gits -->
         <project path="l-loader"             name="96boards-poplar/l-loader.git"          revision="master" clone-depth="1" />
         <project path="poplar-tools"         name="96boards-poplar/poplar-tools.git"      revision="master" clone-depth="1" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="697758e7c81131da6db0e3b10515019fe3aca8c9" clone-depth="1" remote="denx" />
 
-        <!-- Misc gits -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2022.11.1" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" clone-depth="1" remote="tfo" />
 </manifest>
