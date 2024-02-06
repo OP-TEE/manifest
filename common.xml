@@ -13,5 +13,5 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- buildroot git -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2022.11.1" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2023.11.1" clone-depth="1" />
 </manifest>
