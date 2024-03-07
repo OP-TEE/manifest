@@ -7,8 +7,8 @@
 
 	<remove-project                         name="linaro-swg/linux.git" />
 
-	<!-- Foundries.io gits - upstream work in progress -->
-	<project path="arm-trusted-firmware"	name="foundriesio/arm-trusted-firmware.git"  revision="refs/heads/xlnx-v2.7-versal"/>
+	<!-- Private maintainer git - Xilinx adoption work is in progress -->
+	<project path="arm-trusted-firmware"	name="ldts/arm-trusted-firmware.git"  revision="refs/heads/xlnx-v2.7-versal"/>
 
 	<!-- Xilinx gits -->
 	<project path="u-boot"			name="Xilinx/u-boot-xlnx.git"	revision="refs/tags/xilinx-v2022.1"/>
