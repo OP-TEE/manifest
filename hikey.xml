@@ -14,10 +14,10 @@
   <!-- Misc gits -->
   <project path="atf-fastboot" name="96boards-hikey/atf-fastboot.git" revision="d75cfac3877be68bb5e36be3fc57ba597a2d3710"/>
   <project path="burn-boot" name="96boards-hikey/burn-boot.git" revision="7dcbfb1f1496756294b3068e6e2370a9399dcea2"/>
-  <project path="busybox" name="mirror/busybox.git" revision="refs/tags/1_24_0" clone-depth="1"/>
+  <project path="busybox" name="mirror/busybox.git" revision="refs/tags/1_24_0"/>
   <project path="edk2" name="96boards-hikey/edk2.git" revision="77326b5a153513c826d5a50363eace6ef6b59413"/>
-  <project path="grub" name="grub.git" revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah"/>
+  <project path="grub" name="grub.git" revision="refs/tags/grub-2.02" remote="savannah"/>
   <project path="l-loader" name="96boards-hikey/l-loader.git" revision="6560d22743d5ec904ff043d87f7f794336076085"/>
   <project path="OpenPlatformPkg" name="96boards-hikey/OpenPlatformPkg.git" revision="245344ea5421ba126e1eb76484d00b590a4a78f7"/>
-  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" clone-depth="1" remote="tfo"/>
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" remote="tfo"/>
 </manifest>

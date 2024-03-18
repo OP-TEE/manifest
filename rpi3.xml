@@ -10,10 +10,10 @@
   </project>
 
   <remove-project name="linaro-swg/linux.git"/>
-  <project path="linux" name="linaro-swg/linux.git" revision="rpi3-optee-6.7" clone-depth="1"/>
+  <project path="linux" name="linaro-swg/linux.git" revision="rpi3-optee-6.7"/>
 
   <!-- Misc gits -->
-  <project path="firmware" name="raspberrypi/firmware.git" revision="refs/tags/1.20190401" clone-depth="1"/>
-  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" clone-depth="1" remote="tfo"/>
-  <project path="u-boot" name="u-boot/u-boot.git" revision="refs/tags/v2021.10" clone-depth="1"/>
+  <project path="firmware" name="raspberrypi/firmware.git" revision="refs/tags/1.20190401"/>
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" remote="tfo"/>
+  <project path="u-boot" name="u-boot/u-boot.git" revision="refs/tags/v2021.10"/>
 </manifest>

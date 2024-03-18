@@ -10,7 +10,7 @@
   </project>
 
   <!-- Misc gits -->
-  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" clone-depth="1" remote="tfo"/>
-  <project path="u-boot" name="u-boot/u-boot.git" revision="refs/tags/v2020.10-rc2" clone-depth="1"/>
-  <project path="imx-mkimage" name="nxp-imx/imx-mkimage.git" revision="refs/tags/rel_imx_5.4.24_2.1.0" clone-depth="1"/>
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" remote="tfo"/>
+  <project path="u-boot" name="u-boot/u-boot.git" revision="refs/tags/v2020.10-rc2"/>
+  <project path="imx-mkimage" name="nxp-imx/imx-mkimage.git" revision="refs/tags/rel_imx_5.4.24_2.1.0"/>
 </manifest>
