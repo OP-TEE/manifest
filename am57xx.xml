@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="ti" fetch="git://git.ti.com" />
+  <remote name="ti" fetch="git://git.ti.com"/>
 
-        <include name="common.xml" />
-        <project path="build"          name="OP-TEE/build.git">
-                <linkfile src="am57xx.mk" dest="build/Makefile" />
-        </project>
-        <remove-project                name="linaro-swg/linux.git" />
+  <include name="common.xml"/>
 
-        <project path="linux"          name="ti-linux-kernel/ti-linux-kernel.git" revision="00a3beacce33dc14fa301eb5f3fb5a341212e9b4" remote="ti" />
-        <project path="u-boot"         name="ti-u-boot/ti-u-boot.git"             revision="c68ed086bd00054e28c46e033385f79104c3f84c" remote="ti" />
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="am57xx.mk" dest="build/Makefile"/>
+  </project>
+
+  <remove-project name="linaro-swg/linux.git"/>
+
+  <project path="linux" name="ti-linux-kernel/ti-linux-kernel.git" revision="00a3beacce33dc14fa301eb5f3fb5a341212e9b4" remote="ti"/>
+  <project path="u-boot" name="ti-u-boot/ti-u-boot.git" revision="c68ed086bd00054e28c46e033385f79104c3f84c" remote="ti"/>
 </manifest>

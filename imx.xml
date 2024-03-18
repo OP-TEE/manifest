@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="linaro" fetch="https://git.linaro.org" />
-        <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
+  <remote name="linaro" fetch="https://git.linaro.org"/>
+  <remote name="tfo" fetch="https://git.trustedfirmware.org"/>
 
-        <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
-                <linkfile src="imx.mk" dest="build/Makefile" />
-        </project>
+  <include name="common.xml"/>
 
-        <!-- Misc gits -->
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" clone-depth="1" remote="tfo" />
-        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2020.10-rc2" clone-depth="1" />
-        <project path="imx-mkimage"          name="nxp-imx/imx-mkimage.git"                       revision="refs/tags/rel_imx_5.4.24_2.1.0" clone-depth="1" />
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="imx.mk" dest="build/Makefile"/>
+  </project>
+
+  <!-- Misc gits -->
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" remote="tfo"/>
+  <project path="u-boot" name="u-boot/u-boot.git" revision="refs/tags/v2020.10-rc2"/>
+  <project path="imx-mkimage" name="nxp-imx/imx-mkimage.git" revision="refs/tags/rel_imx_5.4.24_2.1.0"/>
 </manifest>

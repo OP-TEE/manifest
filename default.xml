@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
-        <remote name="u-boot" fetch="https://gitlab.denx.de/u-boot" />
+  <remote name="tfo" fetch="https://git.trustedfirmware.org"/>
+  <remote name="u-boot" fetch="https://gitlab.denx.de/u-boot"/>
 
-        <include name="common.xml" />
-        <project path="build"               name="OP-TEE/build.git">
-                <linkfile src="qemu.mk" dest="build/Makefile" />
-        </project>
+  <include name="common.xml"/>
 
-        <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v7.0.0" clone-depth="1" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" remote="tfo" />
-        <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2020.04" remote="u-boot" clone-depth="1" />
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="qemu.mk" dest="build/Makefile"/>
+  </project>
+
+  <project path="qemu" name="qemu/qemu.git" revision="refs/tags/v7.0.0"/>
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" remote="tfo"/>
+  <project path="u-boot" name="u-boot.git" revision="refs/tags/v2020.04" remote="u-boot" />
 </manifest>

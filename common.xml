@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="github" fetch="https://github.com" />
-        <default remote="github" revision="master" />
+  <remote name="github" fetch="https://github.com"/>
 
-        <!-- OP-TEE gits -->
-        <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
-        <project path="optee_test"           name="OP-TEE/optee_test.git" />
+  <default remote="github" revision="master" sync-j="4" clone-depth="1"/>
 
-        <!-- linaro-swg gits -->
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="optee" clone-depth="1" />
-        <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
+  <!-- OP-TEE gits -->
+  <project path="optee_client" name="OP-TEE/optee_client.git"/>
+  <project path="optee_os" name="OP-TEE/optee_os.git"/>
+  <project path="optee_test" name="OP-TEE/optee_test.git"/>
 
-        <!-- buildroot git -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2023.11.1" clone-depth="1" />
+  <!-- linaro-swg gits -->
+  <project path="linux" name="linaro-swg/linux.git" revision="optee"/>
+  <project path="optee_examples" name="linaro-swg/optee_examples.git"/>
+
+  <!-- buildroot git -->
+  <project path="buildroot" name="buildroot/buildroot.git" revision="refs/tags/2023.11.1"/>
 </manifest>

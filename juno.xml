@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
+  <remote name="tfo" fetch="https://git.trustedfirmware.org"/>
 
-        <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
-                <linkfile src="juno.mk" dest="build/Makefile" />
-        </project>
+  <include name="common.xml"/>
 
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" clone-depth="1" remote="tfo" />
-        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2018.03" clone-depth="1" />
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="juno.mk" dest="build/Makefile"/>
+  </project>
+
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" remote="tfo"/>
+  <project path="u-boot" name="u-boot/u-boot.git" revision="refs/tags/v2018.03"/>
 </manifest>
