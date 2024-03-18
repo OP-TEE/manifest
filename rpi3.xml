@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
+  <remote name="tfo" fetch="https://git.trustedfirmware.org"/>
 
-        <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
-                <linkfile src="rpi3.mk" dest="build/Makefile" />
-                <linkfile src="rpi3/debugger/pi3.cfg" dest="build/pi3.cfg" />
-        </project>
-        <remove-project                      name="linaro-swg/linux.git" />
-        <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-6.7" clone-depth="1" />
+  <include name="common.xml"/>
 
-        <!-- Misc gits -->
-        <project path="firmware"             name="raspberrypi/firmware.git"              revision="refs/tags/1.20190401" clone-depth="1" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" clone-depth="1" remote="tfo"/>
-        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2021.10" clone-depth="1" />
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="rpi3.mk" dest="build/Makefile"/>
+    <linkfile src="rpi3/debugger/pi3.cfg" dest="build/pi3.cfg"/>
+  </project>
+
+  <remove-project name="linaro-swg/linux.git"/>
+  <project path="linux" name="linaro-swg/linux.git" revision="rpi3-optee-6.7" clone-depth="1"/>
+
+  <!-- Misc gits -->
+  <project path="firmware" name="raspberrypi/firmware.git" revision="refs/tags/1.20190401" clone-depth="1"/>
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" clone-depth="1" remote="tfo"/>
+  <project path="u-boot" name="u-boot/u-boot.git" revision="refs/tags/v2021.10" clone-depth="1"/>
 </manifest>

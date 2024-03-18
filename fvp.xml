@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="savannah" fetch="https://git.savannah.gnu.org/git" />
-        <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
+  <remote name="savannah" fetch="https://git.savannah.gnu.org/git"/>
+  <remote name="tfo" fetch="https://git.trustedfirmware.org"/>
 
-        <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
-                <linkfile src="fvp.mk" dest="build/Makefile" />
-        </project>
+  <include name="common.xml"/>
 
-        <project path="edk2"                 name="tianocore/edk2.git"                    revision="dd4cae4d82c7477273f3da455084844db5cca0c0" />
-        <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="02daa58c21f89628b4d8c76f95f3a554289149bc" />
-        <project path="grub"                 name="grub.git"                              revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.9" clone-depth="1" remote="tfo" />
-        <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.4.0" />
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="fvp.mk" dest="build/Makefile"/>
+  </project>
 
-        <!-- fTPM implementation -->
-        <project path="ms-tpm-20-ref"        name="microsoft/ms-tpm-20-ref"               revision="98b60a44aba79b15fcce1c0d1e46cf5918400f6a" />
-
+  <project path="edk2" name="tianocore/edk2.git" revision="dd4cae4d82c7477273f3da455084844db5cca0c0"/>
+  <project path="edk2-platforms" name="tianocore/edk2-platforms.git" revision="02daa58c21f89628b4d8c76f95f3a554289149bc"/>
+  <project path="grub" name="grub.git" revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah"/>
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.9" clone-depth="1" remote="tfo"/>
+  <project path="mbedtls" name="Mbed-TLS/mbedtls.git" revision="refs/tags/mbedtls-3.4.0"/>
+  <!-- fTPM implementation -->
+  <project path="ms-tpm-20-ref" name="microsoft/ms-tpm-20-ref" revision="98b60a44aba79b15fcce1c0d1e46cf5918400f6a"/>
 </manifest>

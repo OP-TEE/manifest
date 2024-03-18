@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="savannah" fetch="https://git.savannah.gnu.org/git" />
-        <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
+  <remote name="savannah" fetch="https://git.savannah.gnu.org/git"/>
+  <remote name="tfo" fetch="https://git.trustedfirmware.org"/>
 
-        <include name="common.xml" />
-        <project path="build"                 name="OP-TEE/build.git">
-                <linkfile src="hikey960.mk" dest="build/Makefile" />
-        </project>
+  <include name="common.xml"/>
 
-        <!-- linaro-swg gits -->
-        <project path="patches_hikey"         name="linaro-swg/patches_hikey.git"             revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96" />
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="hikey960.mk" dest="build/Makefile"/>
+  </project>
 
-        <!-- Misc gits -->
-        <project path="edk2"                  name="96boards-hikey/edk2.git"                  revision="77326b5a153513c826d5a50363eace6ef6b59413" />
-        <project path="grub"                  name="grub.git"                                 revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah" />
-        <project path="l-loader"              name="96boards-hikey/l-loader.git"              revision="6560d22743d5ec904ff043d87f7f794336076085" />
-        <project path="OpenPlatformPkg"       name="96boards-hikey/OpenPlatformPkg.git"       revision="245344ea5421ba126e1eb76484d00b590a4a78f7" />
-        <project path="tools-images-hikey960" name="96boards-hikey/tools-images-hikey960.git" revision="a10d2bf1dca7a1be50fc60e58ed93253c95de076" />
-        <project path="trusted-firmware-a"    name="TF-A/trusted-firmware-a.git"              revision="refs/tags/v2.6" clone-depth="1" remote="tfo" />
+  <!-- linaro-swg gits -->
+  <project path="patches_hikey" name="linaro-swg/patches_hikey.git" revision="d9c07f0ac0ce5fe57d367be82b8673aae8e81e96"/>
+
+  <!-- Misc gits -->
+  <project path="edk2" name="96boards-hikey/edk2.git" revision="77326b5a153513c826d5a50363eace6ef6b59413"/>
+  <project path="grub" name="grub.git" revision="refs/tags/grub-2.02" clone-depth="1" remote="savannah"/>
+  <project path="l-loader" name="96boards-hikey/l-loader.git" revision="6560d22743d5ec904ff043d87f7f794336076085"/>
+  <project path="OpenPlatformPkg" name="96boards-hikey/OpenPlatformPkg.git" revision="245344ea5421ba126e1eb76484d00b590a4a78f7"/>
+  <project path="tools-images-hikey960" name="96boards-hikey/tools-images-hikey960.git" revision="a10d2bf1dca7a1be50fc60e58ed93253c95de076"/>
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" clone-depth="1" remote="tfo"/>
 </manifest>

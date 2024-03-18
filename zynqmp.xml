@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<include name="common.xml" />
-	<project path="build"           name="OP-TEE/build.git" >
-		<linkfile src="zynqmp.mk" dest="build/Makefile" />
-	</project>
+  <include name="common.xml"/>
 
-	<remove-project                 name="linaro-swg/linux.git" />
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="zynqmp.mk" dest="build/Makefile"/>
+  </project>
 
-	<!-- Xilinx gits -->
-	<project path="arm-trusted-firmware"	name="Xilinx/arm-trusted-firmware" />
-	<project path="u-boot-xlnx"		name="Xilinx/u-boot-xlnx"		revision="refs/tags/xilinx-v2021.1"/>
-	<project path="linux-xlnx"		name="Xilinx/linux-xlnx"		revision="refs/tags/xilinx-v2021.1"/>
-	<project path="bootgen"			name="Xilinx/bootgen"			revision="refs/tags/xilinx_v2021.1"/>
+  <remove-project name="linaro-swg/linux.git"/>
+
+  <!-- Xilinx gits -->
+  <project path="arm-trusted-firmware" name="Xilinx/arm-trusted-firmware"/>
+  <project path="u-boot-xlnx" name="Xilinx/u-boot-xlnx" revision="refs/tags/xilinx-v2021.1"/>
+  <project path="linux-xlnx" name="Xilinx/linux-xlnx" revision="refs/tags/xilinx-v2021.1"/>
+  <project path="bootgen" name="Xilinx/bootgen" revision="refs/tags/xilinx_v2021.1"/>
 </manifest>

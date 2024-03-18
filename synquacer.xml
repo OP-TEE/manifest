@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
+  <remote name="tfo" fetch="https://git.trustedfirmware.org"/>
 
-        <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
-                <linkfile src="synquacer.mk" dest="build/Makefile" />
-        </project>
-        <include name="include/linaro-swg.xml" />
-        <remove-project                      name="buildroot/buildroot.git" />
+  <include name="common.xml"/>
 
-        <!-- Misc gits -->
-        <project path="SCP-firmware"         name="ARM-software/SCP-firmware.git"         revision="56d4f515bcf1bc1b843abe343e9cf9dc44898ca2" />
-        <project path="edk2"                 name="tianocore/edk2.git"                    revision="21d9dc21f81828538af02ca9c2d86a36551b0771" />
-        <project path="edk2-non-osi"         name="tianocore/edk2-non-osi.git"            revision="596043ffb61d5f74a9eb334eaa4df683fa975c92" />
-        <project path="edk2-platforms"       name="tianocore/edk2-platforms.git"          revision="22d5f499135a0b43bfb723a983f93c3148d68494" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" clone-depth="1" remote="tfo"/>
+  <project path="build" name="OP-TEE/build.git">
+    <linkfile src="synquacer.mk" dest="build/Makefile"/>
+  </project>
+
+  <include name="include/linaro-swg.xml"/>
+  <remove-project name="buildroot/buildroot.git"/>
+
+  <!-- Misc gits -->
+  <project path="SCP-firmware" name="ARM-software/SCP-firmware.git" revision="56d4f515bcf1bc1b843abe343e9cf9dc44898ca2"/>
+  <project path="edk2" name="tianocore/edk2.git" revision="21d9dc21f81828538af02ca9c2d86a36551b0771"/>
+  <project path="edk2-non-osi" name="tianocore/edk2-non-osi.git" revision="596043ffb61d5f74a9eb334eaa4df683fa975c92"/>
+  <project path="edk2-platforms" name="tianocore/edk2-platforms.git" revision="22d5f499135a0b43bfb723a983f93c3148d68494"/>
+  <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.6" clone-depth="1" remote="tfo"/>
 </manifest>
