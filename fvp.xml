@@ -8,7 +8,7 @@
                 <linkfile src="fvp.mk" dest="build/Makefile" />
         </project>
 
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.9" clone-depth="1" remote="tfo" />
+        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.10" clone-depth="1" remote="tfo" />
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.4.0" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2024.04" remote="u-boot" clone-depth="1" />
 
