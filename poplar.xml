@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
-        <remote name="denx"     fetch="https://gitlab.denx.de" />
+        <remote name="denx"     fetch="https://source.denx.de" />
 
         <include name="common.xml" />
         <project path="build"                name="OP-TEE/build.git" >

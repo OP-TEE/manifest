@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
-        <remote name="u-boot" fetch="https://gitlab.denx.de/u-boot" />
+        <remote name="u-boot" fetch="https://source.denx.de/u-boot" />
 
         <include name="common.xml" />
         <project path="build"               name="OP-TEE/build.git">
