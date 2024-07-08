@@ -17,6 +17,10 @@
         <remove-project path="linux"                    name="linaro-swg/linux.git" />
         <project        path="linux"                    name="pub/scm/linux/kernel/git/stable/linux.git"        revision="refs/tags/v6.1.34"    clone-depth="1" remote="kernel-org" />
 
+        <!-- Trusted Firmware-A version and its MbedTLS dependency -->
+        <extend-project name="TF-A/trusted-firmware-a.git" path="trusted-firmware-a" revision="refs/tags/v2.11" remote="tfo" />
+        <extend-project name="Mbed-TLS/mbedtls.git" revision="refs/tags/mbedtls-3.6.0" />
+
         <!-- Misc gits -->
         <!-- The fTPM is not used in this config -->
         <remove-project path="ms-tpm-20-ref"            name="microsoft/ms-tpm-20-ref" />
@@ -24,5 +28,5 @@
         <project        path="linux-arm-ffa-user"       name="linux-arm/linux-trusted-services.git"     revision="refs/tags/debugfs-v5.0.1"     clone-depth="1" remote="arm-gitlab" />
         <project        path="linux-arm-ffa-tee"        name="linux-arm/linux-trusted-services.git"     revision="refs/tags/tee-v2.0.0"         clone-depth="1" remote="arm-gitlab" />
         <!-- Add Trusted Services project -->
-        <project        path="trusted-services"         name="TS/trusted-services.git"                  revision="39a5bc7ef1ec8fd7309e2daedeb8df80c2290455"     remote="tfo" />
+        <project        path="trusted-services"         name="TS/trusted-services.git"                  revision="4242972c139b785decc9910ab7e356a63bd72a3b"     remote="tfo" />
 </manifest>
