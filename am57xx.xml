@@ -3,7 +3,7 @@
         <remote name="ti" fetch="git://git.ti.com" />
 
         <include name="common.xml" />
-        <project path="build"          name="OP-TEE/build.git">
+        <project path="build"          name="OP-TEE/build.git" revision="refs/tags/4.3.0" clone-depth="1">
                 <linkfile src="am57xx.mk" dest="build/Makefile" />
         </project>
         <remove-project                name="linaro-swg/linux.git" />

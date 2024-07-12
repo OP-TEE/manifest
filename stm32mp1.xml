@@ -5,7 +5,7 @@
         <remote name="arm-gitlab" fetch="https://git.gitlab.arm.com/" />
 
         <include name="common.xml" />
-        <project path="build"               name="OP-TEE/build.git" >
+        <project path="build"               name="OP-TEE/build.git" revision="refs/tags/4.3.0" clone-depth="1" >
                 <linkfile src="stm32mp1.mk" dest="build/Makefile" />
         </project>
 
