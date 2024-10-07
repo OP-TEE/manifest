@@ -17,15 +17,11 @@
         <remove-project path="linux"                    name="linaro-swg/linux.git" />
         <project        path="linux"                    name="pub/scm/linux/kernel/git/torvalds/linux.git"      revision="refs/tags/v6.10"      clone-depth="1" remote="kernel-org" />
 
-        <!-- Trusted Firmware-A version and its MbedTLS dependency -->
-        <extend-project name="TF-A/trusted-firmware-a.git" path="trusted-firmware-a" revision="refs/tags/v2.11" remote="tfo" />
-        <extend-project name="Mbed-TLS/mbedtls.git" revision="refs/tags/mbedtls-3.6.0" />
-
         <!-- Misc gits -->
         <!-- The fTPM is not used in this config -->
         <remove-project path="ms-tpm-20-ref"            name="microsoft/ms-tpm-20-ref" />
         <!-- Add Trusted Services Linux drivers -->
         <project        path="linux-arm-ffa-user"       name="linux-arm/linux-trusted-services.git"     revision="refs/tags/debugfs-v5.0.2"     clone-depth="1" remote="arm-gitlab" />
         <!-- Add Trusted Services project -->
-        <project        path="trusted-services"         name="TS/trusted-services.git"                  revision="cc9589c03cb0fcd9c3248b95f05cce1afaa37d0f"     remote="tfo" />
+        <project        path="trusted-services"         name="TS/trusted-services.git"                  revision="ee2e7cb2d4539ca2eb6bffb8a24644b37ecd584d"     remote="tfo" />
 </manifest>
