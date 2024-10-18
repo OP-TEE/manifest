@@ -3,7 +3,7 @@
         <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
 
         <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="build"                name="OP-TEE/build.git" revision="refs/tags/4.4.0" clone-depth="1">
                 <linkfile src="rpi3.mk" dest="build/Makefile" />
                 <linkfile src="rpi3/debugger/pi3.cfg" dest="build/pi3.cfg" />
         </project>
