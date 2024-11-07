@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<include name="common.xml" />
+	<project path="build"                   name="OP-TEE/build.git" >
+			<linkfile src="versal2.mk" dest="build/Makefile" />
+	</project>
+
+	<remove-project                         name="linaro-swg/linux.git" />
+
+	<!-- AMD Gits pointing to latest release -->
+	<project path="arm-trusted-firmware"	name="Xilinx/arm-trusted-firmware.git"	revision="xlnx_rebase_v2.10" />
+	<project path="u-boot-xlnx"		name="Xilinx/u-boot-xlnx.git"	revision="xlnx_rebase_v2024.01" />`
+	<project path="linux-xlnx"		name="Xilinx/linux-xlnx.git"	revision="xlnx_rebase_v6.6_LTS" />
+</manifest>
