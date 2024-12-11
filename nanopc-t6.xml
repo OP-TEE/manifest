@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="tfo"      fetch="https://git.trustedfirmware.org" />
+
+        <include name="common.xml" />
+        <project path="build"                name="OP-TEE/build.git">
+                <linkfile src="nanopc-t6.mk" dest="build/Makefile" />
+        </project>
+        <remove-project                      name="linaro-swg/linux.git" />
+        <project path="linux"                name="friendlyarm/kernel-rockchip.git"       revision="83ad55ea02e284cb96b49df7eda89dc6797d9d9c" clone-depth="1" />
+
+        <project path="rkdeveloptool"        name="friendlyarm/rkdeveloptool"             revision="07a65fe0bc56310e9f21ee4ced65185a11a84eae" clone-depth="1" />
+        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="b833bbe6f088e3ee78037515d6c7c5ebb6d9a0cc" clone-depth="1" remote="tfo" />
+        <project path="u-boot"               name="friendlyarm/uboot-rockchip.git"        revision="d2512f90e9756130358771d4feb1d66d13dd6a90" clone-depth="1" />
+</manifest>
