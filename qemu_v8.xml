@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+        <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
         <remote name="u-boot"   fetch="https://source.denx.de/u-boot" />
         <remote name="xenbits"  fetch="https://xenbits.xen.org/" />
         <remote name="arm-gitlab"       fetch="https://git.gitlab.arm.com/" />
