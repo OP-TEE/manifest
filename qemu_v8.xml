@@ -20,6 +20,6 @@
         <project path="xen"                 name="git-http/xen.git"                         revision="refs/tags/RELEASE-4.19.0" clone-depth="1" remote="xenbits" />
         <project path="SCP-firmware"         name="firmware/SCP-firmware.git"             revision="refs/tags/v2.15.0" remote="arm-gitlab" clone-depth="1" />
 
-        <project path="trusted-services"     name="TS/trusted-services.git"                  revision="refs/tags/v1.1.0" remote="tfo" clone-depth="1" />
+        <project path="trusted-services"     name="TS/trusted-services.git"                  revision="8881aaa3a9cb21e8b869e28c1a079f02fa46fd6c" remote="tfo" clone-depth="1" />
         <project path="linux-arm-ffa-user"   name="linux-arm/linux-trusted-services.git" revision="refs/tags/debugfs-v5.0.2"     clone-depth="1" remote="arm-gitlab" />
 </manifest>
