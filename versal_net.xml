@@ -11,5 +11,5 @@
         <project path="arm-trusted-firmware"	name="ARM-software/arm-trusted-firmware.git"	revision="refs/tags/lts-v2.10.12" clone-depth="1" />
         <project path="u-boot"			name="u-boot/u-boot.git"			revision="refs/tags/v2025.01" clone-depth="1" />
         <project path="linux"			name="Xilinx/linux-xlnx.git"			revision="refs/tags/xilinx-v2024.2" clone-depth="1" />
-        <project path="bootgen"			name="Xilinx/bootgen.git"			revision="refs/tags/xilinx-v2024.2" clone-depth="1" />
+        <project path="bootgen"			name="Xilinx/bootgen.git"			revision="refs/tags/xilinx_v2024.2" clone-depth="1" />
 </manifest>
