@@ -16,7 +16,7 @@
         <project path="trusted-firmware-a"   name="TrustedFirmware-A/trusted-firmware-a.git"           revision="refs/tags/v2.12" clone-depth="1" />
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.6.0" clone-depth="1" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2023.07.02" remote="u-boot" clone-depth="1" />
-        <project path="xen"                 name="git-http/xen.git"                         revision="refs/tags/RELEASE-4.19.0" clone-depth="1" remote="xenbits" />
+        <project path="xen"                 name="git-http/xen.git"                         revision="refs/tags/RELEASE-4.20.0" clone-depth="1" remote="xenbits" />
         <project path="SCP-firmware"         name="linaro-swg/SCP-firmware.git"             revision="refs/tags/v2.15.0" clone-depth="1" />
 
         <project path="trusted-services"     name="TS/trusted-services.git"                  revision="8881aaa3a9cb21e8b869e28c1a079f02fa46fd6c" remote="tfo" clone-depth="1" />
