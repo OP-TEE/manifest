@@ -12,7 +12,7 @@
         <!-- Misc gits -->
         <project path="optee_rust"           name="apache/incubator-teaclave-trustzone-sdk.git"            revision="ec3eefd9de68a18d5acee1a151e0d93f6898807f" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v10.0.0" clone-depth="1" />
-        <project path="hafnium"              name="TF-Hafnium/hafnium.git"                   revision="a33eca9976006ac9b08ed4afe6260a2e8b9d2b3a" clone-depth="1" />
+        <project path="hafnium"              name="TF-Hafnium/hafnium.git"                   revision="refs/tags/v2.12" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TrustedFirmware-A/trusted-firmware-a.git"           revision="refs/tags/v2.12" clone-depth="1" />
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.6.0" clone-depth="1" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2023.07.02" remote="u-boot" clone-depth="1" />
