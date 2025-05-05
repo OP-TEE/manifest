@@ -2,7 +2,6 @@
 <manifest>
         <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
         <remote name="u-boot"   fetch="https://source.denx.de/u-boot" />
-        <remote name="xenbits"  fetch="https://xenbits.xen.org/" />
 
         <include name="common.xml" />
         <project path="build"                name="OP-TEE/build.git">
@@ -16,7 +15,7 @@
         <project path="trusted-firmware-a"   name="TrustedFirmware-A/trusted-firmware-a.git"           revision="refs/tags/v2.12" clone-depth="1" />
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.6.0" clone-depth="1" />
         <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2025.07-rc1" remote="u-boot" clone-depth="1" />
-        <project path="xen"                 name="git-http/xen.git"                         revision="refs/tags/RELEASE-4.20.0" clone-depth="1" remote="xenbits" />
+        <project path="xen"                  name="xen-project/xen.git"                   revision="refs/tags/RELEASE-4.20.0" clone-depth="1" />
         <project path="SCP-firmware"         name="linaro-swg/SCP-firmware.git"             revision="refs/tags/v2.16.0" clone-depth="1" />
 
         <project path="trusted-services"     name="TS/trusted-services.git"                  revision="8881aaa3a9cb21e8b869e28c1a079f02fa46fd6c" remote="tfo" clone-depth="1" />
