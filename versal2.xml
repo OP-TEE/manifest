@@ -8,7 +8,7 @@
 	<remove-project                         name="linaro-swg/linux.git" />
 
 	<!-- AMD Gits pointing to latest release -->
-	<project path="arm-trusted-firmware"	name="Xilinx/arm-trusted-firmware.git"	revision="xlnx_rebase_v2.10" />
-	<project path="u-boot-xlnx"		name="Xilinx/u-boot-xlnx.git"	revision="xlnx_rebase_v2024.01" />`
-	<project path="linux-xlnx"		name="Xilinx/linux-xlnx.git"	revision="xlnx_rebase_v6.6_LTS" />
+	<project path="arm-trusted-firmware"	name="Xilinx/arm-trusted-firmware.git"	revision="xlnx_rebase_v2.12" />
+	<project path="u-boot-xlnx"		name="Xilinx/u-boot-xlnx.git"	revision="xlnx_rebase_v2025.01" />
+	<project path="linux-xlnx"		name="Xilinx/linux-xlnx.git"	revision="xlnx_rebase_v6.12_LTS" />
 </manifest>
