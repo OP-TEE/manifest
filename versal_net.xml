@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <include name="common.xml" />
-        <project path="build"			name="OP-TEE/build.git" >
+        <project path="build"			name="OP-TEE/build.git" revision="refs/tags/4.7.0" clone-depth="1" >
                 <linkfile src="versal_net.mk" dest="build/Makefile" />
         </project>
 
