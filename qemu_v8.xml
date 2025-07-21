@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
-        <remote name="u-boot"   fetch="https://source.denx.de/u-boot" />
 
         <include name="common.xml" />
         <project path="build"                name="OP-TEE/build.git">
@@ -14,7 +13,7 @@
         <project path="hafnium"              name="TF-Hafnium/hafnium.git"                   revision="refs/tags/v2.12" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TrustedFirmware-A/trusted-firmware-a.git"           revision="refs/tags/v2.13-rc0" clone-depth="1" />
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.6.0" clone-depth="1" />
-        <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2025.07-rc1" remote="u-boot" clone-depth="1" />
+        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2025.07-rc1"  clone-depth="1" />
         <project path="xen"                  name="xen-project/xen.git"                   revision="refs/tags/RELEASE-4.20.0" clone-depth="1" />
         <project path="SCP-firmware"         name="linaro-swg/SCP-firmware.git"             revision="refs/tags/v2.16.0" clone-depth="1" />
 
