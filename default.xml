@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
-        <remote name="u-boot" fetch="https://source.denx.de/u-boot" />
 
         <include name="common.xml" />
         <project path="build"               name="OP-TEE/build.git">
@@ -10,5 +9,5 @@
 
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v7.0.0" clone-depth="1" />
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.6" remote="tfo" />
-        <project path="u-boot"               name="u-boot.git"                            revision="refs/tags/v2024.07" remote="u-boot" clone-depth="1" />
+        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2024.07" clone-depth="1" />
 </manifest>
