@@ -14,7 +14,7 @@
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
         <!-- buildroot git -->
-        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2024.05" clone-depth="1" />
+        <project path="buildroot"            name="buildroot/buildroot.git"               revision="refs/tags/2025.05" clone-depth="1" />
 
         <!-- fTPM implementation -->
         <project path="ms-tpm-20-ref"        name="microsoft/ms-tpm-20-ref"               revision="98b60a44aba79b15fcce1c0d1e46cf5918400f6a" clone-depth="1" />
