@@ -7,8 +7,8 @@
                 <linkfile src="fvp.mk" dest="build/Makefile" />
         </project>
 
-        <project path="hafnium"              name="hafnium/hafnium.git"                   revision="a33eca9976006ac9b08ed4afe6260a2e8b9d2b3a" clone-depth="1" remote="tfo" />
-        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.11" clone-depth="1" remote="tfo" />
-        <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.6.0" />
+        <project path="hafnium"              name="hafnium/hafnium.git"                   revision="refs/tags/v2.14.0" clone-depth="1" remote="tfo" />
+        <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.14.0" clone-depth="1" remote="tfo" sync-s="true" />
+        <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.6.5" sync-s="true" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2024.04" clone-depth="1" />
 </manifest>
