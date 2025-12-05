@@ -12,16 +12,11 @@
                 <linkfile src="fvp-psa-sp.mk" dest="build/Makefile" />
         </project>
 
-        <!-- linaro-swg gits -->
-        <!-- Replace Linux with mainline version -->
-        <remove-project path="linux"                    name="linaro-swg/linux.git" />
-        <project        path="linux"                    name="pub/scm/linux/kernel/git/torvalds/linux.git"      revision="refs/tags/v6.10"      clone-depth="1" remote="kernel-org" />
-
         <!-- Misc gits -->
         <!-- The fTPM is not used in this config -->
         <remove-project path="ms-tpm-20-ref"            name="microsoft/ms-tpm-20-ref" />
         <!-- Add Trusted Services Linux drivers -->
         <project        path="linux-arm-ffa-user"       name="linux-arm/linux-trusted-services.git"     revision="refs/tags/debugfs-v5.0.2"     clone-depth="1" remote="arm-gitlab" />
         <!-- Add Trusted Services project -->
-        <project        path="trusted-services"         name="TS/trusted-services.git"                  revision="ee2e7cb2d4539ca2eb6bffb8a24644b37ecd584d"     remote="tfo" />
+        <project        path="trusted-services"         name="TS/trusted-services.git"                  revision="refs/tags/v1.3.0"     remote="tfo" />
 </manifest>
