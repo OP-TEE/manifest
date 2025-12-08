@@ -11,7 +11,7 @@
         <project path="optee_rust"           name="apache/incubator-teaclave-trustzone-sdk.git"            revision="a8cb34150770ba729b2cc9b3c1d7c014bd32d95b" />
         <project path="qemu"                 name="qemu/qemu.git"                         revision="refs/tags/v10.0.0" clone-depth="1" />
         <project path="hafnium"              name="TF-Hafnium/hafnium.git"                   revision="refs/tags/v2.14.0" clone-depth="1" />
-        <project path="trusted-firmware-a"   name="TrustedFirmware-A/trusted-firmware-a.git"           revision="refs/tags/v2.14.0" clone-depth="1" />
+        <project path="trusted-firmware-a"   name="TrustedFirmware-A/trusted-firmware-a.git"           revision="refs/tags/v2.14.0" sync-s="true" clone-depth="1" />
         <project path="mbedtls"              name="Mbed-TLS/mbedtls.git"                  revision="refs/tags/mbedtls-3.6.5" sync-s="true" clone-depth="1" />
         <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2025.07"  clone-depth="1" />
         <project path="xen"                  name="xen-project/xen.git"                   revision="refs/tags/RELEASE-4.20.0" clone-depth="1" />
