@@ -12,4 +12,6 @@
 	<project path="u-boot"			name="Xilinx/u-boot-xlnx.git"		revision="refs/tags/xilinx-v2024.2" clone-depth="1" />
 	<project path="linux"			name="Xilinx/linux-xlnx.git"		revision="refs/tags/xilinx-v2024.2" clone-depth="1" />
 	<project path="bootgen"			name="Xilinx/bootgen.git"		revision="refs/tags/xilinx_v2024.2" clone-depth="1" />
+
+	<project path="embeddedsw"		name="Xilinx/embeddedsw.git"		revision="refs/tags/xilinx_v2024.2" clone-depth="1" />
 </manifest>
