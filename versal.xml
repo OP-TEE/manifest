@@ -7,11 +7,9 @@
 
 	<remove-project                         name="linaro-swg/linux.git" />
 
-	<!-- Private maintainer git - Xilinx adoption work is in progress -->
-	<project path="arm-trusted-firmware"	name="ldts/arm-trusted-firmware.git"  revision="refs/heads/xlnx-v2.7-versal" clone-depth="1" />
-
 	<!-- Xilinx gits -->
-	<project path="u-boot"			name="Xilinx/u-boot-xlnx.git"	revision="refs/tags/xilinx-v2022.1" clone-depth="1" />
-	<project path="linux"			name="Xilinx/linux-xlnx.git"	revision="refs/tags/xilinx-v2022.1" clone-depth="1" />
-	<project path="bootgen"			name="Xilinx/bootgen.git"	revision="refs/tags/xilinx_v2022.1" clone-depth="1" />
+	<project path="arm-trusted-firmware"	name="Xilinx/arm-trusted-firmware.git"	revision="refs/tags/xilinx-v2024.2" clone-depth="1" />
+	<project path="u-boot"			name="Xilinx/u-boot-xlnx.git"		revision="refs/tags/xilinx-v2024.2" clone-depth="1" />
+	<project path="linux"			name="Xilinx/linux-xlnx.git"		revision="refs/tags/xilinx-v2024.2" clone-depth="1" />
+	<project path="bootgen"			name="Xilinx/bootgen.git"		revision="refs/tags/xilinx_v2024.2" clone-depth="1" />
 </manifest>
