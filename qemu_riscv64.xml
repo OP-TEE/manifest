@@ -15,6 +15,5 @@
 
         <!-- RISC-V QEMU platform dependencies -->
         <project path="opensbi"              name="riscv-optee/opensbi.git"         remote="rise-gitlab"        revision="refs/tags/optee-ci-20260817" clone-depth="1" />
-        <project path="qemu"                 name="qemu/qemu.git"                   revision="refs/tags/v10.0.0" clone-depth="1" />
         <project path="u-boot"               name="riscv-optee/u-boot.git"          remote="rise-gitlab"        revision="refs/tags/optee-ci-20260817" clone-depth="1" />
 </manifest>
