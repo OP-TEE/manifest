@@ -8,8 +8,8 @@
 	<remove-project                 name="linaro-swg/linux.git" />
 
 	<!-- Xilinx gits -->
-	<project path="arm-trusted-firmware"	name="Xilinx/arm-trusted-firmware" />
-	<project path="u-boot-xlnx"		name="Xilinx/u-boot-xlnx"		revision="refs/tags/xilinx-v2021.1"/>
-	<project path="linux-xlnx"		name="Xilinx/linux-xlnx"		revision="refs/tags/xilinx-v2021.1"/>
-	<project path="bootgen"			name="Xilinx/bootgen"			revision="refs/tags/xilinx_v2021.1"/>
+	<project path="arm-trusted-firmware"	name="Xilinx/arm-trusted-firmware" clone-depth="1" />
+	<project path="u-boot-xlnx"		name="Xilinx/u-boot-xlnx"		revision="refs/tags/xilinx-v2021.1" clone-depth="1" />
+	<project path="linux-xlnx"		name="Xilinx/linux-xlnx"		revision="refs/tags/xilinx-v2021.1" clone-depth="1" />
+	<project path="bootgen"			name="Xilinx/bootgen"			revision="refs/tags/xilinx_v2021.1" clone-depth="1" />
 </manifest>
