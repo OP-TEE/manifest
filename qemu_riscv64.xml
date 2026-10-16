@@ -7,7 +7,7 @@
         <!-- Replace common.xml defaults with the current RISC-V working repos -->
         <remove-project path="linux"         name="linaro-swg/linux.git" />
 
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="build"                name="OP-TEE/build.git" revision="refs/tags/4.11.0" clone-depth="1">
                 <linkfile src="qemu_riscv64.mk" dest="build/Makefile" />
         </project>
 
