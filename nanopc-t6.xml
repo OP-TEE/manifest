@@ -10,6 +10,9 @@
         <project path="linux"                name="friendlyarm/kernel-rockchip.git"       revision="83ad55ea02e284cb96b49df7eda89dc6797d9d9c" clone-depth="1" />
 
         <project path="rkdeveloptool"        name="friendlyarm/rkdeveloptool"             revision="07a65fe0bc56310e9f21ee4ced65185a11a84eae" clone-depth="1" />
+        <project path="rkbin"                name="rockchip-linux/rkbin"                  revision="5f6fb8f92674de284fd963fd50d23b9df0c33be7">
+                <linkfile src="bin/rk35/rk3588_ddr_lp4_2112MHz_lp5_2400MHz_v1.21.bin" dest="out/rk3588_ddr_lp4_2112MHz_lp5_2400MHz_v1.21.bin" />
+        </project>
         <project path="trusted-firmware-a"   name="TF-A/trusted-firmware-a.git"           revision="refs/tags/v2.12.0" clone-depth="1" remote="tfo" />
         <project path="u-boot"               name="friendlyarm/uboot-rockchip.git"        revision="d2512f90e9756130358771d4feb1d66d13dd6a90" clone-depth="1" />
 </manifest>
